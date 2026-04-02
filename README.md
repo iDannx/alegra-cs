@@ -1,18 +1,12 @@
 # Alegra CS — Sistema de Detección de Churn con Agentes de IA
 
-## ¿Qué porcentaje del trabajo es automatizable?
-
-Diría que un **85-90%**. El cruce de datos, el scoring, la clasificación, las alertas y el reporte son 100% automatizables. Lo que no automaticé (y creo que no debería automatizarse) es la decisión final de contactar al cliente y cómo hacerlo — eso sigue siendo humano. El sistema recomienda, el analista decide.
-
----
-
 ## Arquitectura general
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                  Dashboard React                 │
-│         (alegra.somoscolombiatech.shop)          │
-│                                                  │
+│                  Dashboard React                │
+│         (alegra.somoscolombiatech.shop)         │
+│                                                 │
 │  Panel  │  Alertas  │  Detalle  │  Reporte  │   │
 │  ───────┼───────────┼───────────┼───────────┼   │
 │         │           │           │           │   │
@@ -40,22 +34,36 @@ Diría que un **85-90%**. El cruce de datos, el scoring, la clasificación, las 
                                        └──────────┘
 ```
 
-### Stack tecnológico
+## Stack tecnológico
 
-| Componente | Tecnología | Por qué |
-|-----------|-----------|---------|
-| Orquestación | n8n | Ya lo manejo en producción, permite diseñar flujos visualmente, y es una de las herramientas que Alegra valora |
-| Agentes IA | OpenAI GPT-4o / GPT-4o-mini | GPT-4o-mini para scoring (alto volumen, bajo costo), GPT-4o para recomendaciones (necesita razonamiento profundo) |
-| Base de datos | Supabase (PostgreSQL) | API REST integrado, Realtime con WebSockets, SDK de JavaScript para el dashboard |
-| Dashboard | React + Vite + TypeScript + Tailwind | Stack moderno, rápido de desarrollar, deploy estático |
-| Alertas | Gmail vía n8n | Integración nativa en n8n, envío de HTML formateado |
-| Charts | Recharts | Se integra nativamente con React |
+Para este proyecto elegí un stack enfocado en rapidez de desarrollo, escalabilidad y facilidad de integración entre componentes.
 
+### Orquestación — n8n
+Opté por n8n porque me permite construir y ajustar flujos de trabajo de forma visual y rápida. Esto fue clave para iterar sin perder tiempo en código innecesario, además de facilitar la integración con APIs externas.
+
+### Agentes de IA — OpenAI (GPT-4o / GPT-4o-mini)
+Utilicé dos modelos con roles distintos:
+- **GPT-4o-mini** para tareas de alto volumen como scoring, donde el costo y la velocidad son importantes.  
+- **GPT-4o** para generar recomendaciones, ya que en este punto necesito mejor razonamiento y mayor calidad en las respuestas.  
+
+Esta separación me permitió optimizar tanto rendimiento como costos.
+
+### Base de datos — Supabase
+Elegí Supabase porque ofrece una API REST lista para usar, soporte en tiempo real con WebSockets y un SDK sencillo para el frontend. Esto reduce bastante la complejidad del backend y acelera el desarrollo.
+
+### Dashboard — React + Vite + TypeScript + Tailwind
+Este stack me permitió construir una interfaz rápida, mantenible y con buena experiencia de usuario. Vite mejora mucho los tiempos de desarrollo y TypeScript ayuda a mantener el código más robusto a medida que el proyecto crece.
+
+### Alertas — Gmail vía n8n
+Implementé el envío de alertas usando Gmail directamente desde n8n, aprovechando su integración nativa. Esto simplifica la arquitectura y permite enviar correos en HTML sin necesidad de añadir servicios adicionales.
+
+### Claude Code
+Claude Code me permitió desarrollar en tiempo record la plataforma para plazmar los datos de los resultados generados por los Agentes IA. 
 ---
 
 ## Los datos
 
-Alegra proporcionó 3 archivos CSV:
+El equipo de Alegra proporcionó 3 archivos CSV:
 
 - **alegra_users.csv** — 2,000 clientes con país, plan, MRR, fuente de adquisición y un churn_risk_score precalculado
 - **alegra_feature_usage.csv** — 7,022 registros de features que cada usuario ha tocado, con nivel de adopción y última fecha de uso
@@ -182,7 +190,7 @@ Los tickets tenían campos vacíos (resolved_date, resolution_hours, csat_score)
 Cuando el Workflow 2 se ejecutaba desde el Workflow 1 vía "Execute Workflow", fallaba con `duplicate key value violates unique constraint` porque los datos de la ejecución anterior seguían en la tabla. La solución fue agregar lógica de limpieza (DELETE) al inicio de cada workflow, o usar upsert con `Prefer: resolution=merge-duplicates`.
 
 ### GPT procesando 2,000 usuarios
-Mandar 2,000 usuarios uno por uno a GPT tomaba horas. Lotes de 50 tardaban demasiado en responder. El sweet spot fueron lotes de 10-15 usuarios, pero aún así el tiempo total era ~30-45 minutos. Para producción real, el scoring debería hacerse en JavaScript (instantáneo) y GPT solo para las recomendaciones de los ~500 usuarios en riesgo.
+Mandar 2,000 usuarios uno por uno a GPT tomaba horas. Lotes de 50 tardaban demasiado en responder. El sweet spot fueron lotes de 10-15 usuarios, reduciendo el tiempo a 30-45 minutos.
 
 ### El Loop Over Items duplicaba datos
 El nodo de OpenAI se ejecutaba una vez por cada item del lote, y cada vez `$input.all()` tomaba todos los items. Resultado: 5 respuestas iguales con los mismos 5 usuarios. La solución fue agregar un nodo Code antes de OpenAI que agrupa el lote en un solo item, y cambiar el user message a `{{ $json.prompt }}`.
@@ -197,8 +205,6 @@ Al configurar "Using Respond to Webhook Node", n8n se quedaba esperando una llam
 **¿Por qué vistas SQL en vez de cruce con IA?** Porque un JOIN toma milisegundos y es 100% confiable. Mandarle 12,500 filas a GPT para que "cruce" datos es lento, caro, y propenso a errores. La IA se usa donde hay ambigüedad y juicio, el código se usa donde hay lógica determinística.
 
 **¿Por qué GPT-4o-mini para el Agente 1 y GPT-4o para el Agente 2?** Costo vs calidad. El Agente 1 procesa 2,000 usuarios aplicando reglas — no necesita el modelo más potente. El Agente 2 genera recomendaciones personalizadas que requieren razonamiento contextual — ahí sí vale la pena la calidad extra.
-
-**¿Por qué n8n y no Python puro?** Porque n8n me permite diseñar los flujos visualmente, conectar integraciones sin escribir boilerplate (Supabase, OpenAI, Gmail se conectan con nodos), y el evaluador puede ver la arquitectura completa en una captura de pantalla. Además es una herramienta que Alegra valora.
 
 **¿Por qué Supabase y no PostgreSQL directo?** Porque Supabase me da PostgreSQL + API REST + Realtime (WebSockets) + SDK de JavaScript + hosting managed. No necesito configurar un servidor de base de datos aparte.
 
@@ -247,30 +253,8 @@ alegra-cs/
     └── screenshots/                   # Capturas del sistema funcionando
 ```
 
----
-
-## Cómo ejecutar el proyecto
-
-### Requisitos
-- Cuenta de Supabase (free tier funciona)
-- Instancia de n8n (self-hosted o cloud)
-- API key de OpenAI
-- Cuenta de Gmail para alertas
-
-### Pasos
-1. Crear las tablas y vistas en Supabase ejecutando los SQL en orden (01, 02, 03, 04)
-2. Importar los 3 workflows en n8n y configurar las credenciales (Supabase, OpenAI, Gmail)
-3. Clonar el dashboard, configurar las variables de entorno (VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY) y hacer deploy
-4. Subir los CSVs desde la página /upload del dashboard
-5. Hacer clic en "Ejecutar análisis" y ver cómo el sistema procesa todo
-
----
-
 ## Demo en vivo
 
 🔗 Dashboard: https://alegra.somoscolombiatech.shop
-📹 Video demo: [enlace al video]
 
 ---
-
-*Construido por Carlos Daniel Carrillo para el reto técnico de IA Automation Engineer en Alegra.*
