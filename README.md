@@ -54,11 +54,12 @@ Elegí Supabase porque ofrece una API REST lista para usar, soporte en tiempo re
 ### Dashboard — React + Vite + TypeScript + Tailwind
 Este stack me permitió construir una interfaz rápida, mantenible y con buena experiencia de usuario. Vite mejora mucho los tiempos de desarrollo y TypeScript ayuda a mantener el código más robusto a medida que el proyecto crece.
 
-### Alertas — Gmail vía n8n
+### Alertas — Gmail
 Implementé el envío de alertas usando Gmail directamente desde n8n, aprovechando su integración nativa. Esto simplifica la arquitectura y permite enviar correos en HTML sin necesidad de añadir servicios adicionales.
 
 ### Claude Code
 Claude Code me permitió desarrollar en tiempo record la plataforma para plazmar los datos de los resultados generados por los Agentes IA. 
+
 ---
 
 ## Los datos
