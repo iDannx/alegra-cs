@@ -256,6 +256,6 @@ alegra-cs/
 
 ## Demo en vivo
 
-🔗 Dashboard: https://alegra.somoscolombiatech.shop
+🔗 Dashboard: https://alegracs.somoscolombiatech.shop
 
 ---
