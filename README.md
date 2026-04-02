@@ -1,15 +1,5 @@
 # Alegra CS — Sistema de Detección de Churn con Agentes de IA
 
-## ¿Por qué este rol?
-
-Elegí el rol de **Ops Analyst de Customer Success** porque me pareció el más interesante técnicamente. No es solo mover datos de un lado a otro — es construir un sistema que piense, que identifique patrones que un humano tardaría horas en encontrar, y que actúe antes de que sea tarde.
-
-El problema original es claro: un analista de CS cruza manualmente datos de uso con tickets de soporte para intentar identificar quién se va a ir. Es lento, subjetivo y reactivo. Para cuando detecta el problema, el cliente ya se fue.
-
-Mi solución automatiza ese proceso completo: desde el cruce de datos hasta la recomendación personalizada de qué hacer con cada cliente.
-
----
-
 ## ¿Qué porcentaje del trabajo es automatizable?
 
 Diría que un **85-90%**. El cruce de datos, el scoring, la clasificación, las alertas y el reporte son 100% automatizables. Lo que no automaticé (y creo que no debería automatizarse) es la decisión final de contactar al cliente y cómo hacerlo — eso sigue siendo humano. El sistema recomienda, el analista decide.
