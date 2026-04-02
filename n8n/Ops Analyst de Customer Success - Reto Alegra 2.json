@@ -1,0 +1,368 @@
+{
+  "name": "Ops Analyst de Customer Success - Reto Alegra 2",
+  "nodes": [
+    {
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        528,
+        -16
+      ],
+      "id": "d569af0b-539e-4532-b1df-6cdad9361973",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "batchSize": 20,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        944,
+        -16
+      ],
+      "id": "1d9a0dad-4bf5-45d5-8373-72035e6396be",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "vista_churn_detail",
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        736,
+        -16
+      ],
+      "id": "c02fc94f-2aaf-44aa-8918-351ce30f7eca",
+      "name": "vista_churn_detail",
+      "executeOnce": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "gjwCbWjJ58gKIaoo",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = [];\n\nfor (const item of $input.all()) {\n  let text = item.json.output?.[0]?.content?.[0]?.text \n    || item.json.message?.content \n    || item.json.text \n    || JSON.stringify(item.json);\n  \n  text = text.replace(/```json/g, '').replace(/```/g, '').trim();\n  \n  const rec = JSON.parse(text);\n  \n  items.push({\n    json: {\n      user_id: rec.user_id,\n      risk_level: rec.risk_level,\n      urgency: rec.urgency,\n      recommendation: rec.recommendation,\n      reasoning: rec.reasoning\n    }\n  });\n}\n\nreturn items;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1504,
+        80
+      ],
+      "id": "76a0ee05-5ed6-4a0b-9dee-926913bdc9d6",
+      "name": "ParsearJSON"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "alegra_recommendations",
+        "returnAll": true,
+        "filters": {
+          "conditions": []
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1152,
+        -112
+      ],
+      "id": "16494b0d-d2e2-4dd4-a9ee-5dcdd5b371b7",
+      "name": "urgency_inmediatly",
+      "executeOnce": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "gjwCbWjJ58gKIaoo",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "a19ef73a-85d6-4af9-9b29-205554448d1e",
+              "leftValue": "={{ $json.urgency }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        1536,
+        -112
+      ],
+      "id": "2a79602e-ee47-4885-bb8f-817d488c49c7",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "jsCode": "const users = $input.all();\nconst total = users.length;\n\n// Contar por risk_level\nconst counts = {};\nfor (const item of users) {\n  const risk = item.json.risk_level;\n  counts[risk] = (counts[risk] || 0) + 1;\n}\n\nconst today = new Date().toLocaleDateString('es-CO', { \n  weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' \n});\n\nconst html = `\n<div style=\"font-family: Arial, sans-serif; max-width: 500px; margin: 0 auto;\">\n  <div style=\"background: #d32f2f; color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;\">\n    <h1 style=\"margin: 0; font-size: 20px;\">⚠️ Alerta de Churn</h1>\n    <p style=\"margin: 8px 0 0; opacity: 0.9; font-size: 14px;\">${today}</p>\n  </div>\n  \n  <div style=\"padding: 24px; background: #fff; border: 1px solid #ddd;\">\n    <p style=\"color: #333; margin: 0 0 16px; font-size: 15px;\">Se identificaron <strong>${total} cliente${total > 1 ? 's' : ''}</strong> que requieren contacto inmediato:</p>\n    \n    <table style=\"width: 100%; border-collapse: collapse;\">\n      <thead>\n        <tr style=\"background: #f5f5f5;\">\n          <th style=\"padding: 10px; text-align: left; font-size: 14px;\">Riesgo</th>\n          <th style=\"padding: 10px; text-align: right; font-size: 14px;\">Cantidad</th>\n        </tr>\n      </thead>\n      <tbody>\n        ${counts['alto'] ? `<tr style=\"border-bottom: 1px solid #eee;\"><td style=\"padding: 10px; color: #d32f2f; font-weight: bold;\">🔴 Alto</td><td style=\"padding: 10px; text-align: right; font-weight: bold;\">${counts['alto']}</td></tr>` : ''}\n        ${counts['medio'] ? `<tr style=\"border-bottom: 1px solid #eee;\"><td style=\"padding: 10px; color: #f57c00; font-weight: bold;\">🟡 Medio</td><td style=\"padding: 10px; text-align: right; font-weight: bold;\">${counts['medio']}</td></tr>` : ''}\n        ${counts['bajo'] ? `<tr><td style=\"padding: 10px; color: #388e3c; font-weight: bold;\">🟢 Bajo</td><td style=\"padding: 10px; text-align: right; font-weight: bold;\">${counts['bajo']}</td></tr>` : ''}\n      </tbody>\n    </table>\n\n    <div style=\"text-align: center; margin-top: 24px;\">\n      <a href=\"https://alegra.somoscolombiatech.shop/alerts-cs\" \n         style=\"display: inline-block; background: #7c3aed; color: white; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 15px;\">\n        Ver detalle en la plataforma\n      </a>\n    </div>\n  </div>\n  \n  <div style=\"padding: 12px; background: #f9f9f9; border-radius: 0 0 8px 8px; border: 1px solid #ddd; border-top: none; text-align: center;\">\n    <p style=\"margin: 0; font-size: 11px; color: #999;\">Alegra CS Analytics — Generado automáticamente</p>\n  </div>\n</div>`;\n\nreturn [{ json: { html } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1360,
+        -112
+      ],
+      "id": "8b94d69b-a021-4358-bcd5-9c1a664d2d30",
+      "name": "EmailPayload"
+    },
+    {
+      "parameters": {
+        "sendTo": "cdcarrillo04@gmail.com",
+        "subject": "Reporte de Usuarios - Contacto Inmediato",
+        "message": "={{ $json.html }}",
+        "options": {
+          "senderName": "CS Alerts"
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        1760,
+        -112
+      ],
+      "id": "17ee9a73-2404-4912-9959-ee7e54080587",
+      "name": "EnviarAlerta",
+      "webhookId": "d06e2dc3-1cd9-4549-b242-5d92693c93f6",
+      "executeOnce": true,
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "5xPAgaYsTisCktKO",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "tableId": "alegra_recommendations",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "user_id",
+              "fieldValue": "={{ $json.user_id }}"
+            },
+            {
+              "fieldId": "risk_level",
+              "fieldValue": "={{ $json.risk_level }}"
+            },
+            {
+              "fieldId": "urgency",
+              "fieldValue": "={{ $json.urgency }}"
+            },
+            {
+              "fieldId": "recommendation",
+              "fieldValue": "={{ $json.recommendation }}"
+            },
+            {
+              "fieldId": "reasoning",
+              "fieldValue": "={{ $json.reasoning }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1712,
+        80
+      ],
+      "id": "f777e787-b199-4b94-ada8-73c17abce733",
+      "name": "alegra_recommendations",
+      "executeOnce": false,
+      "credentials": {
+        "supabaseApi": {
+          "id": "gjwCbWjJ58gKIaoo",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "GPT-4O"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "Eres un estratega senior de Customer Success de Alegra, una plataforma SaaS de contabilidad para PYMEs en Latinoamérica.\n\nTu tarea es analizar clientes en riesgo de churn y generar recomendaciones de retención personalizadas y accionables.\n\n## Contexto de Alegra\n\nAlegra ofrece estas features principales:\n- Facturación electrónica (core del producto)\n- Gestión de contactos\n- Reportes financieros\n- Inventario\n- Nómina\n- Cotizaciones\n- Multi-moneda\n- Punto de venta\n- Conciliación bancaria\n- Centro de costos\n\nLos planes son: Free → Pyme → Pro → Plus (de menor a mayor valor).\n\n## Cómo analizar cada cliente\n\nExamina el perfil completo del cliente y responde estas preguntas:\n1. ¿Qué causó el riesgo? (inactividad, insatisfacción, bugs, falta de adopción)\n2. ¿Qué valor podría estar perdiendo el cliente? (features que no usa pero le servirían según su perfil)\n3. ¿Cuál es la acción más efectiva para retenerlo?\n4. ¿Qué tan urgente es actuar?\n\n## Tipos de acciones que puedes recomendar\n\n- Contacto proactivo del equipo de CS (llamada, email, WhatsApp)\n- Sesión de onboarding personalizada para features no adoptadas\n- Escalamiento de tickets críticos al equipo de ingeniería\n- Oferta de upgrade con beneficios específicos\n- Asignación de account manager dedicado\n- Webinar o capacitación grupal\n- Descuento o extensión de trial para usuarios Free\n\n## Niveles de urgencia\n\n- \"inmediata\": Actuar hoy. Cliente con score alto + tickets críticos abiertos o CSAT muy bajo.\n- \"esta_semana\": Actuar en los próximos 5 días. Cliente con señales claras pero sin crisis activa.\n- \"monitoreo\": Revisar en el próximo ciclo semanal. Cliente con riesgo medio sin señales críticas.\n\n## Formato de respuesta\n\nResponde ÚNICAMENTE con un JSON objeto válido. Sin texto adicional, sin markdown, sin backticks.\n\nEJEMPLO:\n\n{\n  \"user_id\": \"USR-XXXXX\", -- El user_id nunca podrá ser alterado, modificado o duplicado debido a que es el identificador único de cada usuario. \n  \"risk_level\": \"alto\",\n  \"urgency\": \"inmediata\",\n  \"recommendation\": \"Contactar al cliente hoy vía WhatsApp para resolver el ticket crítico de facturación. Ofrecer sesión de soporte 1:1 esta semana. Escalar el bug al equipo de ingeniería con prioridad.\",\n  \"reasoning\": \"El cliente lleva 45 días sin usar el producto, tiene un bug crítico abierto en facturación electrónica (su feature principal) y calificó con CSAT 1. Si no se resuelve el bug, perderemos un cliente Pyme que paga $35/mes.\"\n}\n\nLa recomendación debe ser ESPECÍFICA (no genérica), ACCIONABLE (que alguien pueda ejecutarla hoy), y debe mencionar las features o tickets concretos del cliente."
+            },
+            {
+              "content": "=Analiza el siguiente cliente en riesgo y genera una recomendación de retención personalizada:\n\n{{ JSON.stringify($json) }}"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        1152,
+        80
+      ],
+      "id": "2bb5c509-d2b1-42db-92c9-694d6158f5fa",
+      "name": "Recomendaciones CS",
+      "credentials": {
+        "openAiApi": {
+          "id": "VOorrBsbhM8wZtx5",
+          "name": "OpenAI account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "urgency_inmediatly",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Recomendaciones CS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "vista_churn_detail": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ParsearJSON": {
+      "main": [
+        [
+          {
+            "node": "alegra_recommendations",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "vista_churn_detail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "urgency_inmediatly": {
+      "main": [
+        [
+          {
+            "node": "EmailPayload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [],
+        [
+          {
+            "node": "EnviarAlerta",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "EmailPayload": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "alegra_recommendations": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recomendaciones CS": {
+      "main": [
+        [
+          {
+            "node": "ParsearJSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "87795ea5-ff9c-49cc-a30a-47b6b8fe9c2c",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e7141e5f21b3f4de5300245862817a5f5fc1716b6576e200a170af29a837f548"
+  },
+  "id": "ei0FeDZRxOqewzyf",
+  "tags": []
+}

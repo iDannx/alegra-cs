@@ -1,0 +1,258 @@
+{
+  "name": "Ops Analyst de Customer Success - Reto Alegra",
+  "nodes": [
+    {
+      "parameters": {
+        "batchSize": 20,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        416,
+        0
+      ],
+      "id": "c3e70e6d-0bd7-4cb7-9746-6ccd65961c4b",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "o4-mini",
+          "mode": "list",
+          "cachedResultName": "O4-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "Eres un analista experto de Customer Success de Alegra, una plataforma SaaS de contabilidad para PYMEs en Latinoamérica.\n\nTu tarea es evaluar el riesgo de churn (abandono) de cada cliente basándote en sus datos de uso del producto y tickets de soporte.\n\n## Criterios de evaluación y puntaje\n\nEvalúa cada cliente sumando puntos según estas señales:\n\nINACTIVIDAD (días sin usar el producto):\n- 31-60 días sin actividad: +15 puntos\n- 61-90 días sin actividad: +30 puntos\n- Más de 90 días: +40 puntos\n\nADOPCIÓN DE FEATURES (nivel más bajo entre sus features):\n- Solo \"activated\" (nivel 1): +10 puntos\n- Solo \"used_1x\" (nivel 2): +5 puntos\n\nTICKETS ABIERTOS SIN RESOLVER:\n- Cada ticket Critical abierto: +25 puntos\n- Cada ticket High abierto: +15 puntos\n- Cada ticket Medium/Low abierto: +5 puntos\n\nSATISFACCIÓN (CSAT):\n- Peor CSAT = 1: +25 puntos\n- Peor CSAT = 2: +15 puntos\n\nPLAN:\n- Plan Free (no paga): +10 puntos\n\nVOLUMEN DE TICKETS:\n- 4 o más tickets totales: +10 puntos\n\n## Clasificación\n\nDespués de sumar los puntos:\n- 0-25 puntos → riesgo \"bajo\"\n- 26-50 puntos → riesgo \"medio\"  \n- 51+ puntos → riesgo \"alto\"\n\n## Formato de respuesta\n\nResponde ÚNICAMENTE con un JSON array válido. Sin texto adicional, sin markdown, sin backticks. Cada elemento del array debe tener esta estructura exacta:\n\n[\n  {\n    \"user_id\": \"USR-XXXXX\",\n    \"score\": 45,\n    \"risk_level\": \"medio\",\n    \"reasons\": \"Inactividad de 42 días (+15), CSAT peor = 2 (+15), plan Free (+10), 2 tickets abiertos medium (+10)\"\n  }\n]\n\nIncluye en \"reasons\" el desglose de puntos para cada señal que sumó. Esto es clave para que el equipo de CS entienda POR QUÉ el cliente está en riesgo."
+            },
+            {
+              "content": "=Analiza el siguiente cliente y evalúa su riesgo de churn:\n\n{{ JSON.stringify($json) }}"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        624,
+        16
+      ],
+      "id": "d1519c78-2cef-4ac3-916c-bd7434595a79",
+      "name": "Analista CS Alegra",
+      "credentials": {
+        "openAiApi": {
+          "id": "VOorrBsbhM8wZtx5",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "vista_user_summary",
+        "returnAll": true,
+        "filters": {
+          "conditions": []
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "4bcee0db-a36e-43bd-ae27-a5be611881f2",
+      "name": "query_user_summary",
+      "credentials": {
+        "supabaseApi": {
+          "id": "gjwCbWjJ58gKIaoo",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = [];\n\nfor (const item of $input.all()) {\n  let text = item.json.output?.[0]?.content?.[0]?.text \n    || item.json.message?.content \n    || item.json.text \n    || JSON.stringify(item.json);\n  \n  text = text.replace(/```json/g, '').replace(/```/g, '').trim();\n  \n  const users = JSON.parse(text);\n  \n  for (const user of users) {\n    items.push({\n      json: {\n        user_id: user.user_id,\n        score: user.score,\n        risk_level: user.risk_level,\n        reasons: user.reasons\n      }\n    });\n  }\n}\n\nreturn items;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        976,
+        16
+      ],
+      "id": "38a1e786-6de7-4f14-848e-ab54eb2f85a3",
+      "name": "ParsearJSON"
+    },
+    {
+      "parameters": {
+        "tableId": "alegra_churn_analysis",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "user_id",
+              "fieldValue": "={{ $json.user_id }}"
+            },
+            {
+              "fieldId": "score",
+              "fieldValue": "={{ $json.score }}"
+            },
+            {
+              "fieldId": "risk_level",
+              "fieldValue": "={{ $json.risk_level }}"
+            },
+            {
+              "fieldId": "reasons",
+              "fieldValue": "={{ $json.reasons }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1184,
+        16
+      ],
+      "id": "2cef0abf-cb22-4598-a5e0-50a022baa4c0",
+      "name": "Create a row",
+      "credentials": {
+        "supabaseApi": {
+          "id": "gjwCbWjJ58gKIaoo",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "ei0FeDZRxOqewzyf",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/ei0FeDZRxOqewzyf",
+          "cachedResultName": "Ops Analyst de Customer Success - Reto Alegra 2"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": true
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [
+        1392,
+        16
+      ],
+      "id": "5fbba4ba-8822-434b-a7cb-86a690214f61",
+      "name": "Paso 2"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "run-analysis",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "f3eef85c-f6b6-4c97-879f-8a0955fa7726",
+      "name": "Webhook",
+      "webhookId": "abe4f70b-5174-4b76-9ee7-6313811dd104"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Analista CS Alegra",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "query_user_summary": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analista CS Alegra": {
+      "main": [
+        [
+          {
+            "node": "ParsearJSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ParsearJSON": {
+      "main": [
+        [
+          {
+            "node": "Create a row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a row": {
+      "main": [
+        [
+          {
+            "node": "Paso 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "query_user_summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "20ca2626-7c3e-4683-9dde-a876b3007ef3",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e7141e5f21b3f4de5300245862817a5f5fc1716b6576e200a170af29a837f548"
+  },
+  "id": "y4UQS8C7X5OHv6QU",
+  "tags": []
+}

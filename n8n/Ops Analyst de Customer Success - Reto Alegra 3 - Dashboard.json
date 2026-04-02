@@ -1,0 +1,249 @@
+{
+  "name": "Ops Analyst de Customer Success - Reto Alegra 3 - Dashboard",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "dashboard-data",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "c8720d3c-6fb4-4f1f-8760-f4677d1827bf",
+      "name": "Webhook",
+      "webhookId": "907f120a-6be2-4e81-9c5c-afaf54967ec4"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "vista_report_metrics",
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "23262bea-61a6-470f-a626-239a3ce7250b",
+      "name": "Get many rows",
+      "credentials": {
+        "supabaseApi": {
+          "id": "gjwCbWjJ58gKIaoo",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1392,
+        0
+      ],
+      "id": "ed9a6572-789e-4cb9-9f9d-30df033bf0af",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $input.first();\nlet text = item.json.output?.[0]?.content?.[0]?.text \n  || item.json.message?.content \n  || item.json.text \n  || JSON.stringify(item.json);\n\ntext = text.replace(/```json/g, '').replace(/```/g, '').trim();\n\nconst report = JSON.parse(text);\n\nreturn [{\n  json: {\n    title: report.title,\n    executive_summary: report.executive_summary,\n    key_metrics: JSON.stringify(report.key_metrics),\n    top_risk_clients: JSON.stringify(report.top_risk_clients),\n    action_items: report.action_items,\n    generated_by: 'ai_agent'\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        944,
+        0
+      ],
+      "id": "638f263d-9e80-4aca-a316-c0953ac51911",
+      "name": "ParsearJSON"
+    },
+    {
+      "parameters": {
+        "tableId": "alegra_weekly_reports",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "title",
+              "fieldValue": "={{ $json.title }}"
+            },
+            {
+              "fieldId": "executive_summary",
+              "fieldValue": "={{ $json.executive_summary }}"
+            },
+            {
+              "fieldId": "key_metrics",
+              "fieldValue": "={{ $json.key_metrics }}"
+            },
+            {
+              "fieldId": "top_risk_clients",
+              "fieldValue": "={{ $json.top_risk_clients }}"
+            },
+            {
+              "fieldId": "action_items",
+              "fieldValue": "={{ $json.action_items }}"
+            },
+            {
+              "fieldId": "generated_by",
+              "fieldValue": "={{ $json.generated_by }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1168,
+        0
+      ],
+      "id": "30130529-6ff4-4c01-aa70-9e4ab31c122c",
+      "name": "Create a row",
+      "credentials": {
+        "supabaseApi": {
+          "id": "gjwCbWjJ58gKIaoo",
+          "name": "Supabase account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "batchSize": 20,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        384,
+        0
+      ],
+      "id": "f315ea4b-dcb2-4b21-bfe9-c2641d66e295",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-4o",
+          "mode": "list",
+          "cachedResultName": "GPT-4O"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "Eres el director de Customer Success de Alegra, una plataforma SaaS de contabilidad para PYMEs en Latinoamérica.\n\nTu tarea es generar un reporte semanal ejecutivo basado en los datos del sistema de detección de churn.\n\n## Formato de respuesta\n\nResponde ÚNICAMENTE con un JSON objeto válido. Sin texto adicional, sin markdown, sin backticks:\n\n{\n  \"title\": \"Reporte Semanal — [título descriptivo basado en el hallazgo más importante]\",\n  \"executive_summary\": \"[3-4 párrafos: estado general del churn, tendencias preocupantes, logros, y outlook. Escribe como un director que le presenta al CEO. Usa datos concretos.]\",\n  \"key_metrics\": {\n    \"total_analyzed\": 0,\n    \"high_risk\": 0,\n    \"medium_risk\": 0,\n    \"low_risk\": 0,\n    \"immediate_action\": 0,\n    \"mrr_at_risk\": 0,\n    \"critical_tickets_open\": 0\n  },\n  \"top_risk_clients\": [\n    {\n      \"user_id\": \"USR-XXXXX\",\n      \"score\": 0,\n      \"plan\": \"\",\n      \"country\": \"\",\n      \"mrr_usd\": 0,\n      \"recommendation\": \"\"\n    }\n  ],\n  \"action_items\": \"1. [Acción prioritaria 1]\\n2. [Acción prioritaria 2]\\n3. [Acción prioritaria 3]\\n4. [Acción prioritaria 4]\\n5. [Acción prioritaria 5]\"\n}\n\nEl reporte debe ser en español, con tono ejecutivo y profesional. Menciona datos concretos (números, porcentajes, montos). Las action items deben ser accionables y específicas."
+            },
+            {
+              "content": "=Genera el reporte semanal con estos datos:\n\n{{ JSON.stringify($json) }}"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.1,
+      "position": [
+        608,
+        0
+      ],
+      "id": "18efe6bc-d1ff-458b-8878-40acc98a91b8",
+      "name": "Agente de Reporte Semanal",
+      "credentials": {
+        "openAiApi": {
+          "id": "VOorrBsbhM8wZtx5",
+          "name": "OpenAI account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Get many rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many rows": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ParsearJSON": {
+      "main": [
+        [
+          {
+            "node": "Create a row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a row": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Agente de Reporte Semanal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agente de Reporte Semanal": {
+      "main": [
+        [
+          {
+            "node": "ParsearJSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "7c0f7355-89d4-4686-b906-761fdb8cd539",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e7141e5f21b3f4de5300245862817a5f5fc1716b6576e200a170af29a837f548"
+  },
+  "id": "6mVKD24zExbC2vPN",
+  "tags": []
+}
