@@ -1,0 +1,2001 @@
+user_id,country,plan,signup_date,source,mrr_usd,churn_risk_score,features_count
+USR-10000,México,Free,2025-08-27,Paid,0,0.75,1
+USR-10001,Colombia,Pyme,2025-12-31,Referral,35,0.24,3
+USR-10002,Colombia,Free,2026-02-02,Organic,0,0.79,1
+USR-10003,Colombia,Free,2026-02-12,Partner_Accountant,0,0.61,3
+USR-10004,Colombia,Free,2025-12-27,Partner_Accountant,0,0.45,3
+USR-10005,República Dominicana,Free,2026-01-23,Partner_Accountant,0,0.92,1
+USR-10006,Colombia,Pyme,2025-12-12,Partner_Accountant,29,0.24,3
+USR-10007,México,Free,2025-07-29,Organic,0,0.45,3
+USR-10008,República Dominicana,Free,2026-01-09,Partner_Accountant,0,0.48,2
+USR-10009,República Dominicana,Pyme,2025-12-08,Organic,24,0.18,3
+USR-10010,Colombia,Free,2026-01-23,Social,0,0.93,1
+USR-10011,Costa Rica,Plus,2025-08-02,Referral,145,0.24,5
+USR-10012,Colombia,Free,2025-11-28,Referral,0,0.66,3
+USR-10013,México,Pro,2025-11-25,Partner_Accountant,50,0.16,6
+USR-10014,Colombia,Pyme,2025-09-10,Paid,29,0.26,5
+USR-10015,Colombia,Free,2026-02-23,Paid,0,0.38,3
+USR-10016,Colombia,Pyme,2026-02-04,Referral,31,0.38,2
+USR-10017,Colombia,Pyme,2025-10-16,Partner_Accountant,33,0.12,4
+USR-10018,México,Pyme,2025-11-15,Organic,21,0.14,3
+USR-10019,República Dominicana,Free,2025-09-15,Partner_Accountant,0,0.86,1
+USR-10020,México,Pro,2025-12-10,Organic,67,0.06,5
+USR-10021,Colombia,Pro,2025-11-17,Social,58,0.27,7
+USR-10022,Costa Rica,Pro,2026-01-05,Organic,61,0.26,5
+USR-10023,México,Free,2026-01-14,Organic,0,0.68,2
+USR-10024,Colombia,Pyme,2026-01-18,Paid,25,0.28,2
+USR-10025,República Dominicana,Plus,2025-08-20,Partner_Accountant,83,0.13,9
+USR-10026,República Dominicana,Pyme,2025-08-24,Paid,31,0.4,2
+USR-10027,Colombia,Free,2025-08-07,Partner_Accountant,0,0.48,2
+USR-10028,México,Free,2025-12-24,Organic,0,0.88,1
+USR-10029,Colombia,Free,2025-10-25,Partner_Accountant,0,0.55,3
+USR-10030,Colombia,Pro,2026-01-09,Referral,75,0.12,7
+USR-10031,Costa Rica,Free,2026-02-28,Partner_Accountant,0,0.42,2
+USR-10032,México,Free,2025-10-08,Referral,0,0.31,2
+USR-10033,México,Free,2025-07-13,Referral,0,0.71,1
+USR-10034,Colombia,Plus,2026-01-30,Paid,77,0.1,9
+USR-10035,Colombia,Pyme,2025-11-25,Social,27,0.23,2
+USR-10036,Colombia,Plus,2025-09-27,Partner_Accountant,122,0.16,4
+USR-10037,Colombia,Pyme,2025-12-05,Partner_Accountant,32,0.26,5
+USR-10038,Colombia,Pyme,2025-09-05,Paid,25,0.23,2
+USR-10039,República Dominicana,Pyme,2026-01-19,Referral,15,0.22,3
+USR-10040,Colombia,Pro,2025-09-03,Paid,42,0.23,5
+USR-10041,Colombia,Pro,2025-07-12,Organic,70,0.12,4
+USR-10042,Colombia,Pyme,2025-12-23,Referral,16,0.24,4
+USR-10043,Costa Rica,Plus,2025-12-06,Paid,87,0.05,10
+USR-10044,México,Plus,2025-07-19,Partner_Accountant,114,0.18,8
+USR-10045,Costa Rica,Pyme,2025-08-14,Partner_Accountant,30,0.17,4
+USR-10046,República Dominicana,Pyme,2025-07-10,Partner_Accountant,29,0.18,4
+USR-10047,República Dominicana,Pyme,2025-08-22,Partner_Accountant,23,0.29,4
+USR-10048,Panamá,Plus,2025-07-31,Referral,138,0.15,9
+USR-10049,México,Free,2025-09-27,Referral,0,0.65,2
+USR-10050,Costa Rica,Pyme,2025-10-30,Paid,27,0.27,5
+USR-10051,Panamá,Free,2025-12-14,Partner_Accountant,0,0.65,2
+USR-10052,Panamá,Plus,2025-10-20,Partner_Accountant,87,0.14,7
+USR-10053,Colombia,Pyme,2025-09-04,Paid,15,0.3,3
+USR-10054,Panamá,Pro,2025-10-06,Organic,57,0.19,5
+USR-10055,Colombia,Pro,2025-08-18,Organic,51,0.06,3
+USR-10056,Colombia,Free,2025-10-02,Referral,0,0.92,1
+USR-10057,Colombia,Pro,2025-10-28,Partner_Accountant,44,0.12,6
+USR-10058,México,Plus,2025-12-04,Paid,134,0.07,9
+USR-10059,Colombia,Pyme,2025-10-22,Organic,22,0.12,4
+USR-10060,Panamá,Free,2025-08-02,Paid,0,0.43,3
+USR-10061,Panamá,Pyme,2025-07-29,Partner_Accountant,15,0.12,4
+USR-10062,México,Pyme,2025-12-05,Organic,16,0.16,5
+USR-10063,México,Pyme,2025-11-30,Paid,31,0.27,5
+USR-10064,República Dominicana,Pyme,2025-07-22,Organic,17,0.29,4
+USR-10065,Costa Rica,Free,2025-09-18,Paid,0,0.39,3
+USR-10066,Colombia,Pyme,2026-01-13,Referral,34,0.21,2
+USR-10067,Colombia,Pro,2025-10-11,Referral,44,0.15,3
+USR-10068,México,Pro,2026-01-10,Organic,38,0.15,5
+USR-10069,Colombia,Free,2025-07-02,Referral,0,0.7,1
+USR-10070,República Dominicana,Free,2025-12-28,Paid,0,0.64,3
+USR-10071,México,Pyme,2025-09-13,Partner_Accountant,18,0.16,4
+USR-10072,Colombia,Pro,2025-12-10,Organic,68,0.08,4
+USR-10073,México,Pyme,2025-11-26,Referral,29,0.16,4
+USR-10074,Colombia,Pro,2026-02-07,Organic,74,0.13,6
+USR-10075,México,Pyme,2025-08-10,Referral,26,0.21,5
+USR-10076,Colombia,Pyme,2025-09-28,Organic,24,0.31,2
+USR-10077,Costa Rica,Pro,2025-11-12,Partner_Accountant,62,0.14,5
+USR-10078,Costa Rica,Pro,2025-09-25,Organic,43,0.16,4
+USR-10079,Colombia,Free,2026-01-17,Social,0,0.61,3
+USR-10080,Colombia,Free,2026-02-09,Partner_Accountant,0,0.33,3
+USR-10081,Panamá,Free,2025-09-28,Referral,0,0.39,2
+USR-10082,Panamá,Pro,2026-01-19,Partner_Accountant,43,0.05,5
+USR-10083,Colombia,Free,2026-01-20,Paid,0,0.81,1
+USR-10084,México,Pro,2025-07-01,Paid,57,0.15,7
+USR-10085,República Dominicana,Free,2025-09-25,Paid,0,0.33,3
+USR-10086,Costa Rica,Free,2025-10-10,Paid,0,0.7,1
+USR-10087,Costa Rica,Free,2025-10-03,Organic,0,0.5,2
+USR-10088,Costa Rica,Pro,2025-12-02,Organic,69,0.13,5
+USR-10089,Colombia,Plus,2025-07-20,Social,121,0.07,8
+USR-10090,México,Free,2026-01-05,Organic,0,0.4,2
+USR-10091,Colombia,Plus,2025-08-01,Referral,132,0.23,5
+USR-10092,México,Free,2025-08-05,Organic,0,0.49,2
+USR-10093,Colombia,Free,2025-10-31,Partner_Accountant,0,0.56,3
+USR-10094,México,Pyme,2025-08-03,Partner_Accountant,28,0.29,2
+USR-10095,Panamá,Pyme,2025-07-21,Paid,23,0.21,4
+USR-10096,Panamá,Free,2025-07-21,Partner_Accountant,0,0.5,3
+USR-10097,Costa Rica,Pyme,2025-12-24,Referral,16,0.09,5
+USR-10098,Colombia,Pyme,2025-09-02,Paid,19,0.28,4
+USR-10099,México,Pro,2025-07-24,Referral,67,0.12,4
+USR-10100,Colombia,Free,2025-10-12,Paid,0,0.8,1
+USR-10101,Colombia,Pyme,2025-09-10,Partner_Accountant,34,0.25,3
+USR-10102,México,Free,2025-12-30,Organic,0,0.36,2
+USR-10103,República Dominicana,Free,2026-01-29,Paid,0,0.63,3
+USR-10104,México,Free,2026-01-15,Partner_Accountant,0,0.51,3
+USR-10105,Panamá,Free,2025-09-19,Organic,0,0.65,3
+USR-10106,Panamá,Pyme,2025-08-14,Paid,29,0.12,4
+USR-10107,México,Pyme,2026-02-25,Referral,23,0.12,5
+USR-10108,República Dominicana,Free,2025-11-28,Partner_Accountant,0,0.32,3
+USR-10109,Panamá,Plus,2025-12-15,Organic,100,0.15,10
+USR-10110,México,Pyme,2026-02-03,Social,31,0.23,3
+USR-10111,México,Pro,2026-02-05,Organic,60,0.17,7
+USR-10112,Colombia,Free,2025-10-12,Paid,0,0.39,3
+USR-10113,México,Pyme,2025-12-18,Referral,21,0.07,5
+USR-10114,República Dominicana,Pyme,2025-10-23,Partner_Accountant,16,0.23,5
+USR-10115,Panamá,Free,2025-07-09,Social,0,0.73,1
+USR-10116,Costa Rica,Plus,2025-12-22,Paid,119,0.08,4
+USR-10117,México,Free,2025-10-26,Organic,0,0.61,1
+USR-10118,República Dominicana,Pro,2025-08-22,Organic,41,0.16,6
+USR-10119,República Dominicana,Free,2025-08-06,Paid,0,0.52,2
+USR-10120,República Dominicana,Pyme,2025-09-27,Organic,35,0.14,4
+USR-10121,Costa Rica,Pyme,2025-11-20,Social,31,0.21,3
+USR-10122,Colombia,Free,2025-07-11,Partner_Accountant,0,0.38,3
+USR-10123,Panamá,Free,2025-10-31,Social,0,0.43,2
+USR-10124,Colombia,Free,2025-10-28,Partner_Accountant,0,0.71,1
+USR-10125,Colombia,Free,2026-02-25,Paid,0,0.43,2
+USR-10126,Colombia,Pro,2025-12-12,Social,64,0.3,5
+USR-10127,Costa Rica,Free,2025-07-03,Partner_Accountant,0,0.56,2
+USR-10128,Colombia,Pro,2025-09-12,Referral,67,0.1,4
+USR-10129,México,Plus,2025-12-23,Organic,86,0.07,7
+USR-10130,Colombia,Plus,2025-09-10,Partner_Accountant,79,0.24,5
+USR-10131,México,Free,2026-01-19,Partner_Accountant,0,0.75,1
+USR-10132,México,Pyme,2026-01-15,Referral,25,0.16,5
+USR-10133,República Dominicana,Pyme,2025-09-20,Partner_Accountant,26,0.31,2
+USR-10134,México,Pyme,2025-07-07,Paid,17,0.46,2
+USR-10135,República Dominicana,Pyme,2025-09-01,Social,33,0.17,5
+USR-10136,México,Pyme,2025-08-04,Referral,24,0.13,4
+USR-10137,Colombia,Free,2025-09-20,Social,0,0.41,3
+USR-10138,Colombia,Pro,2026-01-03,Organic,48,0.13,5
+USR-10139,México,Plus,2025-11-17,Partner_Accountant,143,0.2,8
+USR-10140,Colombia,Free,2025-12-21,Referral,0,0.34,2
+USR-10141,República Dominicana,Free,2026-01-17,Paid,0,0.48,2
+USR-10142,Costa Rica,Free,2025-12-13,Partner_Accountant,0,0.43,3
+USR-10143,México,Pyme,2025-12-05,Organic,21,0.24,5
+USR-10144,República Dominicana,Pyme,2025-09-19,Social,34,0.45,2
+USR-10145,Colombia,Pyme,2025-08-04,Organic,25,0.09,4
+USR-10146,Costa Rica,Plus,2025-08-12,Organic,92,0.29,5
+USR-10147,México,Free,2026-01-20,Referral,0,0.42,2
+USR-10148,México,Free,2026-01-15,Organic,0,0.79,1
+USR-10149,República Dominicana,Pyme,2026-02-09,Organic,16,0.25,4
+USR-10150,Costa Rica,Pro,2025-11-14,Referral,73,0.12,4
+USR-10151,Colombia,Free,2025-12-27,Partner_Accountant,0,0.5,3
+USR-10152,República Dominicana,Pro,2026-01-08,Paid,58,0.26,6
+USR-10153,República Dominicana,Pro,2025-07-12,Partner_Accountant,75,0.16,3
+USR-10154,México,Free,2025-09-09,Social,0,0.83,1
+USR-10155,México,Free,2025-08-29,Partner_Accountant,0,0.77,1
+USR-10156,México,Pyme,2025-09-26,Organic,18,0.25,5
+USR-10157,Colombia,Pyme,2025-12-14,Organic,20,0.26,3
+USR-10158,México,Pyme,2025-09-02,Partner_Accountant,23,0.2,4
+USR-10159,México,Free,2025-07-19,Partner_Accountant,0,0.64,2
+USR-10160,República Dominicana,Plus,2025-07-05,Partner_Accountant,76,0.12,6
+USR-10161,Panamá,Plus,2025-09-22,Organic,83,0.08,6
+USR-10162,Colombia,Pyme,2025-09-05,Partner_Accountant,20,0.16,4
+USR-10163,Colombia,Pro,2025-08-10,Organic,41,0.06,3
+USR-10164,Colombia,Plus,2026-01-22,Organic,103,0.14,6
+USR-10165,México,Free,2026-01-17,Paid,0,0.7,2
+USR-10166,Colombia,Plus,2025-11-16,Organic,76,0.3,6
+USR-10167,México,Plus,2025-07-25,Organic,125,0.29,4
+USR-10168,Colombia,Free,2025-08-21,Organic,0,0.66,1
+USR-10169,Colombia,Free,2025-10-24,Partner_Accountant,0,0.66,1
+USR-10170,República Dominicana,Pyme,2026-02-05,Organic,25,0.22,3
+USR-10171,República Dominicana,Free,2026-01-22,Referral,0,0.65,1
+USR-10172,República Dominicana,Plus,2025-11-28,Organic,77,0.28,4
+USR-10173,Costa Rica,Free,2025-12-22,Organic,0,0.7,1
+USR-10174,Colombia,Pyme,2025-09-14,Organic,30,0.15,5
+USR-10175,México,Pro,2025-11-22,Paid,55,0.06,5
+USR-10176,Colombia,Free,2026-01-19,Referral,0,0.37,2
+USR-10177,República Dominicana,Free,2025-08-06,Referral,0,0.32,3
+USR-10178,Costa Rica,Free,2025-12-31,Organic,0,0.81,1
+USR-10179,Colombia,Pyme,2025-07-19,Paid,26,0.3,2
+USR-10180,México,Pyme,2025-12-29,Paid,32,0.13,3
+USR-10181,México,Pro,2025-11-23,Partner_Accountant,46,0.14,7
+USR-10182,Colombia,Free,2025-10-07,Organic,0,0.44,2
+USR-10183,México,Pro,2025-10-24,Organic,37,0.07,3
+USR-10184,Panamá,Free,2026-02-14,Social,0,0.32,3
+USR-10185,Colombia,Free,2026-02-01,Referral,0,0.34,2
+USR-10186,Colombia,Free,2025-07-21,Partner_Accountant,0,0.66,2
+USR-10187,México,Free,2025-07-12,Organic,0,0.53,2
+USR-10188,República Dominicana,Pro,2026-01-10,Paid,49,0.29,3
+USR-10189,México,Pro,2025-11-24,Organic,71,0.29,3
+USR-10190,Colombia,Pro,2025-11-30,Organic,55,0.19,3
+USR-10191,México,Pyme,2025-10-15,Paid,19,0.44,2
+USR-10192,Colombia,Pyme,2025-10-30,Referral,16,0.22,5
+USR-10193,México,Pyme,2026-02-08,Organic,22,0.07,5
+USR-10194,México,Pro,2025-11-23,Referral,46,0.06,4
+USR-10195,República Dominicana,Free,2025-10-23,Referral,0,0.64,3
+USR-10196,Colombia,Pyme,2026-02-05,Social,22,0.25,4
+USR-10197,Colombia,Pro,2025-12-29,Paid,52,0.22,6
+USR-10198,Colombia,Free,2025-09-09,Organic,0,0.36,2
+USR-10199,Costa Rica,Pyme,2025-12-22,Partner_Accountant,19,0.23,4
+USR-10200,República Dominicana,Plus,2025-11-07,Partner_Accountant,146,0.11,5
+USR-10201,Costa Rica,Pyme,2025-10-04,Partner_Accountant,23,0.2,5
+USR-10202,Costa Rica,Free,2025-09-26,Social,0,0.9,1
+USR-10203,México,Pyme,2025-12-10,Organic,16,0.25,4
+USR-10204,Colombia,Pyme,2026-03-01,Partner_Accountant,15,0.11,3
+USR-10205,Colombia,Pro,2025-09-13,Paid,68,0.24,5
+USR-10206,México,Free,2025-12-14,Paid,0,0.56,3
+USR-10207,Colombia,Free,2025-08-22,Partner_Accountant,0,0.41,2
+USR-10208,Colombia,Pro,2025-07-30,Organic,66,0.09,7
+USR-10209,Colombia,Pyme,2025-07-26,Partner_Accountant,23,0.25,4
+USR-10210,Costa Rica,Pro,2025-08-05,Organic,45,0.1,5
+USR-10211,Colombia,Pyme,2026-02-27,Organic,20,0.24,5
+USR-10212,México,Free,2025-07-04,Partner_Accountant,0,0.78,1
+USR-10213,Colombia,Pyme,2025-09-27,Organic,35,0.35,2
+USR-10214,República Dominicana,Free,2025-09-10,Paid,0,0.33,3
+USR-10215,Colombia,Pyme,2025-07-27,Partner_Accountant,27,0.47,2
+USR-10216,Colombia,Pro,2026-02-02,Partner_Accountant,56,0.24,7
+USR-10217,República Dominicana,Pyme,2025-08-20,Paid,21,0.08,3
+USR-10218,Costa Rica,Pyme,2025-11-07,Referral,19,0.45,2
+USR-10219,Colombia,Pyme,2025-08-02,Partner_Accountant,18,0.29,5
+USR-10220,Colombia,Pro,2025-08-25,Referral,48,0.24,5
+USR-10221,Costa Rica,Pro,2025-07-07,Referral,44,0.3,3
+USR-10222,República Dominicana,Free,2025-07-27,Partner_Accountant,0,0.5,3
+USR-10223,México,Plus,2025-09-19,Social,76,0.12,9
+USR-10224,Colombia,Free,2026-02-24,Organic,0,0.44,2
+USR-10225,México,Pro,2025-11-17,Organic,60,0.12,5
+USR-10226,Costa Rica,Pyme,2025-07-11,Partner_Accountant,25,0.26,5
+USR-10227,Colombia,Plus,2025-11-14,Partner_Accountant,83,0.26,5
+USR-10228,Colombia,Free,2026-01-20,Organic,0,0.46,3
+USR-10229,Colombia,Pro,2026-01-07,Organic,37,0.13,5
+USR-10230,República Dominicana,Pro,2025-09-14,Partner_Accountant,44,0.05,5
+USR-10231,Costa Rica,Pro,2025-08-17,Organic,74,0.24,4
+USR-10232,Colombia,Pyme,2025-09-30,Social,19,0.17,4
+USR-10233,Panamá,Free,2026-01-18,Paid,0,0.65,2
+USR-10234,México,Free,2026-02-01,Partner_Accountant,0,0.86,1
+USR-10235,Colombia,Free,2025-07-08,Referral,0,0.52,3
+USR-10236,Costa Rica,Pyme,2025-08-04,Partner_Accountant,29,0.35,2
+USR-10237,República Dominicana,Pro,2025-08-10,Organic,71,0.24,4
+USR-10238,México,Plus,2025-07-11,Partner_Accountant,88,0.14,9
+USR-10239,Colombia,Pyme,2025-08-08,Paid,20,0.44,2
+USR-10240,Colombia,Free,2025-07-06,Partner_Accountant,0,0.55,3
+USR-10241,México,Pyme,2025-12-11,Social,15,0.09,3
+USR-10242,México,Pyme,2025-12-23,Organic,25,0.32,2
+USR-10243,México,Pyme,2025-07-25,Organic,20,0.4,2
+USR-10244,Panamá,Pyme,2025-10-16,Paid,26,0.25,5
+USR-10245,Colombia,Pro,2025-08-18,Paid,35,0.15,7
+USR-10246,México,Free,2025-11-01,Referral,0,0.64,2
+USR-10247,República Dominicana,Free,2025-10-11,Organic,0,0.94,1
+USR-10248,Costa Rica,Pyme,2025-07-23,Partner_Accountant,17,0.2,4
+USR-10249,México,Free,2026-01-22,Partner_Accountant,0,0.78,1
+USR-10250,República Dominicana,Free,2025-08-10,Partner_Accountant,0,0.53,2
+USR-10251,Colombia,Free,2026-02-20,Partner_Accountant,0,0.48,2
+USR-10252,México,Pyme,2025-09-26,Referral,18,0.11,4
+USR-10253,Colombia,Free,2025-08-26,Partner_Accountant,0,0.3,2
+USR-10254,República Dominicana,Pro,2026-02-24,Organic,65,0.28,5
+USR-10255,México,Pro,2025-07-21,Organic,74,0.17,7
+USR-10256,Costa Rica,Pro,2025-07-31,Referral,64,0.2,3
+USR-10257,Colombia,Plus,2025-08-17,Paid,101,0.29,7
+USR-10258,Colombia,Pyme,2026-02-03,Social,35,0.26,4
+USR-10259,Colombia,Pro,2025-10-01,Paid,70,0.29,5
+USR-10260,República Dominicana,Pyme,2025-12-05,Organic,24,0.26,3
+USR-10261,República Dominicana,Pyme,2026-02-13,Paid,29,0.08,5
+USR-10262,México,Free,2026-01-12,Paid,0,0.42,3
+USR-10263,Colombia,Pyme,2025-09-22,Partner_Accountant,30,0.18,4
+USR-10264,México,Plus,2025-08-28,Referral,114,0.18,6
+USR-10265,República Dominicana,Pyme,2025-11-18,Partner_Accountant,26,0.21,5
+USR-10266,República Dominicana,Free,2026-01-24,Partner_Accountant,0,0.65,1
+USR-10267,México,Free,2025-08-18,Partner_Accountant,0,0.61,1
+USR-10268,Colombia,Pro,2025-08-29,Partner_Accountant,44,0.17,6
+USR-10269,Costa Rica,Pro,2025-08-01,Partner_Accountant,59,0.24,4
+USR-10270,República Dominicana,Pro,2025-08-01,Referral,65,0.11,4
+USR-10271,Panamá,Pyme,2025-12-24,Partner_Accountant,34,0.35,2
+USR-10272,México,Free,2025-12-27,Partner_Accountant,0,0.69,2
+USR-10273,México,Free,2025-09-30,Partner_Accountant,0,0.42,2
+USR-10274,Colombia,Pro,2026-01-29,Paid,70,0.12,3
+USR-10275,México,Free,2025-09-21,Partner_Accountant,0,0.84,1
+USR-10276,México,Free,2025-07-29,Partner_Accountant,0,0.66,1
+USR-10277,México,Free,2026-01-31,Referral,0,0.45,3
+USR-10278,Panamá,Pro,2025-12-11,Referral,58,0.26,6
+USR-10279,Panamá,Pyme,2026-01-08,Referral,18,0.25,4
+USR-10280,Costa Rica,Pyme,2026-02-02,Social,26,0.24,4
+USR-10281,Panamá,Pyme,2026-02-13,Referral,24,0.24,3
+USR-10282,Colombia,Pyme,2025-09-06,Organic,26,0.19,3
+USR-10283,Colombia,Pro,2025-11-25,Partner_Accountant,73,0.25,3
+USR-10284,Costa Rica,Pro,2025-12-15,Organic,35,0.13,3
+USR-10285,República Dominicana,Free,2025-11-30,Paid,0,0.7,1
+USR-10286,Colombia,Pyme,2025-11-18,Partner_Accountant,27,0.17,5
+USR-10287,México,Pyme,2025-07-29,Referral,28,0.21,4
+USR-10288,México,Plus,2025-12-23,Organic,85,0.26,4
+USR-10289,República Dominicana,Free,2026-01-09,Referral,0,0.53,3
+USR-10290,República Dominicana,Free,2026-02-27,Referral,0,0.31,3
+USR-10291,Colombia,Free,2025-11-14,Partner_Accountant,0,0.32,3
+USR-10292,Colombia,Free,2025-08-30,Partner_Accountant,0,0.68,3
+USR-10293,Colombia,Free,2025-12-04,Social,0,0.65,1
+USR-10294,México,Pyme,2025-12-15,Organic,19,0.16,3
+USR-10295,Colombia,Pyme,2025-07-31,Social,20,0.49,2
+USR-10296,México,Pro,2025-08-18,Organic,43,0.2,3
+USR-10297,México,Pyme,2025-10-04,Partner_Accountant,20,0.15,5
+USR-10298,Panamá,Plus,2025-11-03,Partner_Accountant,106,0.18,7
+USR-10299,Colombia,Free,2026-01-28,Paid,0,0.58,2
+USR-10300,Colombia,Pyme,2025-11-27,Organic,32,0.2,5
+USR-10301,República Dominicana,Free,2025-12-10,Partner_Accountant,0,0.45,3
+USR-10302,Costa Rica,Free,2026-01-13,Organic,0,0.55,2
+USR-10303,México,Free,2026-02-04,Referral,0,0.54,3
+USR-10304,Costa Rica,Free,2026-01-26,Partner_Accountant,0,0.83,1
+USR-10305,República Dominicana,Pro,2026-02-21,Paid,38,0.19,6
+USR-10306,Costa Rica,Free,2025-08-01,Referral,0,0.58,2
+USR-10307,México,Free,2025-12-02,Partner_Accountant,0,0.67,2
+USR-10308,México,Pro,2025-08-29,Partner_Accountant,47,0.23,3
+USR-10309,México,Pyme,2025-08-21,Organic,24,0.05,4
+USR-10310,Colombia,Free,2026-02-20,Partner_Accountant,0,0.66,2
+USR-10311,Panamá,Free,2025-11-22,Referral,0,0.8,1
+USR-10312,Costa Rica,Free,2025-09-10,Social,0,0.37,3
+USR-10313,Colombia,Pyme,2025-08-30,Referral,26,0.08,3
+USR-10314,República Dominicana,Plus,2025-09-26,Organic,114,0.15,10
+USR-10315,Colombia,Free,2026-01-14,Referral,0,0.7,1
+USR-10316,México,Free,2025-11-18,Referral,0,0.33,3
+USR-10317,Costa Rica,Free,2025-07-23,Paid,0,0.42,3
+USR-10318,República Dominicana,Pyme,2026-01-25,Organic,29,0.09,4
+USR-10319,México,Free,2025-09-28,Referral,0,0.5,2
+USR-10320,México,Free,2025-10-27,Paid,0,0.69,1
+USR-10321,México,Free,2025-11-29,Partner_Accountant,0,0.37,2
+USR-10322,Costa Rica,Free,2025-09-22,Referral,0,0.93,1
+USR-10323,República Dominicana,Pyme,2025-09-22,Partner_Accountant,30,0.22,3
+USR-10324,República Dominicana,Free,2026-02-19,Referral,0,0.6,1
+USR-10325,Costa Rica,Pro,2026-02-16,Organic,38,0.23,7
+USR-10326,México,Free,2025-08-02,Partner_Accountant,0,0.56,3
+USR-10327,México,Pro,2025-10-17,Partner_Accountant,46,0.16,7
+USR-10328,Colombia,Pyme,2025-08-06,Partner_Accountant,31,0.27,2
+USR-10329,República Dominicana,Pyme,2025-12-04,Referral,16,0.35,2
+USR-10330,Panamá,Pro,2025-07-10,Paid,54,0.21,5
+USR-10331,Colombia,Free,2025-07-04,Partner_Accountant,0,0.62,3
+USR-10332,Colombia,Plus,2025-11-30,Social,127,0.21,10
+USR-10333,México,Pyme,2025-12-22,Social,16,0.12,4
+USR-10334,México,Free,2025-12-24,Paid,0,0.89,1
+USR-10335,México,Pyme,2026-01-02,Paid,24,0.22,2
+USR-10336,México,Pro,2026-02-05,Organic,43,0.21,7
+USR-10337,Panamá,Free,2025-08-15,Partner_Accountant,0,0.74,1
+USR-10338,Colombia,Pro,2025-12-12,Organic,63,0.19,3
+USR-10339,Colombia,Free,2025-08-08,Paid,0,0.85,1
+USR-10340,México,Pro,2026-01-18,Partner_Accountant,69,0.19,3
+USR-10341,Panamá,Pyme,2026-02-04,Paid,25,0.22,4
+USR-10342,México,Free,2025-07-07,Organic,0,0.56,2
+USR-10343,Colombia,Free,2025-07-11,Partner_Accountant,0,0.6,3
+USR-10344,México,Plus,2025-12-27,Organic,76,0.09,5
+USR-10345,Colombia,Pro,2025-10-11,Partner_Accountant,42,0.13,7
+USR-10346,México,Free,2025-07-21,Partner_Accountant,0,0.91,1
+USR-10347,República Dominicana,Pyme,2025-08-06,Organic,35,0.06,5
+USR-10348,Colombia,Plus,2025-12-06,Social,139,0.08,5
+USR-10349,Colombia,Pyme,2026-01-23,Paid,29,0.25,2
+USR-10350,República Dominicana,Pyme,2025-08-20,Paid,25,0.15,4
+USR-10351,Colombia,Pyme,2025-10-04,Organic,19,0.06,4
+USR-10352,Colombia,Free,2026-01-20,Organic,0,0.46,3
+USR-10353,República Dominicana,Free,2025-11-26,Paid,0,0.32,3
+USR-10354,Costa Rica,Pyme,2025-11-04,Organic,22,0.24,2
+USR-10355,México,Free,2026-02-05,Partner_Accountant,0,0.65,2
+USR-10356,México,Pro,2026-02-14,Organic,68,0.07,5
+USR-10357,México,Pyme,2025-11-21,Partner_Accountant,21,0.23,3
+USR-10358,Colombia,Free,2025-12-22,Paid,0,0.72,1
+USR-10359,Costa Rica,Pyme,2026-01-28,Referral,32,0.07,4
+USR-10360,México,Pro,2025-12-08,Referral,53,0.1,7
+USR-10361,Costa Rica,Pyme,2025-08-03,Paid,24,0.24,3
+USR-10362,República Dominicana,Free,2026-01-31,Social,0,0.95,1
+USR-10363,Colombia,Free,2025-07-09,Referral,0,0.69,2
+USR-10364,Panamá,Pro,2026-02-23,Social,44,0.25,7
+USR-10365,Colombia,Free,2025-11-27,Partner_Accountant,0,0.63,1
+USR-10366,República Dominicana,Free,2025-08-19,Referral,0,0.74,1
+USR-10367,México,Free,2025-09-28,Paid,0,0.85,1
+USR-10368,Costa Rica,Free,2026-02-15,Partner_Accountant,0,0.38,3
+USR-10369,República Dominicana,Free,2026-02-20,Paid,0,0.37,3
+USR-10370,México,Pro,2026-01-19,Organic,44,0.17,5
+USR-10371,México,Free,2025-12-25,Partner_Accountant,0,0.37,3
+USR-10372,Colombia,Free,2025-09-30,Partner_Accountant,0,0.61,3
+USR-10373,Colombia,Pro,2025-09-08,Partner_Accountant,41,0.24,7
+USR-10374,México,Pyme,2025-07-30,Partner_Accountant,28,0.34,2
+USR-10375,Costa Rica,Pyme,2025-09-26,Partner_Accountant,20,0.46,2
+USR-10376,Colombia,Free,2026-01-17,Partner_Accountant,0,0.38,2
+USR-10377,México,Plus,2025-09-16,Organic,90,0.26,8
+USR-10378,Colombia,Free,2025-11-15,Social,0,0.48,3
+USR-10379,Colombia,Free,2025-08-01,Social,0,0.87,1
+USR-10380,República Dominicana,Free,2025-10-07,Referral,0,0.42,3
+USR-10381,Panamá,Free,2025-12-20,Organic,0,0.35,2
+USR-10382,República Dominicana,Pro,2025-10-02,Organic,56,0.24,7
+USR-10383,República Dominicana,Free,2025-11-05,Paid,0,0.86,1
+USR-10384,República Dominicana,Plus,2025-12-21,Paid,113,0.12,8
+USR-10385,México,Free,2026-02-06,Referral,0,0.59,2
+USR-10386,República Dominicana,Pyme,2025-10-30,Referral,32,0.35,2
+USR-10387,Panamá,Free,2025-07-12,Organic,0,0.45,3
+USR-10388,Colombia,Free,2025-12-24,Organic,0,0.52,2
+USR-10389,México,Pyme,2025-10-29,Organic,33,0.25,5
+USR-10390,Panamá,Free,2026-01-18,Partner_Accountant,0,0.42,2
+USR-10391,República Dominicana,Pyme,2025-09-08,Referral,17,0.21,5
+USR-10392,República Dominicana,Pyme,2025-12-08,Partner_Accountant,31,0.25,5
+USR-10393,Colombia,Pyme,2025-10-20,Paid,28,0.21,3
+USR-10394,Colombia,Pro,2025-11-02,Paid,62,0.08,3
+USR-10395,Colombia,Pro,2025-07-15,Partner_Accountant,55,0.15,3
+USR-10396,Panamá,Pyme,2026-03-01,Partner_Accountant,31,0.43,2
+USR-10397,Panamá,Free,2025-08-24,Organic,0,0.5,2
+USR-10398,México,Pyme,2026-02-11,Social,19,0.23,4
+USR-10399,Costa Rica,Pyme,2025-08-30,Referral,29,0.12,5
+USR-10400,Costa Rica,Pro,2025-10-29,Social,56,0.14,3
+USR-10401,República Dominicana,Pyme,2025-10-22,Organic,35,0.08,5
+USR-10402,Colombia,Pyme,2025-09-05,Partner_Accountant,20,0.1,4
+USR-10403,México,Pyme,2025-10-27,Social,21,0.38,2
+USR-10404,Colombia,Pro,2026-02-21,Paid,66,0.24,4
+USR-10405,México,Pyme,2025-09-13,Organic,23,0.05,3
+USR-10406,México,Pyme,2025-07-19,Referral,18,0.34,2
+USR-10407,México,Pro,2025-09-03,Organic,74,0.2,5
+USR-10408,Colombia,Free,2025-11-05,Social,0,0.51,2
+USR-10409,República Dominicana,Free,2025-12-16,Partner_Accountant,0,0.62,1
+USR-10410,Colombia,Pro,2026-02-15,Paid,37,0.26,5
+USR-10411,México,Pyme,2025-07-02,Organic,31,0.27,5
+USR-10412,Colombia,Pyme,2025-10-31,Partner_Accountant,29,0.4,2
+USR-10413,Costa Rica,Pro,2026-02-06,Organic,53,0.07,3
+USR-10414,Colombia,Pro,2026-01-09,Paid,44,0.08,5
+USR-10415,República Dominicana,Pro,2025-10-20,Partner_Accountant,62,0.22,3
+USR-10416,México,Free,2026-02-18,Paid,0,0.89,1
+USR-10417,México,Pyme,2025-11-09,Social,18,0.2,5
+USR-10418,Costa Rica,Free,2025-10-25,Referral,0,0.37,2
+USR-10419,Colombia,Pyme,2025-07-30,Organic,15,0.14,5
+USR-10420,República Dominicana,Free,2025-11-01,Organic,0,0.33,2
+USR-10421,Colombia,Plus,2025-10-22,Partner_Accountant,77,0.21,10
+USR-10422,Colombia,Pyme,2025-09-07,Referral,35,0.33,2
+USR-10423,México,Pyme,2025-11-28,Referral,25,0.26,3
+USR-10424,Colombia,Free,2025-07-23,Partner_Accountant,0,0.81,1
+USR-10425,Panamá,Pyme,2025-11-20,Organic,16,0.26,4
+USR-10426,México,Plus,2026-01-13,Partner_Accountant,109,0.29,5
+USR-10427,México,Pro,2025-08-10,Social,63,0.26,6
+USR-10428,República Dominicana,Free,2025-08-08,Partner_Accountant,0,0.74,1
+USR-10429,Panamá,Pyme,2026-02-27,Partner_Accountant,15,0.23,2
+USR-10430,República Dominicana,Pyme,2026-02-17,Partner_Accountant,33,0.24,4
+USR-10431,México,Pro,2025-12-06,Partner_Accountant,63,0.15,6
+USR-10432,Colombia,Pro,2025-08-31,Referral,62,0.21,3
+USR-10433,México,Free,2025-08-30,Paid,0,0.41,3
+USR-10434,República Dominicana,Free,2025-08-19,Referral,0,0.89,1
+USR-10435,México,Free,2025-07-20,Organic,0,0.65,3
+USR-10436,México,Plus,2025-08-06,Partner_Accountant,137,0.29,9
+USR-10437,República Dominicana,Pyme,2025-09-17,Social,24,0.15,5
+USR-10438,Colombia,Pyme,2025-12-18,Partner_Accountant,29,0.32,2
+USR-10439,Costa Rica,Pro,2026-02-07,Partner_Accountant,36,0.19,5
+USR-10440,Colombia,Free,2026-01-31,Partner_Accountant,0,0.54,3
+USR-10441,Costa Rica,Free,2025-07-30,Paid,0,0.4,2
+USR-10442,Colombia,Pyme,2025-07-07,Paid,16,0.32,2
+USR-10443,Colombia,Free,2025-11-28,Partner_Accountant,0,0.32,3
+USR-10444,Costa Rica,Free,2025-11-28,Referral,0,0.48,3
+USR-10445,República Dominicana,Pyme,2026-02-19,Paid,32,0.4,2
+USR-10446,Colombia,Free,2025-09-28,Partner_Accountant,0,0.6,3
+USR-10447,República Dominicana,Plus,2025-08-23,Partner_Accountant,115,0.29,9
+USR-10448,México,Free,2026-01-30,Organic,0,0.45,2
+USR-10449,Colombia,Free,2025-07-03,Organic,0,0.63,3
+USR-10450,Colombia,Pyme,2025-12-03,Partner_Accountant,21,0.1,5
+USR-10451,México,Free,2026-01-17,Referral,0,0.3,3
+USR-10452,México,Plus,2025-12-22,Paid,138,0.18,6
+USR-10453,Costa Rica,Free,2025-07-17,Paid,0,0.75,1
+USR-10454,México,Free,2025-07-28,Paid,0,0.78,1
+USR-10455,República Dominicana,Pyme,2025-12-08,Partner_Accountant,29,0.31,2
+USR-10456,Colombia,Pro,2025-12-04,Organic,62,0.12,3
+USR-10457,República Dominicana,Pyme,2025-10-27,Referral,28,0.1,4
+USR-10458,México,Free,2026-01-02,Paid,0,0.88,1
+USR-10459,México,Pyme,2025-09-30,Partner_Accountant,24,0.2,3
+USR-10460,Colombia,Pro,2025-07-14,Referral,57,0.22,4
+USR-10461,Colombia,Free,2026-02-10,Organic,0,0.84,1
+USR-10462,Colombia,Pro,2025-09-23,Social,48,0.14,4
+USR-10463,Panamá,Free,2025-08-26,Paid,0,0.31,3
+USR-10464,República Dominicana,Pro,2025-08-23,Paid,64,0.08,5
+USR-10465,Colombia,Free,2025-08-18,Partner_Accountant,0,0.55,2
+USR-10466,Costa Rica,Free,2025-10-29,Organic,0,0.5,3
+USR-10467,Panamá,Pyme,2025-12-11,Referral,33,0.15,3
+USR-10468,Colombia,Free,2025-09-14,Partner_Accountant,0,0.61,1
+USR-10469,México,Pyme,2026-01-22,Paid,30,0.21,5
+USR-10470,México,Pyme,2025-12-20,Paid,25,0.24,4
+USR-10471,Colombia,Pyme,2026-03-01,Social,19,0.18,3
+USR-10472,Colombia,Free,2025-12-26,Partner_Accountant,0,0.45,2
+USR-10473,Colombia,Pro,2025-09-25,Partner_Accountant,61,0.25,6
+USR-10474,Panamá,Free,2025-10-30,Paid,0,0.37,2
+USR-10475,México,Free,2026-02-19,Organic,0,0.83,1
+USR-10476,México,Free,2026-02-18,Paid,0,0.79,1
+USR-10477,México,Plus,2026-02-08,Organic,130,0.3,10
+USR-10478,Costa Rica,Pro,2026-02-19,Referral,71,0.12,6
+USR-10479,México,Free,2025-07-12,Organic,0,0.6,3
+USR-10480,Colombia,Pyme,2025-10-27,Referral,17,0.26,3
+USR-10481,Colombia,Pro,2025-12-19,Organic,52,0.1,6
+USR-10482,Colombia,Pro,2026-02-23,Partner_Accountant,58,0.3,4
+USR-10483,República Dominicana,Pro,2025-11-09,Organic,55,0.08,7
+USR-10484,Colombia,Free,2025-07-27,Referral,0,0.69,2
+USR-10485,República Dominicana,Free,2026-02-12,Partner_Accountant,0,0.45,2
+USR-10486,Colombia,Pyme,2025-09-18,Partner_Accountant,22,0.31,2
+USR-10487,Colombia,Plus,2026-02-28,Referral,92,0.11,6
+USR-10488,México,Free,2025-07-18,Partner_Accountant,0,0.63,1
+USR-10489,República Dominicana,Free,2025-10-18,Referral,0,0.37,3
+USR-10490,República Dominicana,Free,2025-10-10,Social,0,0.54,2
+USR-10491,México,Pro,2025-07-22,Paid,73,0.17,4
+USR-10492,Colombia,Free,2025-11-06,Organic,0,0.45,2
+USR-10493,Colombia,Plus,2025-11-22,Paid,130,0.22,6
+USR-10494,México,Free,2025-12-22,Referral,0,0.35,3
+USR-10495,Colombia,Plus,2025-08-12,Partner_Accountant,113,0.19,8
+USR-10496,México,Free,2025-08-15,Paid,0,0.66,1
+USR-10497,México,Free,2026-01-08,Organic,0,0.65,2
+USR-10498,Colombia,Free,2025-10-31,Referral,0,0.86,1
+USR-10499,República Dominicana,Free,2026-01-19,Organic,0,0.6,2
+USR-10500,Panamá,Pro,2025-12-18,Social,59,0.15,5
+USR-10501,México,Pyme,2025-10-30,Partner_Accountant,31,0.39,2
+USR-10502,México,Pyme,2025-12-04,Paid,17,0.23,5
+USR-10503,República Dominicana,Pyme,2025-08-13,Partner_Accountant,29,0.24,3
+USR-10504,Panamá,Plus,2025-08-26,Partner_Accountant,90,0.21,9
+USR-10505,República Dominicana,Free,2026-02-04,Paid,0,0.54,3
+USR-10506,República Dominicana,Pro,2025-12-02,Referral,49,0.26,6
+USR-10507,Panamá,Free,2025-12-28,Social,0,0.32,2
+USR-10508,Costa Rica,Plus,2026-01-05,Organic,137,0.3,9
+USR-10509,Colombia,Pyme,2025-10-22,Referral,30,0.14,3
+USR-10510,Panamá,Pyme,2025-07-15,Organic,18,0.2,3
+USR-10511,México,Free,2025-08-14,Referral,0,0.55,2
+USR-10512,Colombia,Pyme,2025-08-27,Social,15,0.3,5
+USR-10513,Costa Rica,Free,2025-11-15,Referral,0,0.6,3
+USR-10514,Colombia,Pyme,2025-08-01,Partner_Accountant,16,0.26,3
+USR-10515,México,Plus,2025-09-15,Organic,112,0.22,9
+USR-10516,México,Free,2026-02-27,Referral,0,0.7,3
+USR-10517,México,Pyme,2026-01-18,Organic,28,0.18,3
+USR-10518,República Dominicana,Free,2025-09-09,Partner_Accountant,0,0.93,1
+USR-10519,Colombia,Pro,2026-01-27,Paid,41,0.27,5
+USR-10520,Colombia,Pyme,2026-02-21,Paid,35,0.18,5
+USR-10521,México,Free,2025-07-24,Organic,0,0.79,1
+USR-10522,Colombia,Plus,2026-02-24,Partner_Accountant,138,0.16,8
+USR-10523,México,Plus,2025-10-06,Paid,89,0.12,6
+USR-10524,Costa Rica,Pro,2025-07-02,Organic,64,0.1,5
+USR-10525,Colombia,Pro,2025-10-29,Paid,58,0.21,5
+USR-10526,Colombia,Free,2026-02-16,Partner_Accountant,0,0.47,2
+USR-10527,Colombia,Pro,2025-11-06,Partner_Accountant,43,0.14,3
+USR-10528,Panamá,Pro,2025-09-13,Paid,66,0.27,6
+USR-10529,Panamá,Pyme,2025-08-28,Partner_Accountant,18,0.48,2
+USR-10530,Colombia,Pyme,2025-12-10,Paid,22,0.13,5
+USR-10531,República Dominicana,Free,2025-09-10,Paid,0,0.93,1
+USR-10532,Colombia,Pyme,2026-01-14,Partner_Accountant,19,0.21,4
+USR-10533,Panamá,Pro,2025-08-19,Partner_Accountant,41,0.06,7
+USR-10534,México,Pyme,2026-03-01,Referral,31,0.07,4
+USR-10535,México,Free,2025-08-22,Partner_Accountant,0,0.5,3
+USR-10536,México,Free,2025-08-30,Organic,0,0.65,2
+USR-10537,México,Free,2025-12-02,Paid,0,0.46,3
+USR-10538,México,Pro,2025-09-04,Paid,69,0.25,3
+USR-10539,México,Pyme,2025-10-20,Partner_Accountant,26,0.34,2
+USR-10540,Panamá,Free,2025-09-18,Paid,0,0.36,3
+USR-10541,Colombia,Pro,2025-07-26,Organic,59,0.11,3
+USR-10542,Panamá,Free,2025-09-25,Partner_Accountant,0,0.63,2
+USR-10543,México,Free,2025-07-06,Referral,0,0.65,2
+USR-10544,Colombia,Free,2025-09-12,Paid,0,0.39,2
+USR-10545,Colombia,Free,2025-07-22,Social,0,0.79,1
+USR-10546,México,Pro,2025-12-07,Partner_Accountant,57,0.25,5
+USR-10547,República Dominicana,Pyme,2025-11-25,Organic,28,0.25,2
+USR-10548,República Dominicana,Pyme,2025-09-24,Partner_Accountant,19,0.26,5
+USR-10549,México,Free,2025-10-01,Partner_Accountant,0,0.92,1
+USR-10550,Costa Rica,Pro,2025-08-06,Paid,61,0.29,4
+USR-10551,República Dominicana,Free,2026-02-08,Partner_Accountant,0,0.4,2
+USR-10552,México,Free,2026-02-28,Referral,0,0.41,3
+USR-10553,México,Pyme,2025-10-25,Social,32,0.29,4
+USR-10554,Costa Rica,Plus,2025-07-20,Partner_Accountant,115,0.08,9
+USR-10555,Panamá,Pyme,2026-01-19,Referral,30,0.24,4
+USR-10556,Colombia,Pro,2025-11-06,Referral,36,0.07,6
+USR-10557,México,Pyme,2025-10-23,Partner_Accountant,19,0.24,4
+USR-10558,Colombia,Free,2025-09-18,Partner_Accountant,0,0.71,1
+USR-10559,Colombia,Pyme,2025-07-19,Paid,20,0.17,5
+USR-10560,Panamá,Free,2025-11-07,Partner_Accountant,0,0.36,3
+USR-10561,México,Pyme,2025-10-28,Organic,29,0.42,2
+USR-10562,Colombia,Free,2025-12-02,Paid,0,0.76,1
+USR-10563,México,Pyme,2025-07-09,Paid,34,0.1,4
+USR-10564,Colombia,Free,2025-10-24,Partner_Accountant,0,0.34,3
+USR-10565,Panamá,Pyme,2026-01-17,Referral,20,0.22,5
+USR-10566,República Dominicana,Pyme,2026-01-01,Paid,15,0.29,5
+USR-10567,Panamá,Free,2025-09-16,Paid,0,0.46,3
+USR-10568,Colombia,Pyme,2025-11-30,Organic,20,0.28,5
+USR-10569,México,Pro,2025-07-26,Social,63,0.08,7
+USR-10570,México,Free,2025-09-17,Partner_Accountant,0,0.31,2
+USR-10571,República Dominicana,Free,2025-11-24,Organic,0,0.63,2
+USR-10572,México,Plus,2026-02-17,Organic,95,0.26,7
+USR-10573,México,Plus,2025-07-07,Referral,120,0.26,5
+USR-10574,México,Pyme,2025-10-26,Organic,34,0.07,3
+USR-10575,República Dominicana,Pyme,2025-12-08,Referral,17,0.05,5
+USR-10576,México,Free,2026-02-23,Partner_Accountant,0,0.39,3
+USR-10577,República Dominicana,Free,2025-08-21,Paid,0,0.47,3
+USR-10578,Costa Rica,Free,2025-11-27,Paid,0,0.75,1
+USR-10579,República Dominicana,Pro,2025-12-03,Partner_Accountant,62,0.2,7
+USR-10580,Colombia,Free,2025-09-19,Organic,0,0.49,3
+USR-10581,Colombia,Free,2025-12-31,Referral,0,0.63,3
+USR-10582,México,Free,2025-09-22,Organic,0,0.56,3
+USR-10583,Colombia,Pyme,2025-09-25,Referral,35,0.24,5
+USR-10584,Panamá,Free,2025-12-06,Paid,0,0.65,1
+USR-10585,República Dominicana,Pyme,2025-08-18,Organic,26,0.23,2
+USR-10586,México,Pro,2025-08-13,Paid,72,0.24,3
+USR-10587,México,Pyme,2025-09-10,Partner_Accountant,25,0.41,2
+USR-10588,México,Pro,2025-07-20,Partner_Accountant,38,0.1,3
+USR-10589,Colombia,Plus,2025-12-15,Partner_Accountant,88,0.18,5
+USR-10590,México,Free,2025-07-05,Organic,0,0.83,1
+USR-10591,Colombia,Pyme,2025-08-24,Paid,19,0.14,5
+USR-10592,México,Pyme,2025-12-13,Partner_Accountant,22,0.37,2
+USR-10593,Costa Rica,Pyme,2025-10-09,Paid,18,0.12,5
+USR-10594,República Dominicana,Free,2025-08-12,Partner_Accountant,0,0.83,1
+USR-10595,Colombia,Free,2025-12-21,Organic,0,0.5,2
+USR-10596,México,Plus,2025-11-12,Partner_Accountant,93,0.22,10
+USR-10597,Colombia,Plus,2025-07-08,Paid,130,0.29,6
+USR-10598,México,Plus,2025-08-18,Paid,141,0.29,9
+USR-10599,Colombia,Free,2025-12-17,Paid,0,0.91,1
+USR-10600,República Dominicana,Pro,2025-07-23,Organic,44,0.28,6
+USR-10601,México,Pro,2025-08-05,Partner_Accountant,51,0.19,6
+USR-10602,República Dominicana,Pyme,2025-10-16,Paid,28,0.43,2
+USR-10603,México,Free,2025-11-22,Referral,0,0.83,1
+USR-10604,Costa Rica,Pyme,2025-07-15,Organic,23,0.41,2
+USR-10605,México,Pro,2025-11-10,Partner_Accountant,70,0.13,4
+USR-10606,México,Free,2025-08-22,Organic,0,0.67,3
+USR-10607,México,Pro,2026-02-05,Partner_Accountant,42,0.24,4
+USR-10608,Colombia,Pyme,2025-09-09,Paid,27,0.16,5
+USR-10609,México,Free,2025-10-26,Partner_Accountant,0,0.38,2
+USR-10610,Colombia,Free,2025-11-22,Partner_Accountant,0,0.33,2
+USR-10611,México,Free,2025-11-07,Partner_Accountant,0,0.33,3
+USR-10612,Panamá,Pyme,2026-01-14,Partner_Accountant,22,0.08,5
+USR-10613,México,Plus,2025-08-21,Referral,137,0.07,7
+USR-10614,Panamá,Pro,2025-08-18,Referral,71,0.21,7
+USR-10615,Panamá,Free,2025-07-18,Partner_Accountant,0,0.46,3
+USR-10616,Panamá,Pyme,2025-10-16,Organic,23,0.36,2
+USR-10617,Costa Rica,Free,2026-02-28,Organic,0,0.54,2
+USR-10618,Panamá,Free,2025-07-10,Organic,0,0.42,3
+USR-10619,Costa Rica,Pyme,2025-12-22,Partner_Accountant,15,0.41,2
+USR-10620,México,Pro,2025-10-03,Social,47,0.11,6
+USR-10621,México,Free,2025-12-02,Paid,0,0.74,1
+USR-10622,Colombia,Free,2025-11-04,Referral,0,0.65,3
+USR-10623,Colombia,Plus,2025-12-07,Partner_Accountant,85,0.19,5
+USR-10624,Colombia,Pyme,2025-09-10,Organic,33,0.46,2
+USR-10625,México,Free,2025-12-16,Paid,0,0.67,3
+USR-10626,Costa Rica,Pyme,2025-09-26,Partner_Accountant,34,0.32,2
+USR-10627,México,Pyme,2026-01-13,Partner_Accountant,31,0.25,5
+USR-10628,República Dominicana,Pro,2025-12-03,Partner_Accountant,42,0.05,7
+USR-10629,Colombia,Pro,2026-02-08,Paid,43,0.21,4
+USR-10630,Panamá,Plus,2025-07-05,Social,80,0.07,8
+USR-10631,México,Plus,2025-08-11,Partner_Accountant,112,0.25,5
+USR-10632,República Dominicana,Free,2025-12-14,Partner_Accountant,0,0.52,3
+USR-10633,México,Pyme,2026-01-31,Paid,33,0.13,4
+USR-10634,México,Free,2025-11-01,Paid,0,0.67,2
+USR-10635,República Dominicana,Pyme,2025-09-26,Partner_Accountant,25,0.21,5
+USR-10636,México,Free,2026-01-30,Partner_Accountant,0,0.78,1
+USR-10637,Costa Rica,Free,2025-11-20,Paid,0,0.7,2
+USR-10638,México,Pyme,2026-01-30,Paid,28,0.09,3
+USR-10639,México,Pyme,2026-02-27,Referral,18,0.15,5
+USR-10640,Colombia,Free,2025-09-12,Organic,0,0.7,1
+USR-10641,República Dominicana,Plus,2025-08-06,Partner_Accountant,145,0.14,10
+USR-10642,República Dominicana,Plus,2026-01-07,Partner_Accountant,116,0.23,5
+USR-10643,Colombia,Pyme,2025-12-08,Partner_Accountant,16,0.22,3
+USR-10644,Colombia,Pyme,2025-11-10,Organic,21,0.38,2
+USR-10645,México,Pyme,2025-09-28,Organic,30,0.25,4
+USR-10646,República Dominicana,Free,2025-09-22,Social,0,0.93,1
+USR-10647,República Dominicana,Pro,2025-11-01,Partner_Accountant,73,0.1,4
+USR-10648,Costa Rica,Pyme,2025-07-14,Paid,23,0.11,4
+USR-10649,México,Free,2026-01-22,Partner_Accountant,0,0.56,2
+USR-10650,Costa Rica,Free,2025-09-13,Partner_Accountant,0,0.59,2
+USR-10651,Panamá,Free,2025-11-02,Paid,0,0.55,2
+USR-10652,Costa Rica,Free,2026-01-26,Paid,0,0.85,1
+USR-10653,Colombia,Pro,2026-02-21,Referral,41,0.13,6
+USR-10654,México,Free,2026-01-03,Social,0,0.53,3
+USR-10655,México,Free,2025-07-22,Partner_Accountant,0,0.81,1
+USR-10656,México,Pyme,2025-11-23,Partner_Accountant,22,0.09,4
+USR-10657,República Dominicana,Pyme,2025-12-14,Paid,22,0.22,5
+USR-10658,Costa Rica,Pyme,2025-11-12,Partner_Accountant,30,0.3,5
+USR-10659,México,Free,2025-12-30,Partner_Accountant,0,0.67,2
+USR-10660,Colombia,Pyme,2025-07-03,Partner_Accountant,25,0.13,3
+USR-10661,México,Pyme,2025-12-10,Organic,32,0.29,2
+USR-10662,México,Pro,2025-11-21,Social,47,0.08,7
+USR-10663,Colombia,Pro,2025-07-24,Social,44,0.27,4
+USR-10664,Colombia,Pyme,2025-10-07,Paid,30,0.29,4
+USR-10665,República Dominicana,Pyme,2025-09-28,Paid,20,0.27,5
+USR-10666,México,Free,2026-02-20,Social,0,0.56,3
+USR-10667,Costa Rica,Plus,2025-12-09,Social,97,0.23,7
+USR-10668,Colombia,Pyme,2026-01-31,Organic,25,0.26,4
+USR-10669,México,Free,2025-11-07,Organic,0,0.44,2
+USR-10670,México,Pyme,2025-07-24,Organic,20,0.05,4
+USR-10671,Panamá,Pro,2026-01-05,Partner_Accountant,54,0.15,6
+USR-10672,República Dominicana,Pyme,2025-12-23,Partner_Accountant,20,0.14,5
+USR-10673,México,Free,2025-09-05,Organic,0,0.49,3
+USR-10674,República Dominicana,Pyme,2025-07-03,Partner_Accountant,20,0.13,4
+USR-10675,México,Free,2025-09-03,Partner_Accountant,0,0.32,2
+USR-10676,Panamá,Free,2025-09-07,Paid,0,0.78,1
+USR-10677,México,Pyme,2026-03-01,Referral,33,0.24,4
+USR-10678,Colombia,Free,2025-08-22,Organic,0,0.9,1
+USR-10679,Colombia,Free,2025-10-09,Referral,0,0.46,2
+USR-10680,Colombia,Free,2026-02-09,Partner_Accountant,0,0.57,3
+USR-10681,México,Free,2025-12-04,Partner_Accountant,0,0.38,3
+USR-10682,Colombia,Free,2025-11-01,Partner_Accountant,0,0.74,1
+USR-10683,México,Free,2025-07-26,Partner_Accountant,0,0.65,1
+USR-10684,México,Pyme,2025-10-11,Social,28,0.25,5
+USR-10685,República Dominicana,Free,2026-02-25,Paid,0,0.32,3
+USR-10686,República Dominicana,Free,2025-09-14,Paid,0,0.72,1
+USR-10687,Colombia,Free,2026-01-04,Organic,0,0.63,1
+USR-10688,Colombia,Pyme,2025-09-27,Partner_Accountant,29,0.09,5
+USR-10689,México,Free,2025-09-04,Social,0,0.8,1
+USR-10690,México,Pro,2026-01-21,Organic,58,0.12,6
+USR-10691,Colombia,Pyme,2025-09-20,Social,18,0.22,2
+USR-10692,México,Pyme,2025-10-08,Paid,30,0.16,4
+USR-10693,Colombia,Pro,2025-12-09,Social,70,0.13,3
+USR-10694,Colombia,Free,2026-01-12,Paid,0,0.67,3
+USR-10695,Colombia,Free,2026-02-07,Paid,0,0.47,2
+USR-10696,Colombia,Pro,2026-01-12,Social,55,0.12,7
+USR-10697,México,Pyme,2025-07-08,Organic,34,0.48,2
+USR-10698,México,Free,2026-01-07,Paid,0,0.45,3
+USR-10699,Colombia,Free,2025-11-25,Organic,0,0.62,3
+USR-10700,Costa Rica,Plus,2026-01-01,Organic,79,0.23,9
+USR-10701,República Dominicana,Free,2026-01-11,Partner_Accountant,0,0.36,2
+USR-10702,Colombia,Pyme,2025-12-29,Referral,30,0.16,4
+USR-10703,Costa Rica,Pyme,2025-09-17,Partner_Accountant,20,0.08,5
+USR-10704,Colombia,Pro,2025-11-10,Partner_Accountant,65,0.14,5
+USR-10705,Colombia,Free,2025-09-10,Organic,0,0.53,2
+USR-10706,Costa Rica,Pro,2026-01-06,Partner_Accountant,58,0.26,6
+USR-10707,Costa Rica,Free,2025-08-15,Partner_Accountant,0,0.59,3
+USR-10708,Colombia,Pyme,2025-10-27,Referral,18,0.16,4
+USR-10709,México,Plus,2025-10-22,Partner_Accountant,150,0.18,10
+USR-10710,Colombia,Pro,2025-07-25,Partner_Accountant,56,0.13,4
+USR-10711,República Dominicana,Free,2025-10-10,Organic,0,0.56,2
+USR-10712,Panamá,Pyme,2025-09-16,Partner_Accountant,26,0.16,4
+USR-10713,Colombia,Pyme,2026-01-26,Paid,21,0.25,4
+USR-10714,Colombia,Pro,2025-11-29,Social,37,0.21,6
+USR-10715,Colombia,Free,2025-08-21,Paid,0,0.8,1
+USR-10716,México,Pro,2025-08-05,Partner_Accountant,55,0.14,6
+USR-10717,Colombia,Pyme,2025-11-09,Social,26,0.17,5
+USR-10718,Costa Rica,Free,2025-12-04,Social,0,0.48,3
+USR-10719,México,Pyme,2026-01-06,Partner_Accountant,28,0.11,4
+USR-10720,República Dominicana,Pro,2025-09-29,Referral,44,0.06,4
+USR-10721,Panamá,Pyme,2025-08-11,Organic,28,0.27,3
+USR-10722,República Dominicana,Pro,2025-10-23,Paid,60,0.18,4
+USR-10723,México,Plus,2025-08-23,Paid,121,0.25,7
+USR-10724,Costa Rica,Pro,2025-09-09,Organic,55,0.18,4
+USR-10725,Colombia,Pyme,2025-10-16,Partner_Accountant,20,0.25,3
+USR-10726,Colombia,Free,2025-09-23,Partner_Accountant,0,0.52,3
+USR-10727,Costa Rica,Free,2025-07-29,Social,0,0.42,3
+USR-10728,Panamá,Pyme,2025-11-04,Organic,33,0.11,3
+USR-10729,Colombia,Free,2025-09-16,Partner_Accountant,0,0.43,3
+USR-10730,Costa Rica,Free,2025-08-20,Organic,0,0.46,3
+USR-10731,Costa Rica,Pyme,2025-08-24,Referral,29,0.11,5
+USR-10732,República Dominicana,Pyme,2025-11-17,Organic,19,0.13,5
+USR-10733,Colombia,Pro,2025-07-05,Organic,57,0.22,7
+USR-10734,México,Free,2026-02-28,Organic,0,0.43,3
+USR-10735,Colombia,Pro,2025-07-18,Referral,61,0.25,4
+USR-10736,Colombia,Pro,2026-01-06,Organic,44,0.18,6
+USR-10737,Costa Rica,Pro,2026-02-10,Partner_Accountant,37,0.27,5
+USR-10738,Colombia,Pro,2025-12-27,Referral,61,0.21,3
+USR-10739,República Dominicana,Pyme,2025-08-26,Referral,33,0.38,2
+USR-10740,República Dominicana,Free,2026-01-31,Organic,0,0.94,1
+USR-10741,República Dominicana,Plus,2025-10-09,Paid,131,0.21,10
+USR-10742,Colombia,Pyme,2025-12-13,Partner_Accountant,25,0.14,3
+USR-10743,Colombia,Pro,2025-09-19,Partner_Accountant,66,0.27,6
+USR-10744,Colombia,Pyme,2025-07-24,Organic,17,0.08,4
+USR-10745,Panamá,Free,2026-01-28,Organic,0,0.61,1
+USR-10746,Colombia,Free,2025-08-25,Partner_Accountant,0,0.9,1
+USR-10747,México,Pyme,2025-10-14,Referral,20,0.25,5
+USR-10748,Colombia,Pro,2026-01-20,Partner_Accountant,72,0.08,3
+USR-10749,México,Pyme,2025-12-06,Organic,29,0.19,5
+USR-10750,Panamá,Pro,2025-11-03,Partner_Accountant,43,0.11,4
+USR-10751,Colombia,Pyme,2025-09-30,Partner_Accountant,33,0.42,2
+USR-10752,República Dominicana,Free,2025-12-14,Organic,0,0.93,1
+USR-10753,República Dominicana,Pro,2025-10-30,Paid,56,0.23,3
+USR-10754,México,Pyme,2025-10-24,Organic,18,0.49,2
+USR-10755,Panamá,Pyme,2025-10-07,Organic,24,0.21,4
+USR-10756,México,Pro,2026-02-11,Partner_Accountant,67,0.08,6
+USR-10757,Panamá,Pyme,2025-09-02,Organic,26,0.28,5
+USR-10758,República Dominicana,Plus,2025-12-27,Referral,125,0.16,10
+USR-10759,Costa Rica,Pyme,2026-01-06,Partner_Accountant,16,0.26,2
+USR-10760,Costa Rica,Pro,2025-08-15,Referral,58,0.23,4
+USR-10761,Colombia,Pyme,2025-07-02,Social,22,0.09,5
+USR-10762,Panamá,Pyme,2025-10-13,Social,15,0.05,5
+USR-10763,Costa Rica,Pyme,2025-09-22,Organic,20,0.19,4
+USR-10764,México,Free,2025-10-29,Social,0,0.89,1
+USR-10765,República Dominicana,Free,2025-10-03,Paid,0,0.61,3
+USR-10766,Panamá,Plus,2025-08-21,Paid,125,0.21,7
+USR-10767,México,Pyme,2026-02-24,Organic,25,0.15,3
+USR-10768,Colombia,Pyme,2026-01-27,Organic,30,0.11,4
+USR-10769,Colombia,Free,2025-10-08,Partner_Accountant,0,0.36,3
+USR-10770,Colombia,Pyme,2025-10-12,Organic,28,0.13,5
+USR-10771,República Dominicana,Free,2026-02-06,Referral,0,0.65,1
+USR-10772,México,Plus,2026-02-08,Social,81,0.28,5
+USR-10773,México,Pyme,2025-08-08,Partner_Accountant,28,0.2,3
+USR-10774,República Dominicana,Free,2026-02-06,Organic,0,0.6,2
+USR-10775,México,Free,2025-10-23,Social,0,0.62,2
+USR-10776,Colombia,Plus,2025-11-21,Paid,135,0.27,9
+USR-10777,Costa Rica,Free,2025-09-15,Organic,0,0.58,3
+USR-10778,Costa Rica,Pyme,2026-02-03,Organic,23,0.28,4
+USR-10779,República Dominicana,Pro,2025-07-21,Referral,70,0.15,4
+USR-10780,Costa Rica,Pro,2025-10-13,Partner_Accountant,43,0.07,5
+USR-10781,Costa Rica,Free,2025-10-04,Organic,0,0.9,1
+USR-10782,República Dominicana,Free,2025-07-19,Social,0,0.32,3
+USR-10783,Panamá,Free,2025-08-29,Partner_Accountant,0,0.38,2
+USR-10784,República Dominicana,Pyme,2025-11-29,Partner_Accountant,16,0.49,2
+USR-10785,República Dominicana,Pro,2025-08-17,Organic,49,0.1,6
+USR-10786,México,Plus,2026-01-10,Organic,132,0.22,4
+USR-10787,México,Free,2025-11-17,Referral,0,0.84,1
+USR-10788,México,Plus,2025-10-12,Partner_Accountant,132,0.25,5
+USR-10789,México,Free,2025-10-09,Organic,0,0.5,2
+USR-10790,Colombia,Free,2025-11-05,Partner_Accountant,0,0.68,2
+USR-10791,Colombia,Free,2026-01-22,Social,0,0.82,1
+USR-10792,República Dominicana,Pyme,2025-08-03,Organic,31,0.05,4
+USR-10793,México,Plus,2025-09-10,Referral,148,0.17,10
+USR-10794,República Dominicana,Free,2025-10-30,Partner_Accountant,0,0.52,2
+USR-10795,México,Pyme,2025-12-13,Partner_Accountant,21,0.25,4
+USR-10796,República Dominicana,Pro,2025-10-28,Organic,63,0.1,7
+USR-10797,México,Pyme,2025-10-10,Partner_Accountant,20,0.23,4
+USR-10798,Colombia,Pro,2025-09-25,Social,61,0.18,3
+USR-10799,Colombia,Free,2026-02-08,Partner_Accountant,0,0.61,1
+USR-10800,México,Free,2026-03-01,Partner_Accountant,0,0.6,2
+USR-10801,México,Pyme,2025-11-18,Partner_Accountant,17,0.37,2
+USR-10802,México,Pro,2025-08-24,Organic,69,0.24,7
+USR-10803,Colombia,Free,2026-02-24,Organic,0,0.44,3
+USR-10804,Colombia,Free,2025-09-24,Organic,0,0.54,3
+USR-10805,Costa Rica,Free,2026-02-12,Partner_Accountant,0,0.93,1
+USR-10806,República Dominicana,Plus,2025-10-03,Organic,129,0.13,9
+USR-10807,Costa Rica,Pyme,2025-09-08,Referral,15,0.22,2
+USR-10808,Costa Rica,Pyme,2025-11-25,Social,16,0.22,4
+USR-10809,Costa Rica,Pyme,2025-11-03,Social,22,0.17,4
+USR-10810,Colombia,Free,2025-10-28,Paid,0,0.44,3
+USR-10811,México,Pyme,2025-12-22,Referral,20,0.26,3
+USR-10812,Costa Rica,Pro,2025-11-17,Social,68,0.08,7
+USR-10813,México,Pyme,2026-02-15,Partner_Accountant,21,0.47,2
+USR-10814,Colombia,Free,2026-03-01,Partner_Accountant,0,0.64,1
+USR-10815,Colombia,Pyme,2026-02-27,Organic,26,0.13,4
+USR-10816,Colombia,Free,2026-02-06,Partner_Accountant,0,0.68,2
+USR-10817,República Dominicana,Free,2025-07-24,Paid,0,0.4,2
+USR-10818,República Dominicana,Pro,2025-10-14,Organic,35,0.12,7
+USR-10819,Colombia,Free,2025-08-09,Organic,0,0.45,2
+USR-10820,México,Free,2026-02-07,Organic,0,0.37,3
+USR-10821,México,Pro,2025-10-03,Partner_Accountant,69,0.07,6
+USR-10822,Colombia,Free,2025-12-16,Organic,0,0.69,2
+USR-10823,Colombia,Free,2026-01-08,Paid,0,0.88,1
+USR-10824,Colombia,Pyme,2026-01-24,Paid,19,0.1,5
+USR-10825,Costa Rica,Free,2025-07-19,Referral,0,0.63,3
+USR-10826,Colombia,Pyme,2025-10-09,Social,29,0.21,3
+USR-10827,Colombia,Pyme,2025-11-21,Paid,17,0.21,4
+USR-10828,México,Pyme,2026-01-31,Partner_Accountant,33,0.22,3
+USR-10829,Colombia,Free,2025-11-09,Paid,0,0.67,1
+USR-10830,Costa Rica,Pyme,2025-09-06,Paid,34,0.23,3
+USR-10831,República Dominicana,Pro,2025-08-22,Partner_Accountant,75,0.17,4
+USR-10832,Panamá,Pro,2025-07-01,Social,47,0.1,6
+USR-10833,Costa Rica,Free,2025-09-10,Partner_Accountant,0,0.67,2
+USR-10834,México,Free,2025-12-07,Paid,0,0.68,1
+USR-10835,Colombia,Pyme,2025-08-08,Partner_Accountant,15,0.19,4
+USR-10836,Colombia,Pro,2025-10-26,Organic,45,0.22,4
+USR-10837,México,Pyme,2026-02-13,Organic,27,0.26,2
+USR-10838,Colombia,Free,2025-10-08,Referral,0,0.54,2
+USR-10839,Colombia,Free,2025-09-02,Paid,0,0.56,3
+USR-10840,México,Pyme,2026-02-18,Partner_Accountant,28,0.28,4
+USR-10841,Costa Rica,Plus,2026-01-11,Paid,95,0.07,4
+USR-10842,Colombia,Free,2025-08-29,Referral,0,0.68,3
+USR-10843,Colombia,Free,2025-08-15,Partner_Accountant,0,0.51,3
+USR-10844,México,Free,2025-07-15,Referral,0,0.65,1
+USR-10845,México,Free,2025-10-27,Partner_Accountant,0,0.56,3
+USR-10846,México,Pyme,2025-11-18,Partner_Accountant,32,0.18,5
+USR-10847,México,Pyme,2025-10-04,Paid,15,0.24,3
+USR-10848,México,Free,2025-07-05,Organic,0,0.59,2
+USR-10849,Panamá,Free,2025-12-11,Organic,0,0.76,1
+USR-10850,Costa Rica,Free,2026-01-27,Paid,0,0.62,1
+USR-10851,Panamá,Free,2025-08-07,Social,0,0.68,1
+USR-10852,México,Free,2025-09-27,Partner_Accountant,0,0.53,2
+USR-10853,México,Pyme,2026-01-08,Referral,33,0.23,3
+USR-10854,Colombia,Free,2025-07-04,Organic,0,0.47,3
+USR-10855,Colombia,Pyme,2025-10-28,Organic,20,0.39,2
+USR-10856,México,Pyme,2026-01-06,Social,25,0.25,3
+USR-10857,Colombia,Pyme,2026-01-02,Referral,27,0.11,4
+USR-10858,México,Pro,2025-09-23,Paid,40,0.13,4
+USR-10859,Panamá,Free,2026-02-11,Organic,0,0.75,1
+USR-10860,México,Free,2025-09-22,Organic,0,0.63,1
+USR-10861,México,Pyme,2026-01-20,Organic,35,0.21,2
+USR-10862,República Dominicana,Free,2025-09-18,Organic,0,0.63,3
+USR-10863,Colombia,Free,2025-07-19,Partner_Accountant,0,0.81,1
+USR-10864,República Dominicana,Pyme,2025-08-27,Referral,24,0.29,4
+USR-10865,Colombia,Free,2025-08-08,Organic,0,0.91,1
+USR-10866,Colombia,Pro,2025-09-24,Paid,72,0.23,6
+USR-10867,Costa Rica,Free,2025-10-27,Partner_Accountant,0,0.86,1
+USR-10868,Colombia,Plus,2025-12-27,Referral,96,0.27,6
+USR-10869,Costa Rica,Free,2025-11-01,Organic,0,0.84,1
+USR-10870,México,Pyme,2025-11-29,Partner_Accountant,34,0.06,5
+USR-10871,México,Free,2025-11-29,Paid,0,0.57,2
+USR-10872,Colombia,Free,2025-08-31,Partner_Accountant,0,0.88,1
+USR-10873,Costa Rica,Plus,2026-02-08,Organic,81,0.19,7
+USR-10874,República Dominicana,Pyme,2025-08-22,Social,20,0.3,4
+USR-10875,Colombia,Free,2025-09-25,Partner_Accountant,0,0.49,2
+USR-10876,Colombia,Free,2025-11-17,Partner_Accountant,0,0.65,1
+USR-10877,República Dominicana,Free,2026-01-10,Social,0,0.34,2
+USR-10878,México,Pyme,2025-12-26,Referral,17,0.06,5
+USR-10879,Costa Rica,Free,2025-11-30,Partner_Accountant,0,0.52,3
+USR-10880,Costa Rica,Free,2026-01-27,Paid,0,0.93,1
+USR-10881,República Dominicana,Pro,2025-09-10,Social,61,0.06,7
+USR-10882,Costa Rica,Free,2026-01-21,Organic,0,0.6,2
+USR-10883,Panamá,Pro,2026-02-18,Referral,54,0.12,6
+USR-10884,Panamá,Pro,2025-09-24,Organic,46,0.23,3
+USR-10885,Panamá,Free,2025-09-08,Referral,0,0.38,3
+USR-10886,Panamá,Pyme,2025-09-07,Referral,22,0.2,5
+USR-10887,Colombia,Plus,2026-01-04,Partner_Accountant,92,0.23,5
+USR-10888,México,Plus,2025-11-10,Paid,100,0.06,10
+USR-10889,México,Free,2025-10-24,Partner_Accountant,0,0.49,2
+USR-10890,México,Free,2025-11-19,Social,0,0.4,2
+USR-10891,Colombia,Pyme,2026-02-12,Organic,18,0.17,4
+USR-10892,Colombia,Free,2025-09-17,Organic,0,0.34,3
+USR-10893,México,Pro,2025-11-04,Referral,62,0.11,3
+USR-10894,Colombia,Plus,2025-12-31,Referral,102,0.28,5
+USR-10895,Colombia,Free,2026-01-08,Referral,0,0.37,2
+USR-10896,Costa Rica,Free,2025-09-23,Paid,0,0.47,3
+USR-10897,República Dominicana,Plus,2025-12-18,Referral,97,0.17,10
+USR-10898,México,Pyme,2026-02-14,Partner_Accountant,28,0.15,3
+USR-10899,Costa Rica,Pyme,2025-08-25,Partner_Accountant,29,0.28,5
+USR-10900,Colombia,Pyme,2025-08-28,Social,32,0.18,5
+USR-10901,Colombia,Pyme,2025-09-05,Organic,25,0.26,3
+USR-10902,Colombia,Pyme,2025-12-10,Paid,32,0.24,5
+USR-10903,Costa Rica,Pyme,2025-08-18,Organic,30,0.13,4
+USR-10904,México,Free,2025-11-16,Partner_Accountant,0,0.63,3
+USR-10905,México,Pyme,2025-07-13,Organic,15,0.18,5
+USR-10906,México,Free,2025-08-13,Paid,0,0.46,3
+USR-10907,República Dominicana,Free,2025-12-10,Partner_Accountant,0,0.69,1
+USR-10908,Costa Rica,Free,2026-02-13,Referral,0,0.52,2
+USR-10909,República Dominicana,Free,2025-10-11,Partner_Accountant,0,0.55,3
+USR-10910,Colombia,Free,2026-02-11,Organic,0,0.34,3
+USR-10911,Panamá,Pyme,2026-02-28,Organic,26,0.13,3
+USR-10912,México,Pyme,2025-09-13,Paid,31,0.31,2
+USR-10913,Panamá,Free,2025-10-28,Social,0,0.84,1
+USR-10914,Colombia,Free,2026-01-12,Organic,0,0.65,2
+USR-10915,Costa Rica,Free,2025-10-25,Partner_Accountant,0,0.54,3
+USR-10916,Panamá,Free,2025-07-09,Paid,0,0.34,2
+USR-10917,República Dominicana,Pyme,2026-02-19,Organic,20,0.3,2
+USR-10918,México,Free,2025-09-24,Partner_Accountant,0,0.68,2
+USR-10919,República Dominicana,Free,2025-09-27,Partner_Accountant,0,0.62,2
+USR-10920,Colombia,Free,2025-11-13,Organic,0,0.37,3
+USR-10921,Colombia,Free,2025-07-20,Paid,0,0.68,3
+USR-10922,México,Free,2026-01-19,Paid,0,0.75,1
+USR-10923,Panamá,Pro,2026-02-12,Organic,58,0.07,6
+USR-10924,México,Free,2025-11-02,Partner_Accountant,0,0.42,3
+USR-10925,México,Pyme,2025-09-15,Organic,22,0.11,3
+USR-10926,República Dominicana,Free,2025-11-07,Partner_Accountant,0,0.53,3
+USR-10927,México,Pyme,2026-02-27,Referral,35,0.12,5
+USR-10928,República Dominicana,Pro,2026-01-19,Referral,46,0.25,3
+USR-10929,México,Pyme,2025-10-30,Social,19,0.1,5
+USR-10930,Costa Rica,Pyme,2025-11-21,Partner_Accountant,15,0.19,4
+USR-10931,México,Free,2025-07-24,Partner_Accountant,0,0.55,2
+USR-10932,Costa Rica,Free,2026-02-11,Partner_Accountant,0,0.69,2
+USR-10933,México,Free,2026-01-14,Referral,0,0.49,3
+USR-10934,Costa Rica,Free,2025-07-30,Social,0,0.83,1
+USR-10935,Costa Rica,Pro,2026-02-28,Organic,59,0.12,3
+USR-10936,Costa Rica,Plus,2025-12-08,Partner_Accountant,122,0.16,5
+USR-10937,Colombia,Free,2026-01-21,Organic,0,0.53,2
+USR-10938,Colombia,Plus,2025-09-06,Partner_Accountant,100,0.14,5
+USR-10939,Panamá,Plus,2025-07-21,Partner_Accountant,75,0.17,7
+USR-10940,México,Free,2025-09-14,Partner_Accountant,0,0.7,2
+USR-10941,Colombia,Pyme,2025-08-06,Organic,29,0.26,3
+USR-10942,Colombia,Pyme,2026-02-24,Paid,28,0.16,4
+USR-10943,México,Free,2025-10-24,Referral,0,0.48,3
+USR-10944,México,Pro,2025-07-04,Partner_Accountant,35,0.22,7
+USR-10945,México,Pro,2025-11-24,Organic,55,0.2,6
+USR-10946,República Dominicana,Pyme,2026-01-01,Referral,34,0.23,4
+USR-10947,México,Pro,2025-12-25,Social,63,0.17,5
+USR-10948,República Dominicana,Pyme,2025-12-04,Referral,32,0.23,3
+USR-10949,Panamá,Free,2025-09-20,Partner_Accountant,0,0.32,3
+USR-10950,México,Pyme,2025-11-23,Partner_Accountant,16,0.24,3
+USR-10951,México,Free,2026-01-28,Organic,0,0.62,3
+USR-10952,Colombia,Free,2025-12-22,Organic,0,0.67,2
+USR-10953,México,Pyme,2025-08-26,Partner_Accountant,25,0.23,2
+USR-10954,México,Pyme,2026-03-01,Social,32,0.05,4
+USR-10955,Colombia,Free,2025-09-24,Partner_Accountant,0,0.89,1
+USR-10956,Colombia,Free,2026-01-28,Organic,0,0.73,1
+USR-10957,México,Pro,2025-08-30,Referral,63,0.22,3
+USR-10958,República Dominicana,Free,2025-11-13,Paid,0,0.54,2
+USR-10959,México,Free,2025-11-20,Referral,0,0.8,1
+USR-10960,México,Free,2026-01-14,Paid,0,0.41,2
+USR-10961,México,Plus,2025-09-10,Partner_Accountant,118,0.13,9
+USR-10962,Colombia,Free,2026-01-28,Partner_Accountant,0,0.6,1
+USR-10963,México,Pyme,2026-01-05,Paid,20,0.2,4
+USR-10964,República Dominicana,Pro,2025-10-14,Paid,35,0.29,5
+USR-10965,Colombia,Free,2026-02-01,Organic,0,0.6,3
+USR-10966,República Dominicana,Pyme,2025-08-12,Organic,30,0.44,2
+USR-10967,República Dominicana,Free,2025-11-01,Partner_Accountant,0,0.55,3
+USR-10968,República Dominicana,Free,2025-07-14,Organic,0,0.66,1
+USR-10969,Colombia,Pro,2026-02-23,Partner_Accountant,72,0.09,3
+USR-10970,República Dominicana,Pro,2025-11-27,Partner_Accountant,75,0.27,4
+USR-10971,Colombia,Plus,2025-08-01,Paid,138,0.19,5
+USR-10972,México,Pro,2025-07-01,Referral,71,0.17,6
+USR-10973,Colombia,Free,2026-01-09,Partner_Accountant,0,0.38,2
+USR-10974,México,Pro,2025-10-28,Partner_Accountant,67,0.1,7
+USR-10975,México,Pro,2025-11-24,Partner_Accountant,42,0.27,3
+USR-10976,México,Pro,2025-11-28,Partner_Accountant,36,0.18,5
+USR-10977,México,Free,2025-12-10,Paid,0,0.64,1
+USR-10978,Panamá,Pyme,2025-08-05,Partner_Accountant,16,0.32,2
+USR-10979,República Dominicana,Pyme,2025-12-17,Partner_Accountant,31,0.12,3
+USR-10980,México,Pro,2026-01-15,Partner_Accountant,41,0.25,5
+USR-10981,México,Free,2025-08-19,Partner_Accountant,0,0.88,1
+USR-10982,México,Free,2025-11-27,Partner_Accountant,0,0.64,1
+USR-10983,Panamá,Pyme,2025-10-08,Referral,24,0.47,2
+USR-10984,Panamá,Pyme,2025-08-11,Paid,30,0.07,5
+USR-10985,República Dominicana,Plus,2025-09-05,Paid,75,0.05,5
+USR-10986,Colombia,Free,2025-12-21,Paid,0,0.4,2
+USR-10987,México,Free,2025-07-16,Organic,0,0.61,1
+USR-10988,México,Free,2025-09-09,Paid,0,0.52,2
+USR-10989,México,Free,2026-01-01,Organic,0,0.5,2
+USR-10990,República Dominicana,Free,2026-01-25,Social,0,0.38,2
+USR-10991,Colombia,Pyme,2026-02-06,Paid,31,0.08,5
+USR-10992,Costa Rica,Pyme,2025-09-29,Organic,33,0.06,3
+USR-10993,México,Free,2025-07-30,Organic,0,0.67,2
+USR-10994,Colombia,Pro,2026-01-27,Referral,75,0.25,7
+USR-10995,México,Pyme,2025-10-15,Organic,27,0.09,4
+USR-10996,República Dominicana,Pyme,2025-12-24,Organic,31,0.44,2
+USR-10997,Costa Rica,Pro,2025-08-05,Social,48,0.08,3
+USR-10998,Costa Rica,Pyme,2026-02-24,Organic,32,0.27,4
+USR-10999,Panamá,Pyme,2026-02-03,Partner_Accountant,17,0.24,4
+USR-11000,México,Plus,2025-07-16,Referral,144,0.22,4
+USR-11001,República Dominicana,Pyme,2025-11-08,Social,30,0.17,3
+USR-11002,República Dominicana,Free,2025-09-29,Organic,0,0.75,1
+USR-11003,México,Pyme,2025-11-02,Organic,24,0.08,3
+USR-11004,México,Free,2025-12-02,Organic,0,0.59,3
+USR-11005,Colombia,Free,2025-07-27,Referral,0,0.63,2
+USR-11006,México,Pyme,2025-08-26,Partner_Accountant,23,0.08,3
+USR-11007,México,Pyme,2025-07-17,Partner_Accountant,17,0.22,3
+USR-11008,México,Free,2025-10-13,Referral,0,0.92,1
+USR-11009,Colombia,Free,2025-07-06,Partner_Accountant,0,0.4,2
+USR-11010,Costa Rica,Pyme,2026-01-18,Paid,33,0.47,2
+USR-11011,República Dominicana,Pyme,2025-11-17,Referral,35,0.45,2
+USR-11012,México,Pro,2025-08-27,Organic,74,0.2,6
+USR-11013,Costa Rica,Free,2025-09-19,Referral,0,0.64,3
+USR-11014,Colombia,Free,2025-10-17,Referral,0,0.43,3
+USR-11015,Colombia,Pyme,2025-07-02,Paid,16,0.06,4
+USR-11016,México,Pyme,2026-01-19,Organic,28,0.33,2
+USR-11017,México,Pro,2025-09-20,Paid,47,0.27,7
+USR-11018,Colombia,Plus,2026-02-05,Paid,97,0.22,5
+USR-11019,Panamá,Free,2026-02-04,Social,0,0.6,3
+USR-11020,México,Pyme,2025-08-20,Referral,17,0.08,4
+USR-11021,Colombia,Free,2025-09-03,Organic,0,0.72,1
+USR-11022,Costa Rica,Pyme,2025-09-28,Referral,35,0.08,4
+USR-11023,Colombia,Free,2025-09-04,Social,0,0.65,3
+USR-11024,República Dominicana,Pyme,2025-12-05,Partner_Accountant,30,0.12,5
+USR-11025,Costa Rica,Pro,2025-07-04,Paid,69,0.26,3
+USR-11026,Panamá,Free,2026-01-29,Referral,0,0.3,2
+USR-11027,México,Pyme,2025-07-18,Referral,28,0.12,4
+USR-11028,México,Pyme,2025-07-28,Partner_Accountant,15,0.34,2
+USR-11029,República Dominicana,Pro,2025-10-17,Referral,68,0.17,4
+USR-11030,Colombia,Pro,2025-12-01,Partner_Accountant,59,0.19,4
+USR-11031,Panamá,Pyme,2025-10-09,Referral,20,0.23,3
+USR-11032,Colombia,Free,2025-07-05,Partner_Accountant,0,0.35,2
+USR-11033,República Dominicana,Pyme,2025-11-01,Partner_Accountant,27,0.31,2
+USR-11034,Colombia,Pyme,2025-12-14,Social,22,0.33,2
+USR-11035,Colombia,Free,2025-11-28,Partner_Accountant,0,0.86,1
+USR-11036,Costa Rica,Pyme,2025-10-03,Organic,23,0.06,5
+USR-11037,Colombia,Free,2026-02-01,Organic,0,0.34,2
+USR-11038,México,Pyme,2026-01-14,Organic,32,0.14,5
+USR-11039,México,Pyme,2025-07-31,Partner_Accountant,30,0.31,2
+USR-11040,Colombia,Pyme,2025-12-25,Paid,34,0.33,2
+USR-11041,México,Pyme,2025-10-06,Partner_Accountant,15,0.48,2
+USR-11042,México,Plus,2025-11-02,Organic,86,0.12,9
+USR-11043,República Dominicana,Free,2026-01-27,Organic,0,0.43,2
+USR-11044,Colombia,Pro,2025-07-01,Referral,36,0.15,3
+USR-11045,Costa Rica,Plus,2026-02-21,Referral,116,0.23,9
+USR-11046,Costa Rica,Pro,2026-01-25,Organic,55,0.26,6
+USR-11047,Costa Rica,Pyme,2025-12-30,Paid,25,0.15,3
+USR-11048,Colombia,Plus,2025-10-14,Partner_Accountant,140,0.07,5
+USR-11049,México,Pyme,2026-02-14,Organic,24,0.16,5
+USR-11050,Costa Rica,Plus,2025-11-18,Referral,115,0.16,10
+USR-11051,Colombia,Pyme,2026-01-04,Partner_Accountant,15,0.17,3
+USR-11052,Costa Rica,Pro,2025-10-08,Paid,46,0.13,3
+USR-11053,Costa Rica,Pyme,2026-02-16,Organic,25,0.46,2
+USR-11054,Colombia,Free,2026-02-24,Partner_Accountant,0,0.31,2
+USR-11055,República Dominicana,Pro,2025-11-18,Referral,57,0.3,5
+USR-11056,Colombia,Free,2025-08-24,Organic,0,0.52,3
+USR-11057,Costa Rica,Pyme,2025-11-17,Organic,26,0.14,4
+USR-11058,México,Pyme,2026-01-28,Social,32,0.27,5
+USR-11059,Costa Rica,Free,2025-10-26,Paid,0,0.36,2
+USR-11060,Panamá,Free,2025-10-09,Organic,0,0.37,2
+USR-11061,República Dominicana,Free,2025-09-17,Partner_Accountant,0,0.8,1
+USR-11062,México,Pyme,2025-07-02,Paid,35,0.27,5
+USR-11063,Panamá,Plus,2026-01-10,Referral,144,0.13,7
+USR-11064,Panamá,Pro,2025-08-02,Partner_Accountant,63,0.23,3
+USR-11065,México,Pyme,2025-07-18,Partner_Accountant,26,0.24,5
+USR-11066,México,Plus,2025-12-24,Organic,146,0.19,8
+USR-11067,República Dominicana,Free,2025-11-19,Organic,0,0.56,3
+USR-11068,República Dominicana,Pro,2026-02-06,Social,42,0.08,6
+USR-11069,República Dominicana,Free,2025-08-19,Paid,0,0.72,1
+USR-11070,México,Free,2025-07-15,Social,0,0.44,2
+USR-11071,Colombia,Free,2025-08-11,Organic,0,0.45,3
+USR-11072,Colombia,Plus,2025-09-02,Organic,83,0.15,8
+USR-11073,Colombia,Pyme,2025-10-01,Paid,16,0.29,4
+USR-11074,Colombia,Free,2025-08-12,Partner_Accountant,0,0.65,1
+USR-11075,Colombia,Plus,2026-01-18,Paid,118,0.29,9
+USR-11076,Costa Rica,Pro,2025-09-11,Social,46,0.11,3
+USR-11077,Colombia,Pro,2025-12-19,Paid,66,0.27,3
+USR-11078,Colombia,Pyme,2026-02-15,Referral,23,0.14,3
+USR-11079,República Dominicana,Free,2025-10-19,Partner_Accountant,0,0.72,1
+USR-11080,República Dominicana,Free,2026-01-31,Paid,0,0.66,1
+USR-11081,Colombia,Plus,2025-10-10,Referral,98,0.3,4
+USR-11082,Panamá,Free,2025-09-06,Social,0,0.88,1
+USR-11083,Costa Rica,Free,2025-09-18,Paid,0,0.39,3
+USR-11084,República Dominicana,Pyme,2025-09-30,Referral,20,0.33,2
+USR-11085,Colombia,Pro,2026-01-06,Partner_Accountant,62,0.1,6
+USR-11086,México,Free,2025-12-22,Paid,0,0.6,1
+USR-11087,México,Free,2025-12-27,Partner_Accountant,0,0.43,3
+USR-11088,República Dominicana,Pro,2025-08-17,Organic,64,0.11,3
+USR-11089,México,Pyme,2025-08-12,Organic,16,0.23,3
+USR-11090,Colombia,Pro,2026-01-17,Partner_Accountant,57,0.09,5
+USR-11091,Costa Rica,Pyme,2026-01-17,Partner_Accountant,22,0.07,3
+USR-11092,Panamá,Free,2025-12-03,Organic,0,0.73,1
+USR-11093,Colombia,Free,2026-02-02,Paid,0,0.69,3
+USR-11094,Colombia,Pro,2025-10-31,Partner_Accountant,55,0.3,5
+USR-11095,Colombia,Plus,2025-11-22,Partner_Accountant,98,0.26,5
+USR-11096,México,Pro,2025-12-13,Organic,69,0.05,5
+USR-11097,República Dominicana,Free,2025-10-11,Paid,0,0.56,3
+USR-11098,Colombia,Pyme,2026-02-25,Partner_Accountant,35,0.22,2
+USR-11099,Colombia,Plus,2026-01-01,Organic,102,0.25,8
+USR-11100,Colombia,Pro,2025-12-06,Social,64,0.07,7
+USR-11101,México,Pyme,2025-12-14,Partner_Accountant,32,0.08,3
+USR-11102,República Dominicana,Pro,2025-08-16,Partner_Accountant,42,0.14,3
+USR-11103,México,Pyme,2025-10-31,Social,15,0.15,3
+USR-11104,México,Pyme,2026-02-26,Paid,17,0.06,5
+USR-11105,México,Plus,2025-07-29,Paid,120,0.06,5
+USR-11106,Colombia,Free,2026-02-04,Social,0,0.54,3
+USR-11107,República Dominicana,Pro,2025-09-13,Social,54,0.19,3
+USR-11108,Costa Rica,Free,2025-08-27,Referral,0,0.6,2
+USR-11109,Colombia,Pyme,2025-08-02,Referral,34,0.29,4
+USR-11110,República Dominicana,Pyme,2026-02-04,Paid,31,0.25,4
+USR-11111,Costa Rica,Free,2026-01-02,Organic,0,0.65,1
+USR-11112,Colombia,Pro,2026-02-07,Organic,56,0.13,5
+USR-11113,Colombia,Free,2025-09-05,Paid,0,0.63,1
+USR-11114,México,Pro,2025-08-16,Paid,61,0.16,4
+USR-11115,México,Pyme,2026-01-22,Partner_Accountant,27,0.41,2
+USR-11116,República Dominicana,Plus,2026-01-23,Organic,137,0.1,7
+USR-11117,República Dominicana,Pro,2025-08-20,Partner_Accountant,43,0.05,4
+USR-11118,Colombia,Pyme,2026-01-04,Paid,18,0.24,4
+USR-11119,México,Free,2026-02-17,Organic,0,0.39,3
+USR-11120,México,Pyme,2026-01-21,Social,33,0.27,5
+USR-11121,México,Pyme,2025-09-05,Paid,28,0.19,4
+USR-11122,Costa Rica,Free,2025-12-01,Organic,0,0.41,2
+USR-11123,Panamá,Pyme,2025-10-24,Partner_Accountant,33,0.23,2
+USR-11124,Colombia,Pyme,2025-11-19,Social,28,0.46,2
+USR-11125,Panamá,Pyme,2025-11-28,Paid,34,0.08,4
+USR-11126,Colombia,Free,2025-08-08,Partner_Accountant,0,0.84,1
+USR-11127,México,Pyme,2025-08-19,Partner_Accountant,21,0.13,3
+USR-11128,México,Pyme,2025-09-08,Paid,29,0.43,2
+USR-11129,Colombia,Pro,2025-09-04,Paid,46,0.1,6
+USR-11130,Colombia,Pro,2025-12-15,Organic,71,0.13,4
+USR-11131,República Dominicana,Pyme,2025-09-01,Organic,29,0.06,3
+USR-11132,República Dominicana,Free,2026-01-02,Organic,0,0.7,1
+USR-11133,Colombia,Pro,2025-12-12,Organic,46,0.24,3
+USR-11134,Costa Rica,Pyme,2025-10-11,Referral,24,0.28,2
+USR-11135,República Dominicana,Pro,2025-07-11,Partner_Accountant,46,0.24,7
+USR-11136,Colombia,Free,2026-01-24,Social,0,0.61,1
+USR-11137,Colombia,Pyme,2026-01-20,Referral,18,0.46,2
+USR-11138,Panamá,Free,2025-07-25,Partner_Accountant,0,0.32,3
+USR-11139,República Dominicana,Free,2025-08-20,Paid,0,0.74,1
+USR-11140,Colombia,Free,2025-09-08,Partner_Accountant,0,0.67,3
+USR-11141,Colombia,Pyme,2025-10-19,Referral,20,0.27,3
+USR-11142,Colombia,Pyme,2025-07-22,Social,31,0.16,5
+USR-11143,República Dominicana,Free,2026-02-03,Partner_Accountant,0,0.86,1
+USR-11144,México,Free,2026-01-05,Social,0,0.56,2
+USR-11145,México,Free,2025-11-15,Partner_Accountant,0,0.82,1
+USR-11146,Panamá,Free,2025-12-25,Social,0,0.56,2
+USR-11147,Colombia,Pyme,2026-01-27,Social,19,0.09,4
+USR-11148,Colombia,Free,2025-10-20,Paid,0,0.53,2
+USR-11149,Colombia,Pyme,2025-09-16,Paid,17,0.16,5
+USR-11150,Colombia,Pyme,2025-09-16,Referral,18,0.1,3
+USR-11151,República Dominicana,Pyme,2025-09-19,Paid,15,0.09,5
+USR-11152,Colombia,Pro,2025-07-27,Paid,35,0.17,7
+USR-11153,Colombia,Plus,2025-10-03,Paid,75,0.15,5
+USR-11154,Colombia,Free,2026-01-28,Referral,0,0.5,2
+USR-11155,Colombia,Pro,2025-07-08,Partner_Accountant,75,0.13,6
+USR-11156,Costa Rica,Free,2025-07-10,Paid,0,0.92,1
+USR-11157,Costa Rica,Free,2026-01-13,Social,0,0.6,1
+USR-11158,México,Free,2025-09-05,Partner_Accountant,0,0.42,2
+USR-11159,México,Free,2026-01-26,Partner_Accountant,0,0.63,2
+USR-11160,Colombia,Free,2026-02-16,Partner_Accountant,0,0.56,3
+USR-11161,Panamá,Pyme,2025-10-27,Partner_Accountant,30,0.14,4
+USR-11162,República Dominicana,Free,2025-09-19,Partner_Accountant,0,0.55,3
+USR-11163,Colombia,Free,2025-10-23,Organic,0,0.56,2
+USR-11164,México,Pro,2025-07-29,Partner_Accountant,42,0.06,7
+USR-11165,Costa Rica,Plus,2025-07-10,Paid,139,0.05,8
+USR-11166,Costa Rica,Pyme,2025-11-22,Organic,18,0.17,5
+USR-11167,Colombia,Pro,2025-12-02,Organic,51,0.2,6
+USR-11168,República Dominicana,Free,2025-07-22,Organic,0,0.37,3
+USR-11169,México,Plus,2025-12-05,Partner_Accountant,122,0.24,7
+USR-11170,Costa Rica,Pro,2025-09-15,Partner_Accountant,69,0.28,7
+USR-11171,Colombia,Pro,2025-08-23,Partner_Accountant,67,0.3,6
+USR-11172,Costa Rica,Pro,2026-02-02,Referral,41,0.27,6
+USR-11173,República Dominicana,Pyme,2026-01-13,Partner_Accountant,25,0.25,5
+USR-11174,Colombia,Free,2025-11-24,Paid,0,0.32,3
+USR-11175,México,Plus,2026-01-20,Social,101,0.19,7
+USR-11176,República Dominicana,Free,2025-10-07,Paid,0,0.44,2
+USR-11177,Colombia,Plus,2025-12-16,Partner_Accountant,105,0.3,7
+USR-11178,Colombia,Free,2025-10-27,Social,0,0.46,2
+USR-11179,Colombia,Pyme,2025-11-03,Organic,21,0.16,3
+USR-11180,Colombia,Free,2025-08-28,Partner_Accountant,0,0.74,1
+USR-11181,México,Free,2026-02-20,Partner_Accountant,0,0.68,3
+USR-11182,Costa Rica,Pro,2026-02-14,Referral,43,0.06,3
+USR-11183,República Dominicana,Pro,2025-09-17,Organic,72,0.21,7
+USR-11184,México,Free,2025-08-19,Social,0,0.79,1
+USR-11185,Colombia,Free,2025-09-06,Organic,0,0.61,1
+USR-11186,México,Free,2025-07-17,Partner_Accountant,0,0.53,3
+USR-11187,Colombia,Pyme,2025-09-18,Partner_Accountant,18,0.06,3
+USR-11188,Costa Rica,Pyme,2025-08-15,Organic,26,0.12,4
+USR-11189,Colombia,Free,2025-10-19,Paid,0,0.6,1
+USR-11190,República Dominicana,Free,2025-08-08,Social,0,0.91,1
+USR-11191,Colombia,Free,2025-11-17,Paid,0,0.54,2
+USR-11192,Colombia,Pro,2025-07-07,Social,48,0.09,3
+USR-11193,México,Pro,2025-11-04,Partner_Accountant,46,0.24,3
+USR-11194,México,Free,2025-09-01,Paid,0,0.7,1
+USR-11195,Colombia,Free,2025-10-10,Organic,0,0.92,1
+USR-11196,Colombia,Pro,2026-01-03,Social,72,0.06,5
+USR-11197,México,Pro,2025-07-07,Partner_Accountant,52,0.06,5
+USR-11198,México,Pro,2025-12-27,Social,73,0.08,6
+USR-11199,México,Free,2025-11-24,Referral,0,0.47,3
+USR-11200,Costa Rica,Pro,2025-10-09,Social,75,0.12,4
+USR-11201,México,Free,2025-12-30,Organic,0,0.86,1
+USR-11202,República Dominicana,Pro,2025-09-23,Paid,48,0.19,3
+USR-11203,Colombia,Free,2025-11-10,Organic,0,0.69,1
+USR-11204,Colombia,Plus,2025-10-07,Partner_Accountant,94,0.05,10
+USR-11205,Colombia,Pyme,2026-01-02,Partner_Accountant,22,0.3,2
+USR-11206,Colombia,Pyme,2026-01-23,Partner_Accountant,24,0.14,3
+USR-11207,México,Pyme,2025-09-11,Referral,33,0.19,5
+USR-11208,Panamá,Pyme,2025-11-30,Referral,24,0.17,5
+USR-11209,Panamá,Free,2025-07-05,Social,0,0.63,1
+USR-11210,Colombia,Pro,2025-07-30,Organic,39,0.08,5
+USR-11211,Colombia,Free,2025-07-23,Organic,0,0.34,3
+USR-11212,México,Pyme,2025-08-27,Partner_Accountant,23,0.47,2
+USR-11213,México,Free,2025-07-28,Social,0,0.73,1
+USR-11214,México,Free,2025-11-03,Partner_Accountant,0,0.33,2
+USR-11215,Colombia,Free,2026-01-28,Partner_Accountant,0,0.46,2
+USR-11216,Panamá,Pro,2025-07-20,Paid,63,0.17,7
+USR-11217,Panamá,Free,2025-09-08,Paid,0,0.52,2
+USR-11218,México,Pro,2026-01-09,Partner_Accountant,45,0.22,5
+USR-11219,México,Pyme,2025-07-01,Referral,28,0.23,3
+USR-11220,México,Pro,2026-02-02,Organic,41,0.1,4
+USR-11221,Colombia,Pyme,2025-10-17,Social,15,0.06,3
+USR-11222,México,Pro,2026-02-19,Partner_Accountant,40,0.25,5
+USR-11223,Costa Rica,Pro,2025-08-09,Partner_Accountant,74,0.27,7
+USR-11224,República Dominicana,Pro,2025-07-01,Referral,43,0.06,7
+USR-11225,México,Pro,2025-11-02,Referral,49,0.19,6
+USR-11226,Colombia,Pro,2026-02-10,Organic,46,0.2,3
+USR-11227,Colombia,Pro,2025-09-30,Partner_Accountant,62,0.13,4
+USR-11228,Panamá,Free,2026-02-26,Paid,0,0.9,1
+USR-11229,México,Pro,2025-09-12,Referral,53,0.13,3
+USR-11230,Colombia,Free,2025-10-03,Organic,0,0.58,3
+USR-11231,Costa Rica,Free,2025-07-24,Referral,0,0.92,1
+USR-11232,Panamá,Pyme,2025-11-27,Partner_Accountant,28,0.24,5
+USR-11233,México,Pro,2025-07-26,Referral,58,0.11,4
+USR-11234,República Dominicana,Pyme,2025-08-06,Referral,16,0.26,5
+USR-11235,República Dominicana,Free,2025-09-20,Organic,0,0.91,1
+USR-11236,Costa Rica,Pyme,2025-10-26,Paid,20,0.11,3
+USR-11237,México,Pro,2025-10-23,Social,62,0.1,4
+USR-11238,Panamá,Pyme,2025-08-05,Paid,26,0.2,3
+USR-11239,Panamá,Plus,2025-08-29,Referral,117,0.24,10
+USR-11240,Colombia,Pyme,2025-12-28,Organic,15,0.27,4
+USR-11241,México,Pyme,2025-07-20,Organic,29,0.09,5
+USR-11242,Colombia,Free,2026-01-30,Social,0,0.9,1
+USR-11243,Costa Rica,Pro,2025-11-23,Social,35,0.07,5
+USR-11244,México,Free,2025-07-11,Partner_Accountant,0,0.38,2
+USR-11245,Colombia,Pyme,2026-02-06,Partner_Accountant,29,0.05,4
+USR-11246,Costa Rica,Pyme,2025-11-18,Partner_Accountant,25,0.3,3
+USR-11247,Costa Rica,Free,2025-09-15,Partner_Accountant,0,0.85,1
+USR-11248,Colombia,Free,2025-11-19,Partner_Accountant,0,0.77,1
+USR-11249,México,Free,2025-11-07,Partner_Accountant,0,0.86,1
+USR-11250,México,Pro,2025-11-17,Organic,41,0.24,4
+USR-11251,Colombia,Pyme,2025-08-27,Organic,20,0.05,3
+USR-11252,República Dominicana,Free,2025-07-16,Partner_Accountant,0,0.62,2
+USR-11253,México,Pro,2025-09-11,Partner_Accountant,74,0.11,4
+USR-11254,República Dominicana,Plus,2025-08-02,Organic,86,0.24,5
+USR-11255,México,Free,2025-11-28,Referral,0,0.73,1
+USR-11256,Colombia,Free,2025-10-23,Organic,0,0.48,3
+USR-11257,Panamá,Pro,2025-09-20,Paid,67,0.27,5
+USR-11258,Costa Rica,Free,2025-07-16,Organic,0,0.84,1
+USR-11259,Colombia,Free,2026-01-14,Organic,0,0.57,3
+USR-11260,Colombia,Pyme,2025-12-25,Organic,23,0.27,2
+USR-11261,República Dominicana,Pyme,2025-08-16,Organic,15,0.15,5
+USR-11262,Costa Rica,Plus,2025-10-28,Organic,130,0.23,6
+USR-11263,Colombia,Pyme,2025-08-02,Paid,33,0.25,4
+USR-11264,Colombia,Pro,2025-12-10,Partner_Accountant,45,0.27,6
+USR-11265,República Dominicana,Pyme,2025-10-09,Partner_Accountant,20,0.12,3
+USR-11266,México,Free,2025-09-11,Referral,0,0.59,3
+USR-11267,Colombia,Free,2025-07-24,Partner_Accountant,0,0.47,2
+USR-11268,República Dominicana,Free,2025-07-29,Paid,0,0.41,2
+USR-11269,Colombia,Free,2025-08-21,Referral,0,0.64,2
+USR-11270,Colombia,Pyme,2026-02-25,Organic,34,0.24,2
+USR-11271,Costa Rica,Free,2025-08-20,Social,0,0.44,2
+USR-11272,México,Pyme,2025-12-02,Partner_Accountant,24,0.26,4
+USR-11273,Colombia,Free,2026-02-11,Organic,0,0.71,1
+USR-11274,República Dominicana,Free,2025-10-18,Paid,0,0.48,2
+USR-11275,Colombia,Pyme,2025-10-05,Partner_Accountant,19,0.25,2
+USR-11276,República Dominicana,Plus,2025-09-25,Organic,118,0.25,9
+USR-11277,Panamá,Pyme,2025-10-26,Paid,16,0.45,2
+USR-11278,Costa Rica,Pro,2026-02-10,Organic,49,0.25,7
+USR-11279,República Dominicana,Pyme,2025-10-07,Partner_Accountant,15,0.27,4
+USR-11280,México,Pyme,2025-07-06,Partner_Accountant,27,0.15,3
+USR-11281,Colombia,Pyme,2025-11-07,Referral,28,0.24,4
+USR-11282,Costa Rica,Pro,2025-07-07,Social,75,0.26,3
+USR-11283,República Dominicana,Free,2025-12-22,Partner_Accountant,0,0.64,2
+USR-11284,Panamá,Pyme,2025-10-30,Partner_Accountant,21,0.17,3
+USR-11285,Costa Rica,Pyme,2026-02-20,Referral,15,0.2,4
+USR-11286,República Dominicana,Free,2025-12-23,Paid,0,0.73,1
+USR-11287,México,Plus,2025-07-17,Referral,143,0.29,7
+USR-11288,Colombia,Pro,2025-10-29,Organic,35,0.19,6
+USR-11289,Costa Rica,Pyme,2025-08-21,Paid,29,0.06,5
+USR-11290,México,Pyme,2025-12-01,Referral,28,0.29,4
+USR-11291,México,Pyme,2025-09-09,Referral,17,0.42,2
+USR-11292,República Dominicana,Pyme,2025-11-20,Organic,16,0.34,2
+USR-11293,México,Pyme,2025-09-10,Partner_Accountant,23,0.26,5
+USR-11294,Colombia,Pro,2025-11-30,Organic,72,0.05,4
+USR-11295,México,Pyme,2025-08-03,Paid,24,0.14,4
+USR-11296,México,Plus,2025-09-01,Partner_Accountant,140,0.11,8
+USR-11297,Colombia,Free,2025-09-18,Paid,0,0.93,1
+USR-11298,México,Free,2025-12-06,Paid,0,0.69,2
+USR-11299,Colombia,Free,2025-11-29,Partner_Accountant,0,0.39,3
+USR-11300,República Dominicana,Pyme,2026-02-20,Organic,28,0.36,2
+USR-11301,Colombia,Free,2025-08-18,Referral,0,0.6,1
+USR-11302,Colombia,Free,2025-12-26,Social,0,0.64,3
+USR-11303,Colombia,Pyme,2025-09-21,Referral,19,0.26,5
+USR-11304,México,Free,2025-09-25,Organic,0,0.54,2
+USR-11305,Costa Rica,Pyme,2025-11-23,Social,32,0.21,5
+USR-11306,Colombia,Pro,2025-12-12,Social,35,0.23,4
+USR-11307,Colombia,Pyme,2025-12-12,Referral,20,0.24,4
+USR-11308,México,Pro,2025-11-10,Referral,47,0.26,6
+USR-11309,Costa Rica,Pro,2025-07-17,Paid,65,0.29,5
+USR-11310,México,Free,2025-08-19,Paid,0,0.44,3
+USR-11311,Costa Rica,Free,2025-12-06,Partner_Accountant,0,0.56,3
+USR-11312,Costa Rica,Free,2026-02-14,Paid,0,0.54,2
+USR-11313,República Dominicana,Pyme,2025-08-11,Paid,16,0.29,4
+USR-11314,Colombia,Pyme,2026-02-16,Paid,27,0.23,3
+USR-11315,Colombia,Free,2026-02-16,Social,0,0.85,1
+USR-11316,Panamá,Free,2025-12-21,Organic,0,0.34,3
+USR-11317,Colombia,Free,2025-07-13,Paid,0,0.83,1
+USR-11318,México,Free,2025-12-23,Referral,0,0.57,2
+USR-11319,Colombia,Pyme,2026-01-19,Partner_Accountant,16,0.12,3
+USR-11320,Costa Rica,Pyme,2025-10-13,Paid,19,0.14,3
+USR-11321,Colombia,Free,2026-02-18,Partner_Accountant,0,0.32,2
+USR-11322,México,Free,2025-10-03,Partner_Accountant,0,0.63,3
+USR-11323,México,Plus,2026-01-06,Organic,78,0.13,5
+USR-11324,México,Pro,2025-07-11,Social,74,0.22,6
+USR-11325,Panamá,Free,2025-11-20,Organic,0,0.81,1
+USR-11326,México,Free,2025-09-11,Partner_Accountant,0,0.81,1
+USR-11327,Colombia,Pyme,2025-12-27,Organic,28,0.26,3
+USR-11328,México,Pro,2025-10-12,Social,43,0.14,5
+USR-11329,Colombia,Free,2025-11-24,Referral,0,0.71,1
+USR-11330,Colombia,Pyme,2025-12-29,Paid,27,0.2,3
+USR-11331,México,Pyme,2025-10-10,Referral,28,0.27,3
+USR-11332,México,Pyme,2025-07-02,Paid,26,0.25,3
+USR-11333,México,Free,2025-10-19,Partner_Accountant,0,0.84,1
+USR-11334,Colombia,Pyme,2026-02-06,Organic,27,0.48,2
+USR-11335,México,Pro,2025-09-05,Partner_Accountant,63,0.18,4
+USR-11336,República Dominicana,Free,2025-08-18,Paid,0,0.38,2
+USR-11337,México,Pro,2025-12-20,Organic,56,0.08,3
+USR-11338,México,Free,2025-08-26,Referral,0,0.39,3
+USR-11339,Costa Rica,Pyme,2025-08-25,Referral,21,0.48,2
+USR-11340,Colombia,Pyme,2025-10-05,Organic,16,0.08,3
+USR-11341,Colombia,Free,2025-09-08,Partner_Accountant,0,0.47,2
+USR-11342,Costa Rica,Pyme,2026-02-01,Organic,16,0.27,3
+USR-11343,Colombia,Pyme,2025-07-27,Referral,31,0.25,5
+USR-11344,Costa Rica,Pyme,2025-08-23,Partner_Accountant,19,0.11,4
+USR-11345,Panamá,Pyme,2025-12-17,Partner_Accountant,18,0.22,4
+USR-11346,Colombia,Pyme,2026-02-20,Referral,24,0.23,3
+USR-11347,Colombia,Plus,2025-11-12,Organic,136,0.15,4
+USR-11348,México,Free,2025-11-25,Partner_Accountant,0,0.51,2
+USR-11349,República Dominicana,Free,2025-08-31,Partner_Accountant,0,0.74,1
+USR-11350,México,Pyme,2025-07-22,Organic,27,0.3,2
+USR-11351,México,Free,2026-02-23,Referral,0,0.44,2
+USR-11352,Colombia,Free,2025-10-23,Paid,0,0.44,3
+USR-11353,Colombia,Free,2025-11-09,Organic,0,0.62,2
+USR-11354,México,Pyme,2025-08-29,Referral,25,0.49,2
+USR-11355,Costa Rica,Free,2025-11-09,Social,0,0.88,1
+USR-11356,México,Pro,2025-12-03,Organic,39,0.26,5
+USR-11357,Panamá,Pyme,2025-10-01,Organic,27,0.47,2
+USR-11358,República Dominicana,Pyme,2025-07-04,Social,33,0.27,3
+USR-11359,Colombia,Pro,2025-08-07,Paid,37,0.13,3
+USR-11360,Colombia,Free,2025-10-21,Referral,0,0.54,3
+USR-11361,República Dominicana,Plus,2026-01-01,Partner_Accountant,75,0.18,8
+USR-11362,Colombia,Pyme,2026-02-23,Referral,31,0.26,5
+USR-11363,México,Free,2026-02-12,Partner_Accountant,0,0.67,3
+USR-11364,Colombia,Pyme,2025-07-07,Social,19,0.13,5
+USR-11365,Panamá,Pyme,2025-07-19,Partner_Accountant,35,0.07,5
+USR-11366,México,Free,2025-07-15,Referral,0,0.37,2
+USR-11367,México,Pyme,2026-02-06,Referral,19,0.22,5
+USR-11368,Colombia,Plus,2025-11-16,Partner_Accountant,87,0.06,8
+USR-11369,Colombia,Plus,2025-09-01,Social,128,0.13,7
+USR-11370,México,Pyme,2025-10-21,Partner_Accountant,16,0.39,2
+USR-11371,República Dominicana,Free,2025-10-03,Organic,0,0.71,1
+USR-11372,Panamá,Pyme,2026-01-09,Partner_Accountant,19,0.36,2
+USR-11373,Costa Rica,Pro,2026-01-07,Partner_Accountant,72,0.21,6
+USR-11374,Panamá,Pro,2026-02-05,Paid,54,0.2,3
+USR-11375,México,Plus,2025-12-28,Paid,93,0.08,9
+USR-11376,Colombia,Free,2025-10-08,Paid,0,0.64,2
+USR-11377,Colombia,Pyme,2025-09-11,Paid,35,0.16,4
+USR-11378,México,Pyme,2026-02-14,Social,18,0.2,4
+USR-11379,México,Free,2025-08-31,Partner_Accountant,0,0.53,2
+USR-11380,Colombia,Pro,2025-10-24,Paid,42,0.24,6
+USR-11381,Colombia,Pyme,2026-02-16,Organic,21,0.2,3
+USR-11382,México,Free,2025-09-09,Paid,0,0.87,1
+USR-11383,Colombia,Free,2026-02-11,Paid,0,0.79,1
+USR-11384,México,Free,2026-01-09,Referral,0,0.56,2
+USR-11385,Costa Rica,Free,2025-08-25,Organic,0,0.72,1
+USR-11386,Costa Rica,Pro,2025-09-12,Paid,70,0.17,6
+USR-11387,Costa Rica,Free,2025-09-05,Organic,0,0.33,3
+USR-11388,México,Pyme,2025-11-09,Paid,21,0.23,4
+USR-11389,Colombia,Pyme,2025-08-13,Referral,35,0.2,5
+USR-11390,República Dominicana,Free,2026-01-27,Partner_Accountant,0,0.37,3
+USR-11391,Colombia,Pyme,2025-12-13,Partner_Accountant,25,0.07,3
+USR-11392,Colombia,Free,2025-08-06,Referral,0,0.64,2
+USR-11393,Colombia,Free,2026-02-08,Paid,0,0.45,3
+USR-11394,Colombia,Free,2025-08-23,Referral,0,0.82,1
+USR-11395,México,Plus,2025-08-10,Partner_Accountant,107,0.1,6
+USR-11396,Colombia,Free,2026-03-01,Partner_Accountant,0,0.41,2
+USR-11397,Costa Rica,Free,2025-07-24,Partner_Accountant,0,0.53,2
+USR-11398,Panamá,Free,2025-12-11,Organic,0,0.41,2
+USR-11399,Costa Rica,Pyme,2026-02-10,Organic,29,0.2,5
+USR-11400,México,Pyme,2025-09-25,Paid,30,0.1,5
+USR-11401,México,Pyme,2025-10-29,Paid,33,0.31,2
+USR-11402,México,Pro,2025-12-25,Partner_Accountant,40,0.08,4
+USR-11403,México,Pro,2026-02-17,Social,70,0.15,6
+USR-11404,Colombia,Pro,2026-01-09,Paid,48,0.05,7
+USR-11405,México,Plus,2025-12-22,Organic,102,0.09,6
+USR-11406,Colombia,Free,2025-08-25,Social,0,0.41,3
+USR-11407,Panamá,Pro,2025-08-25,Referral,39,0.24,7
+USR-11408,Costa Rica,Plus,2025-07-19,Partner_Accountant,80,0.11,5
+USR-11409,México,Pyme,2025-12-19,Referral,18,0.31,2
+USR-11410,República Dominicana,Free,2025-08-22,Referral,0,0.42,3
+USR-11411,República Dominicana,Free,2026-02-01,Organic,0,0.67,2
+USR-11412,México,Pyme,2025-09-14,Referral,28,0.28,3
+USR-11413,República Dominicana,Plus,2025-12-12,Organic,119,0.13,6
+USR-11414,Colombia,Pyme,2026-02-14,Partner_Accountant,17,0.17,4
+USR-11415,Panamá,Free,2025-12-08,Organic,0,0.45,2
+USR-11416,Panamá,Pyme,2025-10-25,Partner_Accountant,19,0.06,3
+USR-11417,Costa Rica,Pyme,2026-01-31,Paid,22,0.18,5
+USR-11418,Colombia,Plus,2025-11-02,Partner_Accountant,93,0.18,4
+USR-11419,Colombia,Pyme,2025-11-15,Paid,23,0.3,3
+USR-11420,República Dominicana,Free,2025-07-30,Partner_Accountant,0,0.57,3
+USR-11421,Panamá,Plus,2025-12-12,Organic,91,0.18,10
+USR-11422,Costa Rica,Plus,2025-10-29,Paid,133,0.22,6
+USR-11423,México,Pyme,2025-08-07,Organic,18,0.25,4
+USR-11424,Colombia,Pro,2026-02-15,Organic,61,0.05,7
+USR-11425,México,Plus,2025-11-21,Paid,150,0.17,8
+USR-11426,Colombia,Free,2026-02-16,Partner_Accountant,0,0.61,2
+USR-11427,Colombia,Free,2026-02-09,Organic,0,0.43,2
+USR-11428,Colombia,Pyme,2025-07-04,Partner_Accountant,20,0.1,4
+USR-11429,Costa Rica,Free,2026-01-24,Referral,0,0.7,1
+USR-11430,México,Free,2025-12-24,Social,0,0.49,2
+USR-11431,Colombia,Free,2026-02-23,Referral,0,0.45,3
+USR-11432,Costa Rica,Pro,2025-08-01,Social,72,0.15,7
+USR-11433,Colombia,Pro,2025-10-19,Partner_Accountant,59,0.17,4
+USR-11434,Costa Rica,Free,2026-01-20,Organic,0,0.56,3
+USR-11435,México,Free,2025-07-04,Organic,0,0.67,2
+USR-11436,República Dominicana,Free,2025-12-16,Paid,0,0.87,1
+USR-11437,Costa Rica,Pyme,2025-07-15,Referral,28,0.22,3
+USR-11438,México,Pyme,2025-09-24,Paid,22,0.2,3
+USR-11439,México,Free,2025-11-05,Organic,0,0.71,1
+USR-11440,Panamá,Free,2026-01-14,Partner_Accountant,0,0.38,3
+USR-11441,México,Free,2026-01-10,Social,0,0.62,2
+USR-11442,Costa Rica,Plus,2025-07-25,Organic,78,0.27,10
+USR-11443,México,Plus,2025-10-21,Paid,150,0.26,7
+USR-11444,Costa Rica,Free,2025-08-02,Paid,0,0.93,1
+USR-11445,Colombia,Pyme,2025-09-04,Partner_Accountant,23,0.16,3
+USR-11446,Colombia,Pyme,2026-02-05,Referral,15,0.27,5
+USR-11447,México,Pro,2026-02-28,Social,50,0.17,6
+USR-11448,Costa Rica,Pro,2026-02-28,Organic,68,0.1,7
+USR-11449,México,Free,2026-02-14,Social,0,0.94,1
+USR-11450,México,Pro,2025-08-18,Organic,51,0.06,3
+USR-11451,Colombia,Free,2026-02-16,Paid,0,0.93,1
+USR-11452,México,Pro,2025-09-04,Organic,39,0.15,5
+USR-11453,México,Pyme,2025-09-29,Referral,31,0.23,2
+USR-11454,México,Pyme,2025-11-18,Partner_Accountant,23,0.44,2
+USR-11455,República Dominicana,Pyme,2025-12-27,Organic,18,0.48,2
+USR-11456,Colombia,Pyme,2026-01-29,Referral,27,0.07,3
+USR-11457,México,Free,2025-07-18,Partner_Accountant,0,0.52,2
+USR-11458,México,Pyme,2025-08-11,Partner_Accountant,24,0.17,5
+USR-11459,Colombia,Pro,2025-07-02,Partner_Accountant,67,0.24,4
+USR-11460,República Dominicana,Free,2026-02-09,Paid,0,0.3,2
+USR-11461,México,Pyme,2026-02-12,Referral,15,0.25,3
+USR-11462,Colombia,Pro,2026-02-21,Partner_Accountant,47,0.26,7
+USR-11463,República Dominicana,Pro,2026-02-17,Partner_Accountant,42,0.14,7
+USR-11464,México,Free,2026-01-27,Organic,0,0.55,3
+USR-11465,Colombia,Pyme,2025-07-06,Organic,26,0.13,3
+USR-11466,República Dominicana,Free,2025-12-29,Organic,0,0.61,1
+USR-11467,México,Free,2025-10-28,Paid,0,0.42,3
+USR-11468,Colombia,Pyme,2025-07-24,Referral,23,0.06,5
+USR-11469,México,Free,2025-09-06,Referral,0,0.32,3
+USR-11470,México,Free,2026-01-08,Paid,0,0.61,1
+USR-11471,Colombia,Free,2025-10-11,Partner_Accountant,0,0.66,3
+USR-11472,Costa Rica,Pro,2025-07-15,Organic,37,0.19,3
+USR-11473,México,Free,2026-02-28,Referral,0,0.79,1
+USR-11474,México,Free,2025-07-13,Partner_Accountant,0,0.4,2
+USR-11475,Colombia,Pro,2025-08-05,Organic,62,0.27,3
+USR-11476,República Dominicana,Free,2025-07-23,Partner_Accountant,0,0.6,1
+USR-11477,Panamá,Pyme,2025-09-13,Partner_Accountant,19,0.4,2
+USR-11478,Costa Rica,Pyme,2025-07-27,Partner_Accountant,27,0.27,5
+USR-11479,México,Free,2026-02-11,Partner_Accountant,0,0.37,2
+USR-11480,Colombia,Pyme,2025-12-12,Organic,27,0.12,4
+USR-11481,México,Free,2025-12-02,Paid,0,0.89,1
+USR-11482,Panamá,Pyme,2026-02-22,Paid,17,0.2,5
+USR-11483,Costa Rica,Free,2025-07-15,Paid,0,0.66,1
+USR-11484,México,Pyme,2026-01-30,Paid,30,0.43,2
+USR-11485,Costa Rica,Free,2025-12-12,Organic,0,0.53,2
+USR-11486,Colombia,Plus,2026-02-03,Organic,101,0.29,10
+USR-11487,República Dominicana,Pro,2025-09-17,Partner_Accountant,73,0.28,6
+USR-11488,México,Pyme,2025-09-29,Partner_Accountant,31,0.22,3
+USR-11489,México,Pyme,2025-10-09,Paid,24,0.17,3
+USR-11490,Colombia,Pro,2026-01-22,Paid,70,0.13,5
+USR-11491,Colombia,Pyme,2025-07-03,Partner_Accountant,16,0.17,4
+USR-11492,República Dominicana,Free,2025-12-23,Partner_Accountant,0,0.75,1
+USR-11493,Colombia,Free,2025-12-26,Organic,0,0.68,2
+USR-11494,Colombia,Plus,2026-01-14,Referral,137,0.11,8
+USR-11495,Colombia,Free,2025-08-19,Organic,0,0.4,2
+USR-11496,Costa Rica,Free,2025-07-25,Organic,0,0.6,2
+USR-11497,República Dominicana,Free,2026-02-02,Organic,0,0.75,1
+USR-11498,Colombia,Free,2025-10-30,Paid,0,0.37,2
+USR-11499,México,Pro,2025-08-10,Paid,72,0.06,6
+USR-11500,República Dominicana,Pro,2026-02-20,Referral,61,0.25,4
+USR-11501,República Dominicana,Pyme,2025-10-03,Organic,34,0.09,4
+USR-11502,México,Pyme,2025-12-31,Organic,25,0.26,2
+USR-11503,Colombia,Pyme,2025-08-27,Partner_Accountant,17,0.15,5
+USR-11504,Colombia,Pyme,2025-11-08,Partner_Accountant,18,0.35,2
+USR-11505,México,Free,2026-01-18,Partner_Accountant,0,0.35,3
+USR-11506,México,Free,2025-12-06,Referral,0,0.7,1
+USR-11507,Panamá,Free,2025-10-05,Partner_Accountant,0,0.65,2
+USR-11508,Colombia,Pyme,2025-10-24,Referral,27,0.38,2
+USR-11509,República Dominicana,Pyme,2025-07-18,Paid,32,0.27,5
+USR-11510,México,Free,2025-08-08,Paid,0,0.62,3
+USR-11511,Costa Rica,Pyme,2026-01-02,Referral,35,0.17,5
+USR-11512,Colombia,Free,2025-07-21,Paid,0,0.35,2
+USR-11513,Colombia,Pyme,2025-12-03,Referral,25,0.07,3
+USR-11514,México,Free,2025-10-16,Social,0,0.46,3
+USR-11515,México,Pyme,2026-01-10,Organic,31,0.15,3
+USR-11516,México,Plus,2025-11-04,Paid,87,0.26,5
+USR-11517,Colombia,Pro,2025-08-15,Partner_Accountant,62,0.25,4
+USR-11518,México,Free,2025-11-14,Paid,0,0.64,2
+USR-11519,México,Pyme,2025-07-06,Referral,21,0.19,3
+USR-11520,República Dominicana,Free,2025-08-16,Paid,0,0.45,3
+USR-11521,República Dominicana,Pyme,2025-07-21,Referral,32,0.17,3
+USR-11522,República Dominicana,Plus,2026-02-03,Partner_Accountant,132,0.2,8
+USR-11523,México,Free,2025-07-03,Social,0,0.74,1
+USR-11524,Colombia,Free,2025-10-02,Referral,0,0.54,3
+USR-11525,México,Pro,2025-12-24,Referral,72,0.22,3
+USR-11526,Panamá,Free,2025-12-26,Partner_Accountant,0,0.75,1
+USR-11527,Colombia,Pyme,2025-09-23,Partner_Accountant,23,0.27,2
+USR-11528,México,Pro,2025-09-26,Referral,50,0.09,7
+USR-11529,Costa Rica,Plus,2026-01-30,Partner_Accountant,97,0.06,4
+USR-11530,República Dominicana,Pyme,2025-07-25,Paid,25,0.2,2
+USR-11531,República Dominicana,Free,2025-07-12,Social,0,0.35,3
+USR-11532,Colombia,Free,2026-01-15,Referral,0,0.33,2
+USR-11533,Colombia,Pyme,2025-12-25,Organic,19,0.13,3
+USR-11534,República Dominicana,Pyme,2026-01-01,Partner_Accountant,22,0.13,3
+USR-11535,Colombia,Free,2025-11-19,Partner_Accountant,0,0.69,1
+USR-11536,Colombia,Pyme,2025-09-28,Paid,17,0.2,5
+USR-11537,Colombia,Free,2025-09-15,Partner_Accountant,0,0.57,3
+USR-11538,México,Free,2025-08-14,Referral,0,0.73,1
+USR-11539,República Dominicana,Plus,2026-01-15,Referral,119,0.11,5
+USR-11540,Colombia,Pyme,2025-09-14,Partner_Accountant,15,0.15,3
+USR-11541,Colombia,Free,2026-02-26,Paid,0,0.61,3
+USR-11542,México,Pyme,2025-09-23,Organic,25,0.27,4
+USR-11543,México,Pro,2026-02-01,Social,35,0.26,7
+USR-11544,México,Pyme,2025-09-11,Social,34,0.15,5
+USR-11545,Costa Rica,Pyme,2025-07-21,Social,15,0.17,4
+USR-11546,México,Free,2025-11-03,Organic,0,0.58,3
+USR-11547,México,Free,2026-02-23,Social,0,0.64,3
+USR-11548,República Dominicana,Plus,2026-01-20,Social,84,0.29,7
+USR-11549,México,Free,2026-01-08,Organic,0,0.5,3
+USR-11550,Colombia,Pyme,2025-09-24,Paid,17,0.46,2
+USR-11551,México,Pyme,2025-07-13,Partner_Accountant,21,0.1,5
+USR-11552,Colombia,Free,2025-08-08,Organic,0,0.49,2
+USR-11553,Colombia,Free,2025-09-10,Paid,0,0.66,2
+USR-11554,Colombia,Free,2026-02-18,Partner_Accountant,0,0.69,2
+USR-11555,República Dominicana,Plus,2025-12-30,Partner_Accountant,150,0.29,6
+USR-11556,México,Free,2025-08-21,Paid,0,0.56,2
+USR-11557,Colombia,Pro,2025-09-10,Referral,61,0.23,6
+USR-11558,República Dominicana,Plus,2025-07-09,Paid,79,0.25,6
+USR-11559,Costa Rica,Plus,2025-07-27,Organic,102,0.16,9
+USR-11560,México,Pro,2025-10-03,Partner_Accountant,56,0.09,5
+USR-11561,Colombia,Pro,2025-12-07,Partner_Accountant,62,0.07,4
+USR-11562,Colombia,Pyme,2025-10-25,Organic,31,0.08,4
+USR-11563,Colombia,Pro,2025-11-01,Partner_Accountant,49,0.13,3
+USR-11564,Costa Rica,Free,2025-07-03,Partner_Accountant,0,0.66,2
+USR-11565,Colombia,Free,2025-11-12,Partner_Accountant,0,0.44,3
+USR-11566,Costa Rica,Pro,2025-08-13,Organic,59,0.24,5
+USR-11567,México,Pro,2025-07-15,Organic,69,0.2,5
+USR-11568,Panamá,Pro,2026-01-05,Partner_Accountant,46,0.12,7
+USR-11569,Colombia,Free,2025-07-23,Paid,0,0.42,2
+USR-11570,Costa Rica,Pyme,2025-09-17,Partner_Accountant,25,0.15,3
+USR-11571,Colombia,Free,2026-01-04,Partner_Accountant,0,0.94,1
+USR-11572,Colombia,Free,2026-02-01,Partner_Accountant,0,0.65,1
+USR-11573,México,Pyme,2025-08-02,Referral,19,0.2,4
+USR-11574,República Dominicana,Pro,2025-11-23,Organic,43,0.09,6
+USR-11575,México,Free,2025-07-23,Partner_Accountant,0,0.58,3
+USR-11576,Colombia,Pyme,2026-02-25,Organic,20,0.29,5
+USR-11577,México,Pyme,2025-09-05,Social,21,0.11,5
+USR-11578,Panamá,Pyme,2025-08-22,Organic,27,0.3,3
+USR-11579,México,Pyme,2025-10-23,Partner_Accountant,17,0.13,3
+USR-11580,Colombia,Free,2025-12-31,Organic,0,0.85,1
+USR-11581,Costa Rica,Pro,2025-08-29,Social,63,0.21,7
+USR-11582,México,Pro,2025-09-23,Partner_Accountant,44,0.27,4
+USR-11583,Colombia,Free,2026-02-15,Organic,0,0.57,2
+USR-11584,México,Free,2025-09-10,Social,0,0.53,2
+USR-11585,Colombia,Pyme,2025-10-31,Organic,25,0.18,3
+USR-11586,Colombia,Pyme,2026-02-23,Partner_Accountant,20,0.11,4
+USR-11587,México,Pro,2025-10-21,Partner_Accountant,73,0.23,4
+USR-11588,República Dominicana,Pyme,2025-08-09,Partner_Accountant,20,0.13,3
+USR-11589,México,Pro,2025-12-25,Paid,40,0.1,3
+USR-11590,México,Free,2025-11-12,Partner_Accountant,0,0.71,1
+USR-11591,Colombia,Free,2025-10-09,Organic,0,0.55,2
+USR-11592,República Dominicana,Free,2026-01-20,Partner_Accountant,0,0.81,1
+USR-11593,Costa Rica,Free,2025-12-08,Paid,0,0.65,3
+USR-11594,República Dominicana,Pyme,2025-12-20,Partner_Accountant,30,0.15,4
+USR-11595,República Dominicana,Free,2026-01-15,Referral,0,0.84,1
+USR-11596,México,Pyme,2025-07-18,Paid,19,0.1,4
+USR-11597,México,Pyme,2025-10-30,Partner_Accountant,23,0.17,5
+USR-11598,México,Pyme,2025-09-25,Referral,28,0.17,3
+USR-11599,México,Pyme,2025-07-14,Organic,16,0.11,4
+USR-11600,México,Free,2025-10-28,Social,0,0.44,2
+USR-11601,Colombia,Pyme,2025-10-04,Partner_Accountant,29,0.29,3
+USR-11602,Panamá,Free,2025-09-16,Partner_Accountant,0,0.74,1
+USR-11603,Costa Rica,Pro,2025-12-11,Paid,47,0.05,4
+USR-11604,Colombia,Plus,2025-11-03,Partner_Accountant,90,0.14,8
+USR-11605,República Dominicana,Plus,2026-01-19,Referral,148,0.2,4
+USR-11606,México,Pro,2026-01-14,Partner_Accountant,62,0.3,6
+USR-11607,Colombia,Free,2026-01-22,Organic,0,0.38,3
+USR-11608,México,Pro,2025-09-19,Social,71,0.22,6
+USR-11609,México,Plus,2026-02-28,Paid,135,0.25,10
+USR-11610,México,Free,2025-12-27,Social,0,0.67,3
+USR-11611,República Dominicana,Pyme,2025-10-06,Organic,29,0.22,2
+USR-11612,República Dominicana,Free,2026-01-01,Partner_Accountant,0,0.87,1
+USR-11613,Panamá,Free,2025-08-12,Partner_Accountant,0,0.4,3
+USR-11614,México,Plus,2025-07-01,Organic,125,0.3,6
+USR-11615,México,Pro,2025-08-17,Partner_Accountant,66,0.19,3
+USR-11616,Colombia,Pro,2026-02-02,Organic,56,0.2,5
+USR-11617,República Dominicana,Pyme,2026-01-01,Social,30,0.29,4
+USR-11618,Colombia,Plus,2025-10-09,Organic,134,0.11,6
+USR-11619,Panamá,Free,2025-10-25,Partner_Accountant,0,0.9,1
+USR-11620,Colombia,Plus,2026-01-10,Referral,99,0.17,9
+USR-11621,México,Free,2025-11-27,Social,0,0.72,1
+USR-11622,México,Pyme,2026-02-05,Referral,30,0.35,2
+USR-11623,Colombia,Plus,2025-09-23,Paid,107,0.11,8
+USR-11624,México,Pro,2025-12-19,Partner_Accountant,40,0.12,4
+USR-11625,Costa Rica,Free,2025-07-30,Partner_Accountant,0,0.53,2
+USR-11626,Costa Rica,Pyme,2025-10-08,Social,15,0.2,3
+USR-11627,Colombia,Pyme,2025-07-27,Partner_Accountant,18,0.22,5
+USR-11628,Colombia,Free,2025-12-22,Social,0,0.78,1
+USR-11629,México,Free,2026-02-01,Paid,0,0.33,3
+USR-11630,Costa Rica,Pro,2025-10-21,Partner_Accountant,58,0.14,3
+USR-11631,México,Pyme,2026-02-28,Organic,29,0.38,2
+USR-11632,Colombia,Free,2026-02-27,Organic,0,0.81,1
+USR-11633,México,Pro,2026-02-13,Partner_Accountant,59,0.21,5
+USR-11634,Colombia,Pro,2026-01-18,Organic,51,0.08,7
+USR-11635,México,Plus,2025-10-02,Social,136,0.11,8
+USR-11636,Colombia,Pyme,2025-08-03,Referral,32,0.07,5
+USR-11637,México,Free,2025-07-03,Organic,0,0.49,3
+USR-11638,Colombia,Free,2025-08-07,Social,0,0.45,3
+USR-11639,Costa Rica,Free,2025-09-07,Partner_Accountant,0,0.61,2
+USR-11640,México,Free,2025-08-28,Partner_Accountant,0,0.38,3
+USR-11641,República Dominicana,Free,2025-12-12,Referral,0,0.72,1
+USR-11642,Colombia,Pyme,2026-01-06,Organic,32,0.2,2
+USR-11643,México,Plus,2025-12-19,Social,91,0.19,6
+USR-11644,República Dominicana,Pyme,2025-11-29,Referral,18,0.26,4
+USR-11645,Colombia,Plus,2026-02-05,Paid,98,0.15,6
+USR-11646,República Dominicana,Pyme,2025-10-27,Partner_Accountant,30,0.27,4
+USR-11647,México,Free,2026-01-09,Social,0,0.61,3
+USR-11648,México,Pro,2025-12-08,Social,38,0.17,5
+USR-11649,México,Pyme,2025-08-26,Social,28,0.42,2
+USR-11650,Costa Rica,Pyme,2025-08-31,Organic,18,0.28,3
+USR-11651,Costa Rica,Pyme,2025-08-02,Referral,34,0.25,4
+USR-11652,México,Pyme,2025-11-01,Social,30,0.09,3
+USR-11653,México,Free,2025-08-06,Partner_Accountant,0,0.42,3
+USR-11654,México,Pyme,2025-12-28,Partner_Accountant,25,0.39,2
+USR-11655,República Dominicana,Pro,2025-10-22,Partner_Accountant,52,0.22,4
+USR-11656,Colombia,Plus,2025-11-09,Paid,103,0.27,6
+USR-11657,Colombia,Pro,2026-01-11,Organic,51,0.11,7
+USR-11658,Colombia,Pro,2025-11-28,Organic,75,0.13,5
+USR-11659,Colombia,Pyme,2025-11-28,Referral,17,0.42,2
+USR-11660,México,Pro,2025-12-25,Organic,55,0.29,6
+USR-11661,República Dominicana,Pro,2026-02-14,Partner_Accountant,50,0.28,4
+USR-11662,República Dominicana,Pyme,2026-02-10,Paid,17,0.24,3
+USR-11663,República Dominicana,Pro,2025-12-01,Partner_Accountant,66,0.12,7
+USR-11664,Costa Rica,Free,2025-11-30,Paid,0,0.7,3
+USR-11665,Colombia,Pyme,2025-11-02,Organic,20,0.25,2
+USR-11666,Colombia,Pyme,2025-12-30,Partner_Accountant,15,0.49,2
+USR-11667,México,Pyme,2025-09-11,Paid,34,0.12,5
+USR-11668,México,Free,2025-09-29,Paid,0,0.38,3
+USR-11669,República Dominicana,Free,2025-07-05,Social,0,0.6,3
+USR-11670,Colombia,Free,2025-12-24,Paid,0,0.45,3
+USR-11671,República Dominicana,Free,2026-01-26,Paid,0,0.95,1
+USR-11672,México,Pro,2025-11-22,Organic,70,0.08,7
+USR-11673,Colombia,Free,2026-02-25,Paid,0,0.7,3
+USR-11674,Colombia,Pyme,2025-09-30,Partner_Accountant,18,0.16,3
+USR-11675,Colombia,Pro,2025-10-04,Paid,64,0.21,3
+USR-11676,Costa Rica,Free,2026-02-11,Partner_Accountant,0,0.32,2
+USR-11677,México,Pyme,2026-01-14,Referral,23,0.17,5
+USR-11678,República Dominicana,Free,2026-01-31,Referral,0,0.68,1
+USR-11679,Colombia,Plus,2026-02-09,Partner_Accountant,79,0.22,9
+USR-11680,Panamá,Pyme,2025-09-16,Organic,30,0.11,3
+USR-11681,Panamá,Plus,2025-07-27,Referral,118,0.08,4
+USR-11682,México,Free,2026-02-17,Organic,0,0.51,2
+USR-11683,Costa Rica,Pro,2025-09-19,Paid,43,0.23,6
+USR-11684,Panamá,Free,2025-08-28,Organic,0,0.89,1
+USR-11685,Colombia,Pro,2025-08-12,Organic,63,0.17,4
+USR-11686,México,Free,2025-07-25,Paid,0,0.67,2
+USR-11687,México,Pyme,2025-11-21,Paid,27,0.05,4
+USR-11688,México,Pro,2026-03-01,Paid,65,0.08,7
+USR-11689,Colombia,Pyme,2025-08-28,Paid,22,0.29,4
+USR-11690,Colombia,Free,2025-07-15,Social,0,0.69,3
+USR-11691,Costa Rica,Free,2025-08-25,Social,0,0.59,3
+USR-11692,Colombia,Pyme,2025-12-17,Partner_Accountant,22,0.12,5
+USR-11693,México,Plus,2025-10-02,Paid,87,0.15,7
+USR-11694,República Dominicana,Pyme,2025-09-14,Organic,35,0.08,5
+USR-11695,México,Pro,2025-07-07,Organic,46,0.25,3
+USR-11696,Colombia,Free,2025-11-27,Organic,0,0.33,2
+USR-11697,República Dominicana,Pyme,2026-01-12,Organic,21,0.1,5
+USR-11698,México,Pyme,2025-10-01,Social,25,0.27,3
+USR-11699,Costa Rica,Free,2025-12-11,Paid,0,0.67,1
+USR-11700,República Dominicana,Pyme,2025-11-07,Organic,21,0.33,2
+USR-11701,México,Free,2025-08-28,Referral,0,0.66,3
+USR-11702,Costa Rica,Pyme,2025-08-12,Partner_Accountant,20,0.12,5
+USR-11703,Panamá,Free,2025-08-26,Paid,0,0.31,2
+USR-11704,Colombia,Free,2026-01-17,Partner_Accountant,0,0.67,3
+USR-11705,Panamá,Plus,2025-07-30,Referral,125,0.07,7
+USR-11706,México,Free,2025-11-26,Referral,0,0.41,3
+USR-11707,México,Free,2025-08-07,Referral,0,0.36,2
+USR-11708,Colombia,Free,2025-07-11,Organic,0,0.84,1
+USR-11709,México,Plus,2025-11-08,Referral,96,0.11,10
+USR-11710,República Dominicana,Pyme,2026-01-12,Partner_Accountant,21,0.13,4
+USR-11711,Colombia,Pyme,2025-08-02,Paid,19,0.15,3
+USR-11712,República Dominicana,Free,2025-08-18,Partner_Accountant,0,0.72,1
+USR-11713,Panamá,Pro,2025-11-21,Organic,73,0.15,6
+USR-11714,México,Pyme,2025-10-27,Paid,15,0.13,4
+USR-11715,México,Pyme,2025-07-31,Paid,26,0.38,2
+USR-11716,República Dominicana,Free,2025-12-29,Partner_Accountant,0,0.56,3
+USR-11717,Panamá,Pyme,2025-08-30,Partner_Accountant,26,0.24,4
+USR-11718,Colombia,Free,2025-10-20,Referral,0,0.46,3
+USR-11719,Colombia,Plus,2026-02-17,Paid,75,0.09,9
+USR-11720,México,Pyme,2025-07-28,Partner_Accountant,21,0.17,3
+USR-11721,Colombia,Plus,2025-11-23,Organic,148,0.24,7
+USR-11722,México,Pro,2026-01-01,Referral,35,0.23,5
+USR-11723,Panamá,Pyme,2026-02-19,Social,22,0.18,5
+USR-11724,México,Pyme,2026-02-18,Organic,33,0.3,5
+USR-11725,Colombia,Pro,2025-10-12,Organic,45,0.11,4
+USR-11726,República Dominicana,Free,2026-02-21,Referral,0,0.48,2
+USR-11727,México,Pro,2025-11-05,Social,61,0.3,3
+USR-11728,Colombia,Plus,2025-07-26,Partner_Accountant,124,0.21,4
+USR-11729,México,Free,2025-08-18,Organic,0,0.57,3
+USR-11730,Panamá,Pyme,2025-08-20,Paid,20,0.16,4
+USR-11731,Colombia,Pyme,2026-02-12,Partner_Accountant,16,0.16,4
+USR-11732,Panamá,Free,2025-10-01,Social,0,0.34,2
+USR-11733,Panamá,Free,2026-01-10,Partner_Accountant,0,0.86,1
+USR-11734,Colombia,Free,2025-12-14,Social,0,0.41,2
+USR-11735,Panamá,Free,2026-02-26,Paid,0,0.94,1
+USR-11736,México,Pyme,2025-11-15,Referral,34,0.26,3
+USR-11737,Colombia,Pyme,2026-01-28,Partner_Accountant,22,0.1,5
+USR-11738,Colombia,Pro,2025-12-21,Social,46,0.13,3
+USR-11739,México,Pro,2025-08-19,Referral,49,0.25,3
+USR-11740,Colombia,Free,2026-02-07,Paid,0,0.68,1
+USR-11741,Colombia,Pro,2025-12-06,Paid,55,0.1,7
+USR-11742,República Dominicana,Free,2025-08-05,Referral,0,0.75,1
+USR-11743,México,Pro,2025-10-21,Social,75,0.19,5
+USR-11744,Colombia,Free,2026-01-15,Referral,0,0.78,1
+USR-11745,México,Free,2026-01-20,Referral,0,0.84,1
+USR-11746,Colombia,Pyme,2025-08-20,Organic,30,0.15,5
+USR-11747,México,Free,2025-10-28,Organic,0,0.87,1
+USR-11748,México,Free,2025-12-20,Social,0,0.8,1
+USR-11749,México,Free,2025-10-21,Organic,0,0.87,1
+USR-11750,Costa Rica,Free,2025-10-31,Organic,0,0.41,2
+USR-11751,México,Free,2025-12-13,Partner_Accountant,0,0.34,3
+USR-11752,Costa Rica,Pyme,2025-07-08,Partner_Accountant,20,0.4,2
+USR-11753,México,Pro,2025-07-09,Partner_Accountant,35,0.21,7
+USR-11754,México,Pro,2025-08-12,Partner_Accountant,53,0.16,6
+USR-11755,República Dominicana,Pro,2026-01-20,Partner_Accountant,71,0.13,6
+USR-11756,Colombia,Pyme,2025-07-15,Organic,21,0.16,5
+USR-11757,Colombia,Pyme,2025-07-25,Referral,18,0.22,4
+USR-11758,Colombia,Pro,2025-11-06,Paid,38,0.06,4
+USR-11759,República Dominicana,Free,2025-09-23,Paid,0,0.59,3
+USR-11760,Colombia,Pro,2025-09-17,Paid,35,0.17,4
+USR-11761,México,Pyme,2026-01-24,Referral,23,0.2,3
+USR-11762,Colombia,Free,2026-02-12,Referral,0,0.6,1
+USR-11763,República Dominicana,Pyme,2025-08-24,Partner_Accountant,28,0.3,5
+USR-11764,Colombia,Free,2025-10-17,Partner_Accountant,0,0.74,1
+USR-11765,República Dominicana,Pro,2026-02-15,Organic,64,0.08,6
+USR-11766,Costa Rica,Pro,2025-07-18,Social,61,0.27,5
+USR-11767,Costa Rica,Pyme,2026-02-17,Partner_Accountant,27,0.15,4
+USR-11768,República Dominicana,Free,2026-02-26,Organic,0,0.66,2
+USR-11769,Colombia,Pyme,2025-12-25,Organic,32,0.21,2
+USR-11770,Costa Rica,Pyme,2025-10-26,Partner_Accountant,17,0.29,3
+USR-11771,México,Free,2025-11-16,Paid,0,0.76,1
+USR-11772,República Dominicana,Free,2026-02-19,Referral,0,0.75,1
+USR-11773,México,Pyme,2025-08-26,Organic,23,0.09,4
+USR-11774,Colombia,Free,2025-11-13,Organic,0,0.93,1
+USR-11775,República Dominicana,Pyme,2025-11-18,Organic,26,0.23,4
+USR-11776,República Dominicana,Plus,2026-02-14,Partner_Accountant,112,0.18,4
+USR-11777,Colombia,Free,2026-02-09,Partner_Accountant,0,0.57,2
+USR-11778,Colombia,Pro,2025-07-19,Partner_Accountant,53,0.21,7
+USR-11779,México,Pyme,2025-08-22,Referral,16,0.37,2
+USR-11780,México,Free,2025-08-06,Partner_Accountant,0,0.55,2
+USR-11781,Colombia,Pyme,2025-10-02,Social,21,0.06,4
+USR-11782,México,Pyme,2025-10-03,Partner_Accountant,29,0.19,4
+USR-11783,Colombia,Pro,2025-07-30,Organic,67,0.29,5
+USR-11784,República Dominicana,Pyme,2025-08-11,Social,17,0.23,2
+USR-11785,Colombia,Free,2025-07-11,Partner_Accountant,0,0.31,3
+USR-11786,República Dominicana,Pyme,2026-01-02,Organic,17,0.16,4
+USR-11787,Colombia,Pyme,2025-12-31,Organic,20,0.28,4
+USR-11788,Colombia,Pyme,2026-02-16,Organic,34,0.25,3
+USR-11789,México,Pyme,2025-10-18,Partner_Accountant,32,0.25,3
+USR-11790,Costa Rica,Pro,2025-08-27,Referral,40,0.19,7
+USR-11791,Colombia,Free,2025-08-19,Partner_Accountant,0,0.68,3
+USR-11792,Panamá,Plus,2025-12-26,Partner_Accountant,85,0.08,4
+USR-11793,República Dominicana,Pro,2026-02-13,Organic,52,0.24,7
+USR-11794,Panamá,Pyme,2025-12-14,Organic,16,0.46,2
+USR-11795,Colombia,Free,2025-10-12,Partner_Accountant,0,0.69,3
+USR-11796,República Dominicana,Pyme,2025-07-07,Organic,33,0.11,4
+USR-11797,México,Free,2025-12-25,Partner_Accountant,0,0.43,3
+USR-11798,Costa Rica,Plus,2025-08-06,Partner_Accountant,118,0.25,9
+USR-11799,Panamá,Pyme,2025-12-25,Organic,22,0.27,5
+USR-11800,Colombia,Free,2025-09-27,Referral,0,0.35,2
+USR-11801,Colombia,Pro,2025-07-21,Paid,63,0.15,7
+USR-11802,Colombia,Free,2025-10-06,Partner_Accountant,0,0.45,3
+USR-11803,México,Free,2025-07-07,Paid,0,0.64,3
+USR-11804,Costa Rica,Free,2025-12-12,Social,0,0.94,1
+USR-11805,México,Free,2025-07-26,Organic,0,0.51,2
+USR-11806,Colombia,Pyme,2026-01-19,Referral,33,0.32,2
+USR-11807,Colombia,Pyme,2025-09-05,Partner_Accountant,15,0.24,4
+USR-11808,Colombia,Pyme,2025-12-29,Paid,18,0.19,4
+USR-11809,Panamá,Pro,2025-09-26,Organic,67,0.21,3
+USR-11810,República Dominicana,Free,2025-09-19,Organic,0,0.41,3
+USR-11811,Costa Rica,Free,2025-10-28,Paid,0,0.48,3
+USR-11812,Panamá,Plus,2025-11-21,Referral,111,0.25,5
+USR-11813,Costa Rica,Pyme,2025-11-20,Referral,18,0.12,3
+USR-11814,México,Pro,2025-07-17,Partner_Accountant,64,0.08,7
+USR-11815,México,Pro,2026-01-13,Organic,66,0.19,7
+USR-11816,Colombia,Pyme,2026-01-29,Partner_Accountant,15,0.2,3
+USR-11817,Costa Rica,Pro,2025-08-25,Referral,58,0.24,3
+USR-11818,Colombia,Pyme,2025-07-03,Partner_Accountant,33,0.36,2
+USR-11819,México,Pro,2026-01-09,Partner_Accountant,49,0.12,3
+USR-11820,Colombia,Pyme,2025-12-23,Paid,20,0.27,4
+USR-11821,Colombia,Pyme,2025-07-27,Organic,29,0.1,5
+USR-11822,Costa Rica,Free,2025-09-04,Social,0,0.3,2
+USR-11823,República Dominicana,Pro,2025-07-11,Partner_Accountant,49,0.09,3
+USR-11824,Colombia,Pyme,2025-12-10,Referral,33,0.32,2
+USR-11825,Colombia,Pyme,2025-09-05,Organic,19,0.08,4
+USR-11826,Colombia,Free,2025-12-31,Partner_Accountant,0,0.56,3
+USR-11827,Colombia,Free,2025-12-22,Partner_Accountant,0,0.45,3
+USR-11828,México,Free,2025-10-21,Referral,0,0.68,3
+USR-11829,México,Free,2025-09-17,Partner_Accountant,0,0.62,2
+USR-11830,Colombia,Free,2026-01-27,Organic,0,0.41,3
+USR-11831,Colombia,Pyme,2025-10-28,Social,31,0.27,2
+USR-11832,Costa Rica,Pyme,2025-10-01,Paid,17,0.27,4
+USR-11833,Panamá,Pyme,2026-02-08,Referral,24,0.07,5
+USR-11834,México,Pyme,2025-10-22,Social,24,0.05,5
+USR-11835,Colombia,Free,2025-07-09,Referral,0,0.86,1
+USR-11836,Colombia,Pyme,2026-01-07,Organic,20,0.12,5
+USR-11837,Colombia,Pyme,2025-11-10,Paid,28,0.28,5
+USR-11838,México,Free,2025-10-19,Referral,0,0.67,3
+USR-11839,Panamá,Free,2026-01-09,Paid,0,0.4,2
+USR-11840,México,Pro,2026-01-07,Partner_Accountant,43,0.16,7
+USR-11841,México,Pyme,2025-08-24,Paid,31,0.11,3
+USR-11842,México,Pyme,2025-09-06,Partner_Accountant,22,0.13,4
+USR-11843,México,Free,2025-08-23,Referral,0,0.3,3
+USR-11844,Colombia,Pyme,2025-08-01,Social,17,0.06,3
+USR-11845,Panamá,Pyme,2025-11-06,Paid,17,0.24,2
+USR-11846,Colombia,Pyme,2025-12-17,Partner_Accountant,27,0.24,3
+USR-11847,Colombia,Pyme,2026-02-10,Organic,15,0.07,4
+USR-11848,Colombia,Plus,2026-01-02,Partner_Accountant,120,0.18,6
+USR-11849,República Dominicana,Pro,2026-02-03,Social,58,0.1,6
+USR-11850,Colombia,Pro,2026-02-23,Organic,66,0.19,7
+USR-11851,Panamá,Free,2025-09-20,Organic,0,0.79,1
+USR-11852,Colombia,Free,2026-01-03,Organic,0,0.66,1
+USR-11853,República Dominicana,Pro,2026-02-20,Referral,38,0.22,4
+USR-11854,República Dominicana,Pyme,2025-10-12,Referral,32,0.07,4
+USR-11855,República Dominicana,Plus,2026-01-13,Partner_Accountant,107,0.25,9
+USR-11856,República Dominicana,Pyme,2025-10-19,Paid,34,0.09,4
+USR-11857,México,Pro,2026-02-18,Partner_Accountant,46,0.24,4
+USR-11858,México,Pyme,2025-08-01,Partner_Accountant,30,0.29,4
+USR-11859,República Dominicana,Pyme,2026-01-13,Paid,21,0.17,3
+USR-11860,México,Pyme,2025-07-17,Organic,26,0.09,3
+USR-11861,Costa Rica,Free,2026-01-31,Paid,0,0.37,3
+USR-11862,México,Pro,2025-08-20,Organic,47,0.12,7
+USR-11863,Colombia,Free,2026-02-18,Partner_Accountant,0,0.92,1
+USR-11864,Colombia,Plus,2025-12-22,Partner_Accountant,136,0.28,8
+USR-11865,Colombia,Free,2025-09-27,Social,0,0.73,1
+USR-11866,República Dominicana,Pro,2025-10-15,Partner_Accountant,54,0.13,7
+USR-11867,Colombia,Free,2025-11-12,Referral,0,0.95,1
+USR-11868,México,Plus,2025-11-14,Partner_Accountant,144,0.21,7
+USR-11869,Colombia,Pyme,2026-02-01,Organic,24,0.25,4
+USR-11870,México,Pyme,2025-08-22,Paid,21,0.27,2
+USR-11871,Panamá,Free,2025-12-05,Paid,0,0.86,1
+USR-11872,Colombia,Free,2025-10-02,Referral,0,0.64,3
+USR-11873,Costa Rica,Free,2025-08-09,Referral,0,0.75,1
+USR-11874,Colombia,Plus,2025-07-12,Referral,90,0.13,5
+USR-11875,República Dominicana,Plus,2025-10-10,Organic,114,0.15,7
+USR-11876,Panamá,Pro,2025-08-02,Partner_Accountant,72,0.08,7
+USR-11877,República Dominicana,Free,2025-12-16,Paid,0,0.37,3
+USR-11878,Colombia,Pro,2025-07-29,Referral,54,0.06,5
+USR-11879,Panamá,Pro,2026-03-01,Paid,41,0.19,6
+USR-11880,Colombia,Pyme,2025-10-27,Referral,28,0.16,5
+USR-11881,Panamá,Free,2025-11-17,Referral,0,0.38,2
+USR-11882,México,Free,2025-07-25,Organic,0,0.51,3
+USR-11883,México,Free,2025-11-27,Organic,0,0.93,1
+USR-11884,México,Pro,2026-01-28,Partner_Accountant,73,0.18,5
+USR-11885,Colombia,Pro,2025-10-26,Partner_Accountant,62,0.25,4
+USR-11886,Colombia,Pro,2025-10-01,Partner_Accountant,74,0.08,4
+USR-11887,Costa Rica,Pro,2025-07-02,Partner_Accountant,62,0.06,5
+USR-11888,Panamá,Pyme,2026-02-28,Partner_Accountant,21,0.1,4
+USR-11889,República Dominicana,Free,2026-01-26,Partner_Accountant,0,0.44,2
+USR-11890,Costa Rica,Pro,2025-12-31,Partner_Accountant,43,0.17,3
+USR-11891,México,Free,2025-12-12,Partner_Accountant,0,0.75,1
+USR-11892,México,Plus,2025-11-01,Partner_Accountant,122,0.14,5
+USR-11893,Colombia,Plus,2025-07-08,Partner_Accountant,133,0.23,5
+USR-11894,Colombia,Free,2025-11-14,Organic,0,0.66,2
+USR-11895,Colombia,Plus,2026-02-16,Partner_Accountant,79,0.2,5
+USR-11896,Costa Rica,Free,2025-10-20,Partner_Accountant,0,0.71,1
+USR-11897,Colombia,Pro,2025-12-10,Referral,47,0.12,4
+USR-11898,México,Pro,2026-01-23,Organic,46,0.23,3
+USR-11899,México,Plus,2026-02-27,Referral,98,0.08,5
+USR-11900,Costa Rica,Free,2025-11-06,Paid,0,0.53,3
+USR-11901,Colombia,Free,2025-07-11,Paid,0,0.48,3
+USR-11902,México,Pro,2025-10-19,Referral,53,0.06,5
+USR-11903,Panamá,Free,2025-10-18,Social,0,0.68,3
+USR-11904,Colombia,Pro,2025-08-21,Organic,75,0.09,6
+USR-11905,República Dominicana,Pyme,2025-07-06,Organic,34,0.29,4
+USR-11906,Colombia,Free,2026-02-22,Referral,0,0.73,1
+USR-11907,Colombia,Free,2025-12-18,Organic,0,0.62,3
+USR-11908,Colombia,Plus,2025-09-27,Social,111,0.12,9
+USR-11909,Colombia,Free,2025-11-07,Social,0,0.61,2
+USR-11910,Costa Rica,Pyme,2026-02-25,Organic,31,0.18,5
+USR-11911,República Dominicana,Pyme,2025-09-04,Organic,24,0.21,2
+USR-11912,Colombia,Free,2026-01-15,Partner_Accountant,0,0.5,3
+USR-11913,México,Pro,2026-02-25,Partner_Accountant,52,0.18,7
+USR-11914,México,Free,2025-10-15,Partner_Accountant,0,0.38,2
+USR-11915,México,Free,2025-08-26,Paid,0,0.41,2
+USR-11916,República Dominicana,Plus,2025-11-03,Social,125,0.22,6
+USR-11917,Colombia,Free,2026-02-13,Social,0,0.95,1
+USR-11918,Colombia,Pro,2025-11-01,Social,61,0.13,3
+USR-11919,Colombia,Free,2025-10-03,Referral,0,0.55,2
+USR-11920,México,Pro,2025-12-05,Partner_Accountant,39,0.21,3
+USR-11921,Colombia,Free,2026-02-01,Organic,0,0.7,1
+USR-11922,Colombia,Pyme,2025-08-25,Organic,33,0.22,5
+USR-11923,Colombia,Free,2025-10-24,Social,0,0.4,2
+USR-11924,República Dominicana,Pyme,2025-12-27,Paid,17,0.17,3
+USR-11925,México,Pyme,2026-01-12,Partner_Accountant,20,0.22,5
+USR-11926,Colombia,Plus,2026-01-25,Paid,147,0.13,8
+USR-11927,Colombia,Free,2025-08-07,Partner_Accountant,0,0.5,2
+USR-11928,Colombia,Pro,2025-07-14,Partner_Accountant,39,0.18,7
+USR-11929,Costa Rica,Plus,2025-10-26,Partner_Accountant,146,0.21,9
+USR-11930,Colombia,Free,2025-12-23,Organic,0,0.65,2
+USR-11931,México,Pyme,2025-12-19,Referral,15,0.27,4
+USR-11932,Colombia,Pyme,2025-10-30,Partner_Accountant,28,0.08,3
+USR-11933,Costa Rica,Pyme,2026-01-27,Organic,30,0.12,4
+USR-11934,México,Pro,2025-12-06,Paid,41,0.29,5
+USR-11935,México,Free,2025-08-05,Partner_Accountant,0,0.62,3
+USR-11936,Colombia,Free,2025-08-02,Organic,0,0.74,1
+USR-11937,Costa Rica,Free,2025-07-23,Organic,0,0.4,3
+USR-11938,Colombia,Free,2025-10-30,Partner_Accountant,0,0.3,3
+USR-11939,México,Pyme,2025-07-01,Paid,25,0.41,2
+USR-11940,México,Pro,2025-10-02,Social,71,0.12,4
+USR-11941,Costa Rica,Pyme,2026-02-06,Organic,18,0.25,2
+USR-11942,México,Pyme,2025-11-24,Partner_Accountant,15,0.13,4
+USR-11943,México,Free,2025-08-21,Social,0,0.38,2
+USR-11944,México,Free,2025-09-06,Paid,0,0.63,1
+USR-11945,Panamá,Free,2026-01-26,Organic,0,0.34,3
+USR-11946,México,Free,2025-07-25,Paid,0,0.87,1
+USR-11947,República Dominicana,Pro,2025-11-28,Partner_Accountant,59,0.1,4
+USR-11948,Colombia,Free,2026-01-22,Partner_Accountant,0,0.8,1
+USR-11949,México,Pyme,2025-10-06,Partner_Accountant,26,0.18,4
+USR-11950,Costa Rica,Pyme,2026-02-24,Partner_Accountant,35,0.35,2
+USR-11951,Costa Rica,Pro,2025-07-01,Paid,39,0.06,5
+USR-11952,República Dominicana,Pyme,2025-11-03,Referral,30,0.15,4
+USR-11953,Costa Rica,Free,2025-11-03,Organic,0,0.7,3
+USR-11954,Colombia,Free,2026-02-05,Paid,0,0.32,3
+USR-11955,México,Pyme,2025-11-16,Organic,18,0.28,2
+USR-11956,Colombia,Pro,2025-12-07,Partner_Accountant,70,0.2,4
+USR-11957,Colombia,Pyme,2025-10-18,Partner_Accountant,35,0.19,3
+USR-11958,Colombia,Pyme,2025-11-20,Organic,30,0.36,2
+USR-11959,México,Free,2025-08-15,Partner_Accountant,0,0.84,1
+USR-11960,Colombia,Pyme,2025-11-20,Organic,20,0.16,3
+USR-11961,México,Pyme,2026-02-17,Paid,15,0.13,4
+USR-11962,Colombia,Plus,2025-08-24,Partner_Accountant,101,0.17,6
+USR-11963,Costa Rica,Pyme,2025-10-15,Paid,20,0.18,3
+USR-11964,Colombia,Free,2025-09-08,Referral,0,0.61,2
+USR-11965,República Dominicana,Pyme,2025-08-19,Paid,26,0.26,3
+USR-11966,Costa Rica,Pyme,2025-08-09,Organic,35,0.13,4
+USR-11967,Colombia,Free,2025-07-24,Organic,0,0.63,2
+USR-11968,Colombia,Free,2025-08-29,Organic,0,0.53,3
+USR-11969,Colombia,Free,2025-07-16,Paid,0,0.47,2
+USR-11970,Costa Rica,Free,2026-01-15,Paid,0,0.65,1
+USR-11971,República Dominicana,Free,2025-09-13,Organic,0,0.45,2
+USR-11972,República Dominicana,Free,2026-02-18,Partner_Accountant,0,0.84,1
+USR-11973,República Dominicana,Free,2026-02-26,Referral,0,0.35,2
+USR-11974,México,Pyme,2025-08-15,Partner_Accountant,24,0.21,3
+USR-11975,Colombia,Free,2026-01-25,Organic,0,0.41,3
+USR-11976,Colombia,Free,2025-07-14,Organic,0,0.46,3
+USR-11977,Panamá,Pyme,2025-10-07,Organic,29,0.25,5
+USR-11978,Colombia,Pyme,2026-01-13,Partner_Accountant,20,0.23,3
+USR-11979,México,Free,2026-01-16,Organic,0,0.36,2
+USR-11980,México,Free,2025-12-06,Partner_Accountant,0,0.66,3
+USR-11981,Costa Rica,Free,2025-09-25,Paid,0,0.89,1
+USR-11982,República Dominicana,Pro,2025-12-20,Organic,66,0.16,5
+USR-11983,Panamá,Pyme,2026-01-09,Partner_Accountant,22,0.19,4
+USR-11984,Costa Rica,Pyme,2025-07-06,Paid,30,0.24,3
+USR-11985,Costa Rica,Pro,2025-11-29,Partner_Accountant,40,0.14,5
+USR-11986,Costa Rica,Pyme,2025-12-04,Partner_Accountant,34,0.29,4
+USR-11987,Colombia,Pro,2025-09-10,Paid,52,0.1,4
+USR-11988,México,Free,2025-07-29,Partner_Accountant,0,0.34,2
+USR-11989,Colombia,Pro,2025-07-03,Partner_Accountant,36,0.27,3
+USR-11990,México,Pyme,2026-02-08,Partner_Accountant,16,0.18,3
+USR-11991,México,Pro,2026-01-06,Partner_Accountant,43,0.29,3
+USR-11992,Colombia,Pro,2025-07-27,Organic,69,0.25,6
+USR-11993,Colombia,Plus,2025-12-21,Partner_Accountant,91,0.23,4
+USR-11994,México,Pyme,2025-12-09,Partner_Accountant,21,0.22,4
+USR-11995,Colombia,Free,2025-10-01,Organic,0,0.33,2
+USR-11996,Colombia,Free,2025-11-24,Partner_Accountant,0,0.57,3
+USR-11997,Colombia,Free,2026-01-16,Paid,0,0.5,3
+USR-11998,México,Free,2025-12-03,Partner_Accountant,0,0.32,3
+USR-11999,Colombia,Pro,2025-11-08,Paid,64,0.21,5

@@ -1,5 +1,5 @@
 {
-  "name": "Ops Analyst de Customer Success - Reto Alegra",
+  "name": "Ops Analyst de Customer Success - Reto Alegra 1",
   "nodes": [
     {
       "parameters": {
@@ -150,8 +150,8 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
       "position": [
-        1392,
-        16
+        640,
+        -144
       ],
       "id": "5fbba4ba-8822-434b-a7cb-86a690214f61",
       "name": "Paso 2"
@@ -177,7 +177,13 @@
   "connections": {
     "Loop Over Items": {
       "main": [
-        [],
+        [
+          {
+            "node": "Paso 2",
+            "type": "main",
+            "index": 0
+          }
+        ],
         [
           {
             "node": "Analista CS Alegra",
@@ -224,7 +230,7 @@
       "main": [
         [
           {
-            "node": "Paso 2",
+            "node": "Loop Over Items",
             "type": "main",
             "index": 0
           }
@@ -248,7 +254,7 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "20ca2626-7c3e-4683-9dde-a876b3007ef3",
+  "versionId": "34110229-21c6-4736-8052-190aa1cb47ff",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "e7141e5f21b3f4de5300245862817a5f5fc1716b6576e200a170af29a837f548"
