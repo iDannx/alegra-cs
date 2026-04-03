@@ -222,37 +222,6 @@ El nodo de OpenAI se ejecutaba una vez por cada item del lote, y cada vez `$inpu
 
 ---
 
-## Estructura del repositorio
-
-```
-alegra-cs/
-├── README.md                          # Este archivo
-├── n8n/
-│   ├── workflow-agent1-scoring.json   # Workflow del Agente 1
-│   ├── workflow-agent2-recommendations.json  # Workflow del Agente 2
-│   ├── workflow-agent3-report.json    # Workflow del Agente 3 (reporte semanal)
-│   └── prompts/
-│       ├── system_prompt_agent1.txt   # Prompt del scoring
-│       ├── system_prompt_agent2.txt   # Prompt de recomendaciones
-│       └── system_prompt_agent3.txt   # Prompt del reporte
-├── sql/
-│   ├── 01_create_tables.sql           # Tablas base
-│   ├── 02_create_results_tables.sql   # Tablas de resultados
-│   ├── 03_create_views.sql            # Vistas SQL
-│   └── 04_indexes.sql                 # Índices de optimización
-├── dashboard/
-│   ├── package.json
-│   ├── src/
-│   │   ├── pages/                     # Dashboard, Alerts, UserDetail, Report, Upload
-│   │   ├── components/                # Componentes reutilizables
-│   │   ├── hooks/                     # Custom hooks para Supabase
-│   │   └── lib/                       # Configuración de Supabase
-│   └── ...
-└── docs/
-    ├── architecture-diagram.png       # Diagrama de arquitectura
-    └── screenshots/                   # Capturas del sistema funcionando
-```
-
 ## Demo en vivo
 
 🔗 Dashboard: https://alegracs.somoscolombiatech.shop
