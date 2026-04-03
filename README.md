@@ -1,4 +1,4 @@
-# Alegra CS — Sistema de Detección de Churn con Agentes de IA
+# Alegra CS Reto
 
 ## Arquitectura general
 
@@ -49,10 +49,10 @@ Utilicé dos modelos con roles distintos:
 Esta separación me permitió optimizar tanto rendimiento como costos.
 
 ### Base de datos — Supabase
-Elegí Supabase porque ofrece una API REST lista para usar, soporte en tiempo real con WebSockets y un SDK sencillo para el frontend. Esto reduce bastante la complejidad del backend y acelera el desarrollo.
+Elegí Supabase porque ofrece una API REST lista para usar y WebSockets. Esto reduce bastante la complejidad del backend y acelera el desarrollo.
 
 ### Dashboard — React + Vite + TypeScript + Tailwind
-Este stack me permitió construir una interfaz rápida, mantenible y con buena experiencia de usuario. Vite mejora mucho los tiempos de desarrollo y TypeScript ayuda a mantener el código más robusto a medida que el proyecto crece.
+Este stack me permitió construir una interfaz rápida, mantenible y con buena experiencia de usuario.
 
 ### Alertas — Gmail
 Implementé el envío de alertas usando Gmail directamente desde n8n, aprovechando su integración nativa. Esto simplifica la arquitectura y permite enviar correos en HTML sin necesidad de añadir servicios adicionales.
@@ -90,7 +90,7 @@ Esta fue una de las decisiones técnicas más importantes. En vez de mandarle a 
 
 **vista_report_metrics** — Agrega todos los datos en un solo JSON con las métricas que el Agente 3 necesita para generar el reporte semanal: distribución de riesgo, riesgo por plan, riesgo por país, top 10 clientes, MRR en riesgo, tickets abiertos.
 
-La razón de usar vistas y no hacer todo en IA: un JOIN en PostgreSQL toma milisegundos. Mandarle 12,500 filas crudas a GPT para que "cruce" los datos tomaría minutos, costaría mucho más, y el resultado sería menos confiable. La IA se usa donde agrega valor real — en el análisis y las recomendaciones — no en operaciones que una base de datos hace mejor.
+La razón de usar vistas y no hacerlo con IA: un JOIN en Supabase toma milisegundos. Mandarle 12,500 filas crudas a GPT para que "cruce" los datos tomaría minutos, costaría mucho, y el resultado sería menos confiable. Por eso, se le dio uso a la IA en tareas como, clasificación, Scoring, recomendaciones y generación de reportes semanales.
 
 ---
 
@@ -122,9 +122,11 @@ La razón de usar vistas y no hacer todo en IA: un JOIN en PostgreSQL toma milis
 - 26-50 puntos → Riesgo **medio** (amarillo)
 - 51+ puntos → Riesgo **alto** (rojo)
 
-**Por qué GPT y no solo JavaScript:** Los criterios de scoring podrían implementarse como un script de JavaScript puro — y de hecho para producción a escala lo haría así. Pero usé GPT porque el reto pide agentes de IA, y porque GPT no solo calcula el número sino que genera una explicación en lenguaje natural del por qué: "Inactividad de 204 días (+40), adopción nivel activated (+10), plan Free (+10)". Eso es información que el analista de CS necesita para tomar decisiones.
+**Por qué estos criterior de clasificación:** Me basé principalmente en los datos entregados y como se comporta cada cliente con el producto. Se identifican las señales que indican riesgo de abandono, tales como inactividad, insatisfacción, problemas sin resolver y tambien el bajo uso del producto. Y con base en esto, se le asigna una cantidad de puntos segun la gravedad **relativa** de cada señal, esto quiere decir, que no todas las señales tienen el mismo peso. 
 
-**Modelo:** GPT-4o-mini (bajo costo, alto volumen)
+---
+
+**Modelo:** GPT-4o-mini
 
 **System prompt:** Define el rol de analista de CS, los criterios de evaluación exactos, y exige respuesta en JSON estricto con user_id, score, risk_level y reasons.
 
@@ -132,11 +134,11 @@ La razón de usar vistas y no hacer todo en IA: un JOIN en PostgreSQL toma milis
 
 **Qué hace:** Toma cada usuario de riesgo alto y medio con su contexto completo (features, tickets, CSAT, plan, país) y genera una recomendación de retención personalizada y accionable.
 
-**Por qué este agente es diferente:** Aquí es donde la IA realmente brilla. No es aplicar reglas fijas — es razonar. El agente mira el contexto completo y decide: "este cliente dejó de usar facturación electrónica hace 45 días y tiene un bug crítico abierto en esa feature, la acción más efectiva es resolver ese bug antes que ofrecerle un descuento." Eso no se puede hacer con if/else.
+**Por qué este agente es diferente:** Se le pasa el contexto completo al agente y el decide algo tipo: "este cliente dejó de usar facturación electrónica hace 45 días y tiene un bug crítico abierto en esa feature, la acción más efectiva es resolver ese bug antes que ofrecerle un descuento."
 
-**Modelo:** GPT-4o (necesita razonamiento más profundo que el Agente 1)
+**Modelo:** GPT-4o
 
-**Salidas:**
+**Outputs:**
 - **Urgencia:** inmediata / esta_semana / monitoreo
 - **Recomendación:** Acción específica, accionable, que menciona features y tickets concretos
 - **Razonamiento:** Por qué esa acción y no otra
@@ -147,7 +149,7 @@ La razón de usar vistas y no hacer todo en IA: un JOIN en PostgreSQL toma milis
 
 **Modelo:** GPT-4o
 
-**Salidas:**
+**Outputs:**
 - Título descriptivo basado en el hallazgo más importante
 - Resumen ejecutivo de 3-4 párrafos con datos concretos
 - Métricas clave en formato estructurado (JSON)
@@ -166,7 +168,7 @@ La razón de usar vistas y no hacer todo en IA: un JOIN en PostgreSQL toma milis
 
 ## El dashboard
 
-Construido con React + Vite + TypeScript + Tailwind CSS. Dark mode, diseño tipo Linear/Vercel.
+Construido con React + Vite + TypeScript + Tailwind CSS.
 
 ### Páginas
 
@@ -196,9 +198,6 @@ Mandar 2,000 usuarios uno por uno a GPT tomaba horas. Lotes de 50 tardaban demas
 ### El Loop Over Items duplicaba datos
 El nodo de OpenAI se ejecutaba una vez por cada item del lote, y cada vez `$input.all()` tomaba todos los items. Resultado: 5 respuestas iguales con los mismos 5 usuarios. La solución fue agregar un nodo Code antes de OpenAI que agrupa el lote en un solo item, y cambiar el user message a `{{ $json.prompt }}`.
 
-### Webhook del reporte no respondía
-Al configurar "Using Respond to Webhook Node", n8n se quedaba esperando una llamada externa y no se podía probar manualmente. La solución fue entender que los webhooks necesitan una llamada HTTP real (curl o desde el dashboard), no se ejecutan con el botón de test.
-
 ---
 
 ## Decisiones técnicas que tomé
@@ -207,7 +206,7 @@ Al configurar "Using Respond to Webhook Node", n8n se quedaba esperando una llam
 
 **¿Por qué GPT-4o-mini para el Agente 1 y GPT-4o para el Agente 2?** Costo vs calidad. El Agente 1 procesa 2,000 usuarios aplicando reglas — no necesita el modelo más potente. El Agente 2 genera recomendaciones personalizadas que requieren razonamiento contextual — ahí sí vale la pena la calidad extra.
 
-**¿Por qué Supabase y no PostgreSQL directo?** Porque Supabase me da PostgreSQL + API REST + Realtime (WebSockets) + SDK de JavaScript + hosting managed. No necesito configurar un servidor de base de datos aparte.
+**¿Por qué Supabase y no PostgreSQL directo?** Porque Supabase me da PostgreSQL + API REST + Realtime (WebSockets) + hosting managed. No necesito configurar un servidor de base de datos aparte.
 
 **¿Por qué alertas solo para urgencia inmediata?** Porque mandar email por cada usuario en monitoreo sería spam. Solo los casos que necesitan acción hoy merecen interrumpir al analista. Los demás se ven en el dashboard cuando el analista tenga tiempo.
 
